@@ -1,0 +1,18 @@
+uuid: 1e6b79a0-9949-487e-9a37-3055ad82d17c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sliders
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.sliders
+target_entity_type_id: taxonomy_term
+target_bundle: sliders
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,37 @@
+uuid: a20b62fd-d4fd-48fb-bd48-88fbab0f6b84
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.base_block
+    - field.storage.block_content.field_term
+    - taxonomy.vocabulary.airlines
+    - taxonomy.vocabulary.career
+    - taxonomy.vocabulary.corporate
+    - taxonomy.vocabulary.country
+    - taxonomy.vocabulary.traveller
+id: block_content.base_block.field_term
+field_name: field_term
+entity_type: block_content
+bundle: base_block
+label: Term
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      airlines: airlines
+      career: career
+      corporate: corporate
+      country: country
+      traveller: traveller
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: airlines
+field_type: entity_reference

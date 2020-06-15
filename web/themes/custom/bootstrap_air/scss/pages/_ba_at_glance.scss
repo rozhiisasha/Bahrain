@@ -1,0 +1,77 @@
+.bia-at-a-glance .main-container{
+	.page-header {
+		color: #ff6600;
+	}
+	.field--name-field-title {
+		color: #ff6600;
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+	.field--name-field-body {
+		text-transform: uppercase;
+		padding-left: 0;
+		line-height: 10px;
+		font-weight: 600;
+		color: #665;
+		p {
+
+		}
+		.big {
+			font-size: 65px;
+			color: #ff6600;
+			font-weight: 700;
+			padding-top: 25px;
+			display: block;
+			&>span 	{
+				font-size: 12px;
+				margin-left: -10px;
+			}
+		}
+		.airlines {
+			color: #ff6600;
+			font-size: 30px;
+			font-weight: 700;
+			letter-spacing: 0.01px;
+			line-height: 30px;
+			a {
+				color: #ff6600;
+				text-decoration: none;
+			}
+		}
+
+	}
+	.field--name-field-media-image {
+		margin-top: 5px;
+		margin-bottom: 10px;
+	}
+	.field--item:nth-child(4) {
+		float: left;
+		width: 33%;
+		position: relative;
+		margin-right: 12px;
+	}
+	.field--item:nth-child(5) {
+		.airlines {
+			margin-top: 5px;
+	
+		}
+	}
+	.field--item:nth-child(6) {	
+		
+		width: 45%;
+		margin-top: -50px;
+		margin-bottom: 30px;
+	}
+	.field--item:nth-child(7){	
+		
+		p {
+			padding-left: 20px;
+		}
+	}
+	.field--items>.field--item:nth-child(1){	
+		
+		p {
+			padding-left: 20px;
+		}
+	}
+}

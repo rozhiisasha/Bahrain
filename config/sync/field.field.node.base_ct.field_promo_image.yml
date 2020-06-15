@@ -1,0 +1,28 @@
+uuid: e4c7f086-3f05-4b1f-a897-be157259fd2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_promo_image
+    - media.type.image
+    - node.type.base_ct
+id: node.base_ct.field_promo_image
+field_name: field_promo_image
+entity_type: node
+bundle: base_ct
+label: promo_image
+description: 'Image for top page banner or views'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

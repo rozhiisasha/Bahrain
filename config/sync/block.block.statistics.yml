@@ -1,0 +1,31 @@
+uuid: 783c237e-2246-4aff-9643-8e48392d27fc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_with_paragraphs:4ae75f9b-9e72-4b95-84e2-0064f1d8fa2c'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_air
+id: statistics
+theme: bootstrap_air
+region: content
+weight: -18
+provider: null
+plugin: 'block_content:4ae75f9b-9e72-4b95-84e2-0064f1d8fa2c'
+settings:
+  id: 'block_content:4ae75f9b-9e72-4b95-84e2-0064f1d8fa2c'
+  label: Statistics
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /corporate/doing-business-with-us/statistics-and-data/statistics
+    negate: false
+    context_mapping: {  }

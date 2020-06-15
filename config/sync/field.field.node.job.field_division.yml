@@ -1,0 +1,21 @@
+uuid: 97c43aa9-3220-41a7-8f91-61b1ab374a51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_division
+    - node.type.job
+  module:
+    - text
+id: node.job.field_division
+field_name: field_division
+entity_type: node
+bundle: job
+label: Division
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

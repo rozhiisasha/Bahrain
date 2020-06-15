@@ -1,0 +1,39 @@
+uuid: 72deb7b5-d0af-4a27-bf5a-8f586aa4b5b5
+langcode: en
+status: false
+dependencies:
+  module:
+    - bahrain_flight
+    - system
+  theme:
+    - bootstrap_air
+id: bahrainflightsblock
+theme: bootstrap_air
+region: navigation_collapsible
+weight: -29
+provider: null
+plugin: bahrain_flights_Block
+settings:
+  id: bahrain_flights_Block
+  label: 'Bahrain flights block'
+  provider: bahrain_flight
+  label_display: '0'
+  time: Time
+  flight: Flight
+  origin: Origin
+  destination: Destination
+  stat: Status
+  link_arrivals: 'View all arrivals'
+  link_departures: 'View all departures'
+  btn_departures: Departures
+  btn_arrivals: Arrivals
+  refresh: 'Refresh list'
+  number: Number
+  update: 'Last udated'
+  find: 'Last update:'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

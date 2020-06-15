@@ -1,0 +1,235 @@
+.advertising-space,
+.aeronautical-charges,
+.introduction,
+.cargo,
+.office-space,
+.retail-space,
+.route-development,
+.bahrain-airport-services,
+.bahrain-duty-free,
+.partners,
+.civil-aviation-affairs,
+.mumtalakat,
+.tender-listing,
+.supplier-relations,
+.tenders-supplier-relations,
+.doing-business-with-us {
+  .page-header {
+    color: $orange;
+  }
+
+  .region.region-sidebar-second {
+    .menu.menu--corporate-menu.nav a {
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+
+  #block-footermenuhorizont {
+    .horizont {
+      nav {
+        ul {
+          li {
+            a:hover {
+              color: $orange;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.route-development,
+.cargo,
+.office-space,
+.retail-space,
+.advertasing-space,
+.civil-aviation-affairs {
+  .content {
+    a {
+      color: $orange;
+    }
+  }
+
+  .field--name-field-title {
+    font-weight: 700;
+  }
+}
+
+
+// BEGIN page Supplier Relations
+.corp .navigation-wrapper .block-switch-portal {
+
+    background-color: #F7F6F6;
+    a {
+      color: #E63D37;
+      &::before {
+        background-image: url("../../../../../sites/default/files/switch-icon-active.svg");
+      }
+      &:hover::before {
+        background-image: url('../images/switch-icon-active-corp.svg');
+      }
+    }
+}
+.supplier-relations {
+  .content .field--name-body {
+    p {
+      &:last-child {
+        font-size: 16px;
+        color: $orange;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .field--name-field-webform-node {
+  	.form-group {
+  		display: flex;
+  		.control-label {
+			width: 130px;
+  		}
+  		input.form-file {
+  			background: none;
+  			border: none;
+  			box-shadow: unset;
+  		}
+  		.form-textarea-wrapper {
+  			width: 375px;
+  			textarea {
+  				height: 155px;
+  			}
+  		}
+  	}
+    .webform-element--title-inline {
+      .form-text {
+		width: 300px;
+		height: 25px;
+    	}
+      .control-label {
+      	width: 130px;
+        &:after {
+          font-size: 15px;
+          background: none;
+          content: "*";
+          color: $orange;
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+
+  .webform-button--submit {
+    font-weight: 700;
+    background-color: $orange;
+    padding: 2px 2px 1px;
+    border-radius: 0;
+    text-transform: uppercase;
+    border: none;
+    margin-left: 130px;
+    font-size: 12px;
+
+    &:after {
+      content: '❱';
+      padding-left: 5px;
+      padding-right: 3px;
+    }
+  }
+
+}
+[dir="rtl"]  .webform-button--submit {
+	margin-right: 130px;
+	margin-left: 0;
+  }
+
+// BEGIN  @media (max-width: 768px)
+
+@media (max-width: 768px) {
+  .supplier-relations {
+    .global-content-wrapper {
+      background: none;
+      padding-bottom: 20px;
+      padding-left: 0;
+
+      .content-wrap {
+        background: none;
+        padding-left: 0;
+
+        .region-content {
+          .page-header {
+            color: $dim-gray;
+          }
+        }
+
+        .field--name-body {
+          p {
+            &:last-child {
+              color: $dim-gray;
+            }
+          }
+        }
+
+        .field--name-field-webform-node {
+        	.form-group {
+  				display: block;
+  				.form-textarea-wrapper {
+  					width: 275px;
+  				}
+  			}
+          .webform-element--title-inline {
+          	.form-text {
+				width: 225px;
+			}
+            .control-label {
+              &:after {
+                font-size: 15px;
+                color: $color-red;
+              }
+            }
+          }
+        }
+
+        .webform-button--submit {
+          background-color: $color-red;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+// END  @media (max-width: 768px)
+// END page Supplier Relations
+
+// BEGIN title sidebar for Corporate > Doing Business With Us
+
+.doing-business-with-us,
+.advertising-space,
+.aeronautical-charges,
+.statistics-and-data,
+.bia-at-a-glance,
+.introduction,
+.statistics,
+.cargo,
+.office-space,
+.retail-space,
+.route-development,
+.our-partners,
+.bahrain-airport-services,
+.bahrain-duty-free,
+.partners,
+.civil-aviation-affairs,
+.mumtalakat,
+.tenders-supplier-relations,
+.tender-listing,
+.supplier-relations {
+  .region-sidebar-second {
+    h2 {
+      color: $orange;
+    }
+  }
+}
+
+// END title sidebar for Corporate > Doing Business With Us

@@ -1,0 +1,20 @@
+<div class="current-time-block">
+  <div class="bold-text info-1">
+    <div>{{ 'Current time in Bahrain is'|t }}<span class="current-time"> {{ last_update }} </span></div>
+    {% if path_arr_last  != 'flight-finder' %}
+      <div class="last-update">{{ 'Last updated at '|t }} <span class="last-time"> {{ last_update }} </span></div>
+    {% endif %}
+  </div>
+  <div class="info-2">{{ 'For more information, please contact the information desk at'|t }}
+    <span class="bold-text"> {{ '80007777(Local)'|t }}</span>,
+    <span class="bold-text"> {{ '80114444(International)'|t }}</span>.
+  </div>
+  <div class="info-3">
+    <div class="bold-text"> {{ 'Please note:'|t }}</div>
+    <div>
+      {{ 'The information shown here is not verified for accuracy or completeness and thus may prove to be
+      inaccurate or incomplete. If you require further information, it is recommended that you contact your airline
+      directly.'|t }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+uuid: db4267a2-9ff6-429d-97f1-3ea1e90e3a4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.group_title_body__img
+  module:
+    - text
+id: paragraph.group_title_body__img.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: group_title_body__img
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,20 @@
+uuid: c5621319-2444-4b8a-9273-e9b0162260a6
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - careers-menu
+      - corporate-menu
+      - traveller-menu
+    parent: 'traveller-menu:'
+name: 'With paragraphs'
+type: with_paragraphs
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

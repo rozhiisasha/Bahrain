@@ -1,0 +1,36 @@
+uuid: 986cb820-f5ce-405f-a501-77043a6017b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.link
+    - field.field.node.airline.field_airline_link
+    - field.field.node.airline.field_airline_term
+    - field.field.node.airline.field_icon_airline
+    - node.type.airline
+  module:
+    - link
+    - user
+id: node.airline.link
+targetEntityType: node
+bundle: airline
+mode: link
+content:
+  field_airline_link:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  field_airline_term: true
+  field_icon_airline: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

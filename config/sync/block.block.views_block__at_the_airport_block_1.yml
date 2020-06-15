@@ -1,0 +1,30 @@
+uuid: 8b619a0f-65da-4f59-b065-c84477a4e48b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.at_the_airport
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_air
+id: views_block__at_the_airport_block_1
+theme: bootstrap_air
+region: content
+weight: -38
+provider: null
+plugin: 'views_block:at_the_airport-block_1'
+settings:
+  id: 'views_block:at_the_airport-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /at-the-airport
+    negate: false
+    context_mapping: {  }

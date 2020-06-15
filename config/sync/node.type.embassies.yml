@@ -1,0 +1,18 @@
+uuid: 9a2b2f1f-2847-43d7-b9e8-ac4c731d3ecf
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Embassies
+type: embassies
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

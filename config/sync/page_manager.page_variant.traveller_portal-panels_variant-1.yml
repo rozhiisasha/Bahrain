@@ -1,0 +1,126 @@
+uuid: d5dacbaa-0956-40df-81fe-0074fa65cc9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.traveller_portal
+    - views.view.flight_finder
+    - views.view.last_news_block
+    - webform.webform.flight_notification
+    - webform.webform.information_counter
+  content:
+    - 'block_content:block_with_paragraphs:86ee15f6-09b0-4c01-acc4-299e3813a9f7'
+  module:
+    - bahrain_flight
+    - block_content
+    - language
+    - panels
+    - views
+    - webform
+id: traveller_portal-panels_variant-1
+label: Arabic
+variant: panels_variant
+variant_settings:
+  blocks:
+    7595ad3f-0bb7-4f89-b370-007de2018db0:
+      id: webform_block
+      label: Webform
+      provider: webform
+      label_display: '0'
+      webform_id: information_counter
+      default_data: ''
+      redirect: false
+      region: third_above
+      weight: -2
+      uuid: 7595ad3f-0bb7-4f89-b370-007de2018db0
+      context_mapping: {  }
+    22bf7f95-9052-4bb9-8597-07984d383bd8:
+      id: 'views_block:last_news_block-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: second_below
+      weight: 0
+      uuid: 22bf7f95-9052-4bb9-8597-07984d383bd8
+      context_mapping: {  }
+    041b7d9a-3b7f-49f5-9178-1e9362cb1ac0:
+      id: webform_block
+      label: Webform
+      provider: webform
+      label_display: '0'
+      webform_id: flight_notification
+      default_data: ''
+      redirect: false
+      region: first_above
+      weight: -10
+      uuid: 041b7d9a-3b7f-49f5-9178-1e9362cb1ac0
+      context_mapping: {  }
+    29eeb65e-86c2-4e80-8ce4-ffb6063c3672:
+      id: 'block_content:86ee15f6-09b0-4c01-acc4-299e3813a9f7'
+      label: 'corporate portal (traveller homepage)'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: first_below
+      weight: 0
+      uuid: 29eeb65e-86c2-4e80-8ce4-ffb6063c3672
+      context_mapping: {  }
+    a773af15-13d1-4cf1-a687-16f6783e1e2f:
+      id: 'views_exposed_filter_block:flight_finder-page_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      region: second_above
+      weight: 0
+      uuid: a773af15-13d1-4cf1-a687-16f6783e1e2f
+      context_mapping: {  }
+    7a143507-8ff4-4a22-94c3-994e4799d48f:
+      id: bahrain_flights_Block
+      label: 'Bahrain flights block'
+      provider: bahrain_flight
+      label_display: '0'
+      time: الوقت
+      flight: الرحلة
+      origin: 'جهة القدوم'
+      destination: ' الوجهة'
+      stat: الحالة
+      link_arrivals: 'عرض جميع الرحلات القادمة'
+      link_departures: 'عرض جميع الرحلات المغادرة'
+      btn_departures: 'مغادرة الرحلات'
+      btn_arrivals: 'وصول الرحلات'
+      refresh: 'تحديث القائمة'
+      number: 'رقم الرحلة'
+      update: 'آخر تحديث'
+      find: 'البحث عن الرحلات'
+      region: third_above
+      weight: -1
+      uuid: 7a143507-8ff4-4a22-94c3-994e4799d48f
+      context_mapping: {  }
+  id: panels_variant
+  uuid: db6bca73-fd78-494f-a6aa-ead66a6748c7
+  label: null
+  weight: 0
+  layout: layout_traveller_homepage
+  layout_settings:
+    label: travel
+  page_title: ''
+  storage_type: page_manager
+  storage_id: traveller_portal-panels_variant-1
+  builder: standard
+page: traveller_portal
+weight: 0
+selection_criteria:
+  -
+    id: language
+    langcodes:
+      ar: ar
+    negate: false
+    context_mapping:
+      language: language_interface
+selection_logic: and
+static_context: {  }

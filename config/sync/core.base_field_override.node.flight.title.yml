@@ -1,0 +1,18 @@
+uuid: 0eee0c65-d7c5-4ccd-862b-4a7169416f12
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.flight
+id: node.flight.title
+field_name: title
+entity_type: node
+bundle: flight
+label: 'Flight number'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

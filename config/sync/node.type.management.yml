@@ -1,0 +1,17 @@
+uuid: edac06ad-643a-4bce-b0b9-b12461e73985
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Management
+type: management
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

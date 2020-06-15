@@ -1,0 +1,28 @@
+uuid: d7367384-e453-473b-96d3-e28f259b452a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icon_for_views
+    - media.type.image
+    - node.type.with_paragraphs
+id: node.with_paragraphs.field_icon_for_views
+field_name: field_icon_for_views
+entity_type: node
+bundle: with_paragraphs
+label: icon_for_views
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

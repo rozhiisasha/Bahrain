@@ -1,0 +1,142 @@
+{
+    "name": "drupal-composer/drupal-project",
+    "description": "Project template for Drupal 8 projects with composer",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "",
+            "role": ""
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "highcharts/highcharts",
+                "version": "v8.0.4",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://code.highcharts.com/highcharts.js",
+                    "type": "file"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "moment/moment",
+                "version": "2.24.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/moment/moment/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "composer/installers": "^1.2",
+        "cweagans/composer-patches": "^1.6.5",
+        "drupal/addtoany": "^1.12",
+        "drupal/admin_toolbar": "^2.0",
+        "drupal/adminimal_theme": "^1.5",
+        "drupal/better_exposed_filters": "^4.0",
+        "drupal/bootstrap": "^3.21",
+        "drupal/colorbox": "^1.4",
+        "drupal/console": "^1.0.2",
+        "drupal/core": "^8.8.0",
+        "drupal/core-composer-scaffold": "^8.8.0",
+        "drupal/devel": "^2.1",
+        "drupal/easy_breadcrumb": "^1.12",
+        "drupal/field_group": "^3.0",
+        "drupal/page_manager": "^4.0",
+        "drupal/panels": "^4.4",
+        "drupal/paragraphs": "^1.11",
+        "drupal/pathauto": "^1.6",
+        "drupal/search_api": "^1.15",
+        "drupal/slick": "^2.1",
+        "drupal/slick_views": "^2.2",
+        "drupal/snippet_manager": "^1.7",
+        "drupal/social_media_links": "^2.6",
+        "drupal/time_field": "^1.13",
+        "drupal/view_custom_table": "^1.3",
+        "drupal/views_autocomplete_filters": "^1.2",
+        "drupal/we_megamenu": "^1.7",
+        "drupal/webform": "^5.8",
+        "drush/drush": "^9.7.1 | ^10.0.0",
+        "highcharts/highcharts": "v8.0.*",
+        "vlucas/phpdotenv": "^4.0",
+        "webflo/drupal-finder": "^1.0.0",
+        "zaporylie/composer-drupal-optimizations": "^1.0"
+    },
+    "require-dev": {
+        "drupal/core-dev": "^8.8.0"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "classmap": [
+            "scripts/composer/ScriptHandler.php"
+        ],
+        "files": [
+            "load.environment.php"
+        ]
+    },
+    "scripts": {
+        "pre-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "pre-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "post-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ],
+        "post-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ]
+    },
+    "extra": {
+        "composer-exit-on-patch-failure": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            }
+        },
+        "installer-paths": {
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ]
+        }
+    }
+}

@@ -1,0 +1,4 @@
+services:
+  switch_portal.get_current_portal:
+    class: Drupal\switch_portal\GetCurrentPortal
+    arguments: ['@path.current', '@path_alias.manager']

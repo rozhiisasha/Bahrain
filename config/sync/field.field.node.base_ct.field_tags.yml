@@ -1,0 +1,37 @@
+uuid: f790f43c-02c0-41f1-8ca6-3efc7755ac92
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.base_ct
+    - taxonomy.vocabulary.airlines
+    - taxonomy.vocabulary.career
+    - taxonomy.vocabulary.corporate
+    - taxonomy.vocabulary.country
+    - taxonomy.vocabulary.traveller
+id: node.base_ct.field_tags
+field_name: field_tags
+entity_type: node
+bundle: base_ct
+label: Tags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      airlines: airlines
+      career: career
+      corporate: corporate
+      country: country
+      traveller: traveller
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: airlines
+field_type: entity_reference

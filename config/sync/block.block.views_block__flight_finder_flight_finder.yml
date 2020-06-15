@@ -1,0 +1,30 @@
+uuid: 29a6b652-f110-47cc-9d80-5d19c96f3210
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.flight_finder
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_air
+id: views_block__flight_finder_flight_finder
+theme: bootstrap_air
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:flight_finder-flight_finder'
+settings:
+  id: 'views_block:flight_finder-flight_finder'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /flight-details/flight-finder
+    negate: false
+    context_mapping: {  }

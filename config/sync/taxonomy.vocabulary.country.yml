@@ -1,0 +1,8 @@
+uuid: 725a1148-5818-4807-be99-00f1e03956b8
+langcode: en
+status: true
+dependencies: {  }
+name: country
+vid: country
+description: ''
+weight: 0

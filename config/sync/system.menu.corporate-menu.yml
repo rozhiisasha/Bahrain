@@ -1,0 +1,8 @@
+uuid: 2f221d6e-a41f-488e-869f-7e0bc7da10c9
+langcode: en
+status: true
+dependencies: {  }
+id: corporate-menu
+label: 'Corporate menu'
+description: ''
+locked: false

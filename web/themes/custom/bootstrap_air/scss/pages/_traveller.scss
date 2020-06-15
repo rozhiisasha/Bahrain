@@ -1,0 +1,946 @@
+//  View. Add color on the title and link
+.at-the-airport {
+  .views-field.views-field-title {
+    a {
+      color: $traveller-purple;
+    }
+  }
+
+  .views-field.views-field-view-node {
+    a {
+      background-color: $traveller-purple;
+    }
+  }
+}
+
+// BEGIN Views Traveller portal
+
+.before-you-fly,
+.baggage-information {
+
+  h2 {
+    color: $orange;
+  }
+
+  .region-sidebar-second {
+    .menu.menu--traveller-menu.nav a {
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+
+  #block-footermenuhorizont {
+    .horizont {
+      nav {
+        ul {
+          li {
+            a:hover {
+              color: $orange;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .views-field.views-field-title {
+
+    a {
+      color: $orange;
+    }
+  }
+
+  .views-field.views-field-view-node {
+    a {
+      background-color: $orange;
+    }
+  }
+}
+
+.flight-details {
+  h2 {
+    color: $traveller-red;
+  }
+
+  .views-field.views-field-title {
+    a {
+      color: $traveller-red;
+    }
+  }
+
+  .views-field.views-field-view-node {
+    a {
+      background-color: $traveller-red;
+    }
+  }
+}
+
+
+.prepare-documents {
+  h2 {
+    color: $bright-pink;
+  }
+
+  .views-field.views-field-title {
+    a {
+      color: $bright-pink;
+    }
+  }
+
+  .views-field.views-field-view-node {
+    a {
+      background-color: $bright-pink;
+    }
+  }
+}
+
+.prepare-documents,
+.customs-rules,
+.channels,
+.bahrain-visa-queries {
+  .region-sidebar-second {
+    .menu.menu--prepare-documents.nav a {
+      &:hover {
+        color: $bright-pink;
+      }
+    }
+  }
+
+  #block-footermenuhorizont {
+    .horizont {
+      nav {
+        ul {
+          li {
+            a:hover {
+              color: $bright-pink;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// END Views Traveller portal
+
+
+// BEGIN Page Traveller portal
+
+
+//#block-preparedocuments {
+//  ul {
+//    .last {
+//      display: none;
+//    }
+//  }
+//}
+
+.parking-rates {
+  h2 {
+    color: $blue;
+  }
+
+  td {
+    padding: 5px;
+  }
+
+  .page-header {
+    color: $blue;
+  }
+
+  .field--name-field-title {
+    padding-top: 18px;
+  }
+}
+
+
+.customs-rules {
+  #block-travellermenu-3 {
+    display: none;
+  }
+
+  h2 {
+    color: $bright-pink;
+  }
+
+  .content-wrap {
+    ul {
+      list-style-type: disc;
+      padding-left: 15px;
+
+      li {
+        padding-bottom: 12px;
+      }
+    }
+  }
+
+  .field--name-field-title {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $bright-pink;
+    padding-bottom: 13px;
+  }
+
+  .page-header {
+    color: $bright-pink;
+  }
+
+  .field--name-body {
+    display: none;
+  }
+
+  .field--name-field-body {
+    a[href^="mailto:"],
+    a[href="http://www.bahrainairport.com/images/pdfs/Customs-Offical-Document-for-Travelers.pdf"] {
+      color: $bright-pink;
+    }
+  }
+
+  #block-travellermenu-2 {
+    display: none;
+  }
+}
+
+
+.baggage-services,
+.public-transport,
+.car-park,
+.lost-and-found,
+.lost-found,
+.reclaim,
+.regulations-and-allowance,
+.immigration-and-customs {
+  h2,
+  .page-header {
+    color: $orange;
+  }
+
+  .region-sidebar-second {
+    .menu.menu--traveller-menu.nav a {
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+
+  #block-footermenuhorizont {
+    .horizont {
+      nav {
+        ul {
+          li {
+            a:hover {
+              color: $orange;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.lost-found {
+  .content-wrap {
+    min-height: 500px;
+  }
+}
+
+
+.public-transport {
+
+  .field--name-field-title {
+    color: $orange;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 13px;
+  }
+
+  .paragraph--type--text-image {
+    display: flex;
+
+    .field--name-field-body {
+      order: 1;
+      padding: 20px 32px 20px 32px;
+
+      a {
+        color: $orange;
+      }
+    }
+
+    .field--name-field-media {
+      order: 0;
+      padding: 26px 5px;
+    }
+  }
+}
+
+.car-park {
+  td {
+    padding: 5px;
+  }
+
+  .field--name-field-title {
+    padding-top: 18px;
+  }
+}
+
+.reclaim {
+  .field--name-body {
+    li {
+      padding: 5px 10px;
+    }
+  }
+
+  .content-wrap {
+    min-height: 500px;
+  }
+}
+
+.baggage-services {
+  .content-wrap {
+    min-height: 500px;
+  }
+
+  .field--name-field-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: $orange;
+    text-transform: uppercase;
+    padding-bottom: 13px;
+  }
+}
+
+
+.immigration-and-customs {
+
+  .field--name-field-title {
+    color: $orange;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 13px;
+  }
+
+  .field--name-field-body {
+    ul {
+      list-style: disc;
+      padding-left: 15px;
+    }
+
+    a[href^="mailto:"],
+    a[href="http://www.bahrainairport.com/images/pdfs/Customs-Offical-Document-for-Travelers.pdf"] {
+      color: #e72844;
+    }
+  }
+}
+
+
+.bahrain-visa-queries,
+.channels {
+  h2 {
+    color: $bright-pink;
+  }
+
+  .page-header {
+    color: $bright-pink;
+  }
+
+  .field--name-body {
+    a[href^="mailto:"] {
+      color: $bright-pink;
+    }
+  }
+}
+
+.channels {
+  .field--name-body {
+    ul {
+      padding-left: 8px;
+
+      li {
+        padding: 5px 10px;
+      }
+    }
+  }
+}
+
+// END Page Traveller portal
+
+
+// BEGIN Page Executive management
+
+.executive-management {
+
+  .page-header,
+  .region-sidebar-second {
+    color: $color-red;
+  }
+
+  .content {
+    margin-bottom: 10px;
+  }
+
+  .executive-management-items {
+    height: 161px;
+    position: relative;
+    background: linear-gradient(280deg, rgba(255, 255, 255, 1) 5%, rgba(123, 123, 123, 1) 80%);
+    border-bottom: 1px solid rgba(148, 148, 148, 1);
+    border-right: 1px solid rgba(148, 148, 148, 1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    .views-field-field-name {
+      padding-top: 10px;
+      padding-left: 10px;
+      padding-right: 135px;
+
+      .field-content {
+        font-family: 'Helvetica Neue LT Com';
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        margin-top: 50px;
+      }
+    }
+
+    .views-field-field-subtitle {
+      padding-left: 10px;
+      padding-right: 135px;
+
+      .field-content {
+        font-family: 'Helvetica Neue LT Com';
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        margin-top: 5px;
+      }
+    }
+
+
+    .field--name-field-media-image {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    .views-field-view-node {
+      font-weight: 700;
+      padding: 3px 10px 3px 5px;
+      background-color: $color-red;
+      text-transform: uppercase;
+      position: absolute;
+      bottom: 10px;
+      right: 15px;
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+  // BEGIN Modal
+  .ui-dialog {
+    max-width: 36% !important;
+    min-width: 36% !important;
+    z-index: 1100 !important;
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+
+    .ui-dialog-titlebar {
+      border: none;
+      background: none;
+      margin: 0;
+      padding: 0;
+
+      .ui-dialog-title {
+        display: none;
+      }
+
+      .ui-dialog-titlebar-close {
+        margin-top: -20px;
+
+      }
+    }
+
+    .ui-dialog-content {
+      .content {
+        display: flex;
+        flex-direction: column-reverse;
+
+        .management_wrapper {
+          background: linear-gradient(280deg, rgba(255, 255, 255, 1) 5%, rgba(123, 123, 123, 1) 80%);
+          height: 160px;
+          margin: -6px -12px 20px -12px;
+          position: relative;
+          border-radius: 10px 0 0 10px;
+
+          .field--name-field-media {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+          }
+
+          .field--name-field-name {
+            font-family: 'Helvetica Neue LT Com';
+            font-size: 22px;
+            line-height: 26px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #fff;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 135px;
+            margin-top: 50px;
+          }
+
+          .field--name-field-subtitle {
+            font-family: 'Helvetica Neue LT Com';
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #fff;
+            padding-left: 10px;
+            padding-right: 135px;
+            margin-top: 5px;
+          }
+        }
+
+        .field--name-body {
+          padding: 0 5px;
+        }
+      }
+    }
+  }
+
+  // END Modal
+}
+
+// END Page Executive management
+
+
+// BEGIN Page Lost and found > sidebar
+.lost-and-found {
+  #block-travellermenu-3 {
+    display: none;
+  }
+}
+// END Page Lost and found > sidebar
+
+
+// BEGIN Page Embassies in Bahrain
+.embassies-in-bahrain {
+  .content-wrap {
+    width: 100%;
+
+    .page-header {
+      color: $corporate-pink;
+    }
+
+    #views-exposed-form-embassies-block-1 {
+      width: 480px;
+      border-radius: 7px;
+      padding: 12px 10px;
+      box-shadow: 1px 1px 1px 0px white;
+      background: url(../../../../../sites/default/files/2020-03/pattern.png) repeat left top, linear-gradient(0deg, #cc0066 0%, #ed0d6d 100%);
+
+      .control-label {
+        color: #fff;
+        font-size: 18px;
+        font-family: 'Helvetica Neue LT Com', serif;
+        padding-top: 4px;
+        margin: 0;
+        text-transform: uppercase;
+      }
+
+      .input-group {
+        width: 196px;
+        text-transform: uppercase;
+        line-height: 26px;
+        border: 0;
+        padding: 0 5px;
+        font-size: 10px;
+        margin: 0 11px 0 24px;
+
+        input {
+          font-family: 'Helvetica Neue LT Com', serif;
+          font-size: 12px;
+          text-transform: uppercase;
+          height: 26px;
+          color: #000;
+          padding: 0 5px 0 5px;
+        }
+
+        .input-group-addon {
+          display: none;
+        }
+      }
+
+      .form-actions {
+        button {
+          font-family: 'Helvetica Neue LT Com', serif;
+          font-size: 12px;
+          font-weight: 700;
+          text-transform: uppercase;
+          width: 81px;
+          height: 26px;
+          background-color: #e4096b;
+          border: none;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+          border-right: 1px solid rgba(0, 0, 0, 0.5);
+
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .view-content {
+      table.table {
+        border-spacing: 0 7px;
+        border-collapse: separate;
+
+        thead {
+          color: #fff;
+          font-size: 10px;
+          text-transform: uppercase;
+          background-color: $corporate-pink;
+
+          tr > :first-child {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            padding-right: 0;
+
+            &:after {
+              content: '/';
+              padding-left: 3px;
+            }
+          }
+
+          tr > :nth-child(2) {
+            padding-left: 3px;
+          }
+
+          tr > :nth-child(4) {
+            width: 100px;
+          }
+
+          tr > :last-child {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+          }
+        }
+
+        tbody {
+          td {
+            font-size: 11px;
+            height: 50px;
+            background: #fff;
+            color: #000;
+            padding: 3px 7px;
+            vertical-align: middle;
+
+            p {
+              padding-bottom: 0;
+            }
+          }
+
+          .views-field-field-embassies-phone:before {
+            content: '+';
+          }
+
+          .views-field-field-icon-airline {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+          }
+
+          .views-field-field-embassies-webpage {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//// BEGIN Page Embassies in Bahrain for Arabic
+html[lang="ar"] {
+  .embassies-in-bahrain {
+    #views-exposed-form-embassies-block-1 {
+      .input-group {
+        margin-left: 0;
+      }
+    }
+
+    table.table {
+      thead {
+        text-align: right;
+        tr {
+
+          & > :first-child {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top-left-radius: unset;
+            border-bottom-left-radius: unset;
+            padding-right: 3px;
+            padding-left: 0;
+
+            &:after {
+              content: '/';
+              padding-left: 3px;
+              padding-right: 3px;
+            }
+          }
+
+          & > :nth-child(2) {
+            padding-right: 3px;
+            padding-left: 0;
+          }
+
+          & > :last-child {
+            border-top-right-radius: unset;
+            border-bottom-right-radius: unset;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+          }
+        }
+
+        th {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+//// END Page Embassies in Bahrain for Arabic
+//// BEGIN Page Embassies in Bahrain for Mobile
+
+@media (max-width: 768px) {
+  .embassies-in-bahrain {
+    .global-content-wrapper {
+      background: none;
+      padding-bottom: 15px;
+
+      .content-wrap {
+        background: none;
+
+        .page-header  {
+          color: $dim-gray;
+        }
+
+        .content {
+          .field--name-body {
+            font-size: 16px;
+
+            p:first-child {
+              padding-bottom: 0;
+            }
+          }
+        }
+
+        #block-views-block-embassies-block-1 {
+
+          .views-exposed-form {
+            width: 300px;
+            height: 50px;
+
+            .control-label {
+              display: none;
+            }
+            .input-group {
+              margin: 0;
+            }
+
+            .form--inline {
+              display: flex;
+            }
+          }
+
+          .view-content {
+            .table-responsive {
+              border: none;
+            }
+            table.table {
+              border-spacing: unset;
+              border-collapse: unset;
+            }
+          }
+
+          .wrapper-pager {
+            padding-right: 0;
+            padding-left: 0;
+
+            #go_to_page {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//// END Page Embassies in Bahrain for Mobile
+// END Page Embassies in Bahrain
+
+
+// Adaptation to Arabic
+html[lang="ar"] {
+
+  #block-preparedocuments {
+    ul {
+      .last {
+        display: block;
+      }
+    }
+  }
+
+  // BEGIN  Views Traveller portal for Arabic
+  .flight-details,
+  .baggage-information,
+  .before-you-fly,
+  .prepare-documents {
+    .global-views-col {
+      img {
+        right: 230px;
+      }
+
+      a {
+        font-family: 'GE SS Text Light';
+        font-size: 17px;
+      }
+
+      .views-field-view-node {
+        a {
+          font-size: 13px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  // END  Views Traveller portal for Arabic
+
+
+  // BEGIN  Pages Traveller portal for Arabic
+  .bahrain-visa-queries {
+
+    .field.field--name-field-body.field--type-text-long.field--label-hidden.field--item {
+      background-color: #de1269;
+      color: #fff;
+      padding: 20px 16px 20px 10px;
+      border-radius: 6px;
+      margin: 15px 0 28px;
+    }
+
+  }
+
+  // END  Pages Traveller portal for Arabic
+
+
+  // BEGIN Page Executive management for Arabic
+  .executive-management {
+    .executive-management-items {
+      background: linear-gradient(90deg, rgba(255, 255, 255, 1) 5%, rgba(123, 123, 123, 1) 80%);
+      border-bottom: 1px solid rgba(148, 148, 148, 1);
+      border-left: 1px solid rgba(148, 148, 148, 1);
+      border-right: none;
+
+      .views-field-field-name {
+        padding-right: 10px;
+        padding-left: 135px;
+
+        .field-content {
+          font-family: 'GE SS Text Light';
+        }
+      }
+
+      .views-field-field-subtitle {
+        padding-right: 10px;
+        padding-left: 135px;
+
+        .field-content {
+          font-family: 'GE SS Text Light';
+          margin-top: 0;
+        }
+      }
+
+      .field--name-field-media-image {
+        right: unset;
+        left: 0;
+      }
+
+      .views-field-view-node {
+        right: unset;
+        left: 15px;
+      }
+    }
+  }
+
+  // END Page Executive management for Arabic
+
+
+  // BEGIN Modal for Arabic
+  .ui-dialog {
+    .ui-dialog-content {
+      .content {
+        .management_wrapper {
+          background: linear-gradient(90deg, rgba(255, 255, 255, 1) 5%, rgba(123, 123, 123, 1) 80%);
+          border-radius: 0 10px 10px 0;
+
+          .field--name-field-media {
+            right: unset;
+            left: 0;
+          }
+
+          .field--name-field-name {
+            padding-right: 10px;
+            padding-left: 135px;
+          }
+
+          .field--name-field-subtitle {
+            padding-right: 10px;
+            padding-left: 135px;
+          }
+        }
+      }
+    }
+  }
+
+  // END Modal for Arabic
+}
+//background with people at traveller portal
+.traveller {
+    background: #B1B1B1 url('../images/footer-wrap-bg1.jpg') repeat-x center 101%;
+    .global-content-wrapper {
+      background: none;
+    }
+    .footer {
+      background: none;
+      border-top: 0;
+      padding-bottom: 0;
+    }
+}
+@media all and(max-width: 768px) {
+  .traveller {
+    background:none;
+    .global-content-wrapper {
+      background: #fff;
+    }
+    .footer {
+      background: linear-gradient(to bottom, #444, #282828, #1d1d1d, #121212, #000000);
+      border-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+

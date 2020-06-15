@@ -1,0 +1,10 @@
+uuid: 3290ce2f-d2fb-44aa-bc87-abaf5604faa3
+langcode: en
+status: true
+dependencies: {  }
+id: title_img_file
+label: Title_img_file
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

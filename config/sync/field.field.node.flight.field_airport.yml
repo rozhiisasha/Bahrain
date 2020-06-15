@@ -1,0 +1,29 @@
+uuid: 9a7ab6ce-97f6-4b6f-a4da-b0868998c47f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_airport
+    - node.type.flight
+    - taxonomy.vocabulary.airport
+id: node.flight.field_airport
+field_name: field_airport
+entity_type: node
+bundle: flight
+label: Airport
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      airport: airport
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: airport
+field_type: entity_reference

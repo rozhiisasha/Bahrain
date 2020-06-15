@@ -1,0 +1,15 @@
+uuid: 2d206f38-6148-4c1a-b20b-883672a47729
+langcode: en
+status: true
+dependencies: {  }
+name: gallery_thumbs
+label: 'Gallery thumbs (160 x 120)'
+effects:
+  505d6e1e-387b-4a2d-9305-ae7f8dfcf40a:
+    uuid: 505d6e1e-387b-4a2d-9305-ae7f8dfcf40a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 160
+      height: 120
+      anchor: center-center

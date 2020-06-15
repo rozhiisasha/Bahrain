@@ -1,0 +1,30 @@
+uuid: 6ee98c88-527b-43de-a709-302f88d677b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slider
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_air
+id: views_block__slider_block_2
+theme: bootstrap_air
+region: navigation_collapsible
+weight: -32
+provider: null
+plugin: 'views_block:slider-block_2'
+settings:
+  id: 'views_block:slider-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /corporate
+    negate: false
+    context_mapping: {  }

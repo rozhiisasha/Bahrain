@@ -1,0 +1,8 @@
+uuid: 558a0646-39b2-4751-8b2f-38b2c4c50cfb
+langcode: en
+status: true
+dependencies: {  }
+id: block_for_views
+label: 'Block for views'
+revision: 1
+description: ''

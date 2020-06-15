@@ -1,0 +1,25 @@
+uuid: 269b7b36-5b5c-4afb-9d62-2316903565bc
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:632d4279-3ba0-4584-8caf-f390909d02d0'
+  module:
+    - block_content
+  theme:
+    - bootstrap_air
+id: socialnetworks
+theme: bootstrap_air
+region: footer
+weight: -7
+provider: null
+plugin: 'block_content:632d4279-3ba0-4584-8caf-f390909d02d0'
+settings:
+  id: 'block_content:632d4279-3ba0-4584-8caf-f390909d02d0'
+  label: 'Social Networks'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

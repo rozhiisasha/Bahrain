@@ -1,0 +1,26 @@
+uuid: 4b800cbe-fd07-41fa-a3f3-87d4bfe5db69
+langcode: en
+status: true
+dependencies:
+  module:
+    - addtoany
+    - system
+  theme:
+    - bootstrap_air
+id: addtoanybuttons
+theme: bootstrap_air
+region: content
+weight: -6
+provider: null
+plugin: addtoany_block
+settings:
+  id: addtoany_block
+  label: 'AddToAny buttons'
+  provider: addtoany
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/before-you-fly/*\r\n/before-you-fly\r\n/flight-details/*\r\n/flight-details\r\n/at-the-airport/*\r\n/at-the-airport\r\n/corporate\r\n/corporate/about-us\r\n/corporate/about-us/our-history\r\n/corporate/doing-business-with-us\r\n/corporate/doing-business-with-us/statistics-and-data\r\n/corporate/doing-business-with-us/our-partners\r\n/corporate/doing-business-with-us/tenders-supplier-relations\r\n/corporate/media-center\r\n/corporate/media-center/bac-news\r\n/corporate/media-center/gallery\r\n/corporate/media-center/gallery/*\r\n/career\r\n/career/working-with-us\\r\\n/career/the-business-areas\r\n/career/job-list\r\n/job-list/in-dev\r\n/career/working-with-us/employee-quotes"
+    negate: true
+    context_mapping: {  }

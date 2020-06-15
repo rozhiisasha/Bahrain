@@ -1,0 +1,30 @@
+uuid: 384a6556-62b0-4e73-8e87-10b3ecc1a32e
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.traveller-menu
+  module:
+    - system
+  theme:
+    - bootstrap_air
+id: travellermenu
+theme: bootstrap_air
+region: navigation_collapsible
+weight: -25
+provider: null
+plugin: 'system_menu_block:traveller-menu'
+settings:
+  id: 'system_menu_block:traveller-menu'
+  label: 'Traveller menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility:
+  request_path:
+    id: request_path
+    pages: "/corporate*\r\n/corporate\r\n/career*\r\n/career\r\n/privacy-policy\r\n"
+    negate: true
+    context_mapping: {  }

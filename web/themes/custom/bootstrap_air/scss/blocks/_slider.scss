@@ -1,0 +1,469 @@
+@import "../global/mixins";
+.region-navigation-collapsible {
+  padding: 0;
+}
+
+.corporate, .path-frontpage, .career {
+  .slick--view--slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .slick__slide {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 100%;
+        min-width: 1920px;
+        height: 535px;
+      }
+    }
+
+    nav {
+      background: none;
+    }
+
+    .slick__arrow {
+      z-index: 1002;
+      position: absolute;
+      top: 50%;
+      margin-top: 8px;
+      height: 50px;
+    }
+
+    .slick-prev:before, .slick-next:before {
+      opacity: 1;
+      display: block;
+    }
+  }
+}
+
+.path-frontpage {
+  .slick--view--slider {
+    .slick__slide {
+      @include dot-bg(1002);
+      img {
+        min-height: 535px;
+      }
+    }
+    .slick-arrow {
+      left: 24.5%;
+    }
+
+    .slick-prev:before {
+      content: url("../../../../../sites/default/files/left.svg");
+    }
+
+    .slick-next {
+      margin-left: 168px;
+
+      &:before {
+        content: url("../../../../../sites/default/files/right.svg");
+      }
+    }
+  }
+}
+
+.career, .corporate {
+  .slick--view--slider {
+    .slick-arrow {
+      width: 35px;
+    }
+    .slick-prev:hover {
+      &:before {
+        content: url("../../../../../sites/default/files/left-arr-active.png");
+      }
+    }
+
+    .slick-next:hover {
+      &:before {
+        content: url("../../../../../sites/default/files/right-arr-active.png");
+      }
+    }
+    .slick-prev:before {
+      content: url("../../../../../sites/default/files/left-arr-no-active.png");
+    }
+
+    .slick-next {
+      margin-left: 150px;
+
+      &:before {
+        content: url("../../../../../sites/default/files/right-arr-no-active.png");
+      }
+    }
+  }
+
+  .slick-dots {
+    bottom: -11px;
+    width: 190px;
+    height: 40px;
+    margin-left: calc(50% - 95px);
+    background: url("../../../../../sites/default/files/bg.svg") no-repeat center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      margin: 0;
+      width: 13px;
+      height: 7px;
+      line-height: 0;
+      button {
+        &:before {
+          content: url("../../../../../sites/default/files/n0-active.svg");
+        }
+      }
+    }
+
+    .slick-active {
+      height: 13px;
+      width: 15px;
+      button {
+        &:before {
+          content: url("../../../../../sites/default/files/no-active-dot.svg");
+        }
+      }
+    }
+  }
+}
+#block-views-block-slider-block-3 {
+  .view-display-id-block_3 {
+    border: 0;
+  }
+}
+
+.field-content hr {
+  height: 0;
+  width: 0;
+  color: transparent;
+  background-color: transparent;
+
+}
+
+.view-display-id-block_3 {
+  width: 470px;
+  height: 320px;
+  p {
+    color: #333;
+    padding-right: 15px;
+  }
+  border: 1px solid #818181;
+  border-left: 0;
+  padding: 15px 17px 0 17px;
+  .view-content {
+    .views-row {
+      display: grid;
+      grid-template-columns: 173px 260px;
+      grid-template-rows: 25px 45px;
+      height: 70px;
+      .views-field-title {
+        grid-area: 1 / 1 / 2 / 1;
+        padding-left: 15px;
+        margin: 0;
+        span {
+          color: #333;
+          font-size: 24px;
+          font-weight: bolder;
+          transform: scale(0.7,1);
+          display: block;
+          margin-left: -22px;
+          width: 150px;
+        }
+      }
+      .views-field-body {
+        color: #333;
+        width: 433px;
+        height: 45px;
+        margin-left: -2px;
+        margin-top: -2px;
+        grid-area: 2 / 1 / 3 / 3;
+      }
+    }
+  }
+  #slick-views-bac-news-attachment-1-2-slider {
+    width: 440px;
+    .slick-track {
+      width: 440px;
+    }
+    .slide__caption{
+      margin: -18px 0 0 -9px;
+    }
+    .slick__slide {
+      .slick-active {
+        width: 455px;
+        margin: 5px;
+      }
+    }
+    .slide__description {
+      display: grid;
+      column-gap: 8px;
+      grid-template-columns: 173px 248px;
+      .views-field-field-media {
+        grid-area: 1 / 1 / 4 / 1;
+      }
+      .views-field-changed {
+        grid-area: 1 / 2 / 2 / 2;
+        color: #e63238;
+        span {
+          font-size: 10px;
+          font-weight: bolder;
+        }
+      }
+      .views-field-title {
+        grid-area: 2 / 2 / 3 / 2;
+        span {
+          text-decoration: none;
+          color: #383838;
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 14px;
+          text-transform: uppercase;
+          letter-spacing: 0.75px;
+        }
+      }
+      .views-field-body {
+        grid-area: 3 / 2 / 4 / 2;
+      }
+      .views-field-view-node {
+        text-align: end;
+        grid-area: 4 / 2 / 5 / 3;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        .field-content {
+          display: block;
+          width: 85px;
+          height: 20px;
+          border-radius: 3px;
+          background-color: #e63238;
+          padding: 3px 2px 2px 2px;
+          a {
+            color: #fff;
+            font-size: 10px;
+            text-decoration: none;
+            font-weight: 700;
+
+          }
+        }
+      }
+    }
+  }
+
+  .slick--view--bac-news--attachment-1 {
+    .slick__arrow {
+      width: 171px;
+      position: relative;
+      left: 13px;
+      bottom: 56px;
+
+      button {
+        color: #333333;
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: bolder;
+      }
+
+      .slick-arrow {
+        display: flex;
+        background-color: #111111;
+        color: white;
+        align-items: center;
+        width: 70px;
+        height: 20px;
+        padding-top: 1px;
+        border-radius: 3px;
+
+        &:before {
+          margin-top: -5px;
+        }
+      }
+
+      .slick-prev {
+        padding-left: 5px;
+
+        button {
+          text-align: right;
+        }
+
+        &:before {
+          content: url("../../../../../sites/default/files/news-arr.svg");
+          transform: rotateY(180deg);
+          margin-right: 25px;
+        }
+      }
+
+      .slick-next {
+        padding-right: 5px;
+        flex-direction: row-reverse;
+
+        &:before {
+          content: url("../../../../../sites/default/files/news-arr.svg");
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+// Prepare for interview - career homepage slider 
+.career .block-views-blockprepare-for-an-interview-career-slider--block-1 {
+
+	height: 285px;
+	width: 471px;
+	padding: 15px 19px 35px 30px;
+	border-top: 1px solid #818181;
+	border-right: 1px solid #818181;
+	color: #323232;
+	@media all and (max-width: 1100px){
+        border: 1px solid #818181;
+      } 
+
+	.view-header {
+		h1 {
+			font-size: 22px;
+			text-transform: uppercase;
+			font-weight: 700;
+			margin-top: 0;
+			line-height: 14px;
+			margin-bottom: 14px;
+		}
+	}
+
+	.slick__arrow {
+      width: 171px;
+      position: relative;
+      bottom: -35px;
+
+      button {
+        color: #333333;
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: bolder;
+      }
+		.slick-arrow {
+        	display: flex;
+       	 	background-color: #333333;
+      	  	color: white;
+        	align-items: center;
+       		 width: 70px;
+        	height: 20px;
+        	padding-top: 1px;
+        	border-radius: 3px;
+
+        	&:before {
+          		margin-top: -5px;
+        	}
+      	}
+
+      .slick-prev {
+        padding-left: 5px;
+
+        	button {
+          		text-align: right;
+        	}
+
+        	&:before {
+         	 content: url("../../../../../sites/default/files/news-arr.svg");
+         	 transform: rotateY(180deg);
+         	 margin-right: 25px;
+       	 	}
+     	 }
+
+      	.slick-next {
+        	padding-right: 5px;
+        	flex-direction: row-reverse;
+
+        	&:before {
+          		content: url("../../../../../sites/default/files/news-arr.svg");
+          		margin-left: 20px;
+        	}
+     	}
+ 	}
+
+	.slide__caption {
+		padding: 0;
+	}
+
+	.slide__description {
+		display: flex;
+		justify-content: space-between;
+
+		.views-field-field-icon-for-views {
+
+			img {
+				width: 171px;
+				height: 128px;
+				max-width: inherit;
+
+
+			}
+		}
+
+		.paragraph {
+
+			padding-left: 10px;
+
+			.field--name-field-body {
+
+				text-overflow: clip;
+
+				ul>li {
+					display: none;
+					font-size: 11px;
+
+					&:first-child {
+						display: block;																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
+					}
+					&:after {
+						content: '..';
+					}																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
+				}
+
+			}
+
+			.field--name-field-title {
+
+				padding-bottom: 5px;
+				font-size: 16px;
+			}
+		}
+	}
+}
+html[lang='ar'] {
+	.block-views-blockprepare-for-an-interview-career-slider--block-1 {
+		border-left: 1px solid #818181;
+		border-right: 0;
+		@media all and (max-width: 1100px){
+        	border: 1px solid #818181;
+      	} 
+
+		.slick__arrow {
+			width: 135px;
+				.slick-prev {
+	        	padding-left: 5px;
+	        	flex-direction: row-reverse;
+
+	        	button {
+	          		text-align: right;
+	        	}
+
+	        	&:before {
+	         	 content: url("../../../../../sites/default/files/news-arr.svg");
+	         	 transform: rotateY(180deg);
+	         	 margin-right: 25px;
+	       	 	}
+	     	 }
+
+	      	.slick-next {
+	        	padding-right: 5px;
+	        	flex-direction: row;
+
+	        	&:before {
+	          		content: url("../../../../../sites/default/files/news-arr.svg");
+	          		margin-left: 20px;
+	        	}
+	     		
+			}
+		}
+
+	}
+}

@@ -1,0 +1,30 @@
+uuid: e1e7aa82-8689-454d-8525-14f777c4c989
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.shops_and_services
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_air
+id: views_block__shops_and_services_block
+theme: bootstrap_air
+region: content
+weight: -32
+provider: null
+plugin: 'views_block:shops_and_services-block_1'
+settings:
+  id: 'views_block:shops_and_services-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /at-the-airport/shops-and-services
+    negate: false
+    context_mapping: {  }

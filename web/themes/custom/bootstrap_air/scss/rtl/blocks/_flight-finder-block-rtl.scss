@@ -1,0 +1,54 @@
+@import "../../global/variables";
+@import "../../global/mixins";
+.block-views-exposed-filter-blockflight-finder-page-1 {
+  #edit-field-in-bahreyn-value {
+    label {
+      &:after {
+        margin-right: -5px;
+        margin-top: -5px;
+        transform: rotate(180deg);
+      }
+      &:before {
+        content: 'البحرين (BAH): ';
+      }
+    }
+    label[for=edit-field-in-bahreyn-value-2] {
+      width: 130px;
+      margin-left: -3px;
+      &:after {
+        margin-right: -25px;
+      }
+    }
+
+  }
+  fieldset {
+    margin-top: -10px;
+  }
+  input {
+    padding-right: 4px;
+  }
+  #edit-tid {
+    margin-left: 13px;
+  }
+  .form-item-tid-1 {
+    margin-bottom: 8px;
+    margin-top: 44px;
+  }
+  #edit-actions {
+    margin-bottom: 6px;
+    button {
+      width: 88px;
+      margin-top: -15px;
+    }
+  }
+  #views-exposed-form-flight-finder-page-1 {
+    .form-actions {
+      button {
+        margin-top: -14px;
+        span {
+          display: none;
+      }
+      }
+    }
+  }
+}

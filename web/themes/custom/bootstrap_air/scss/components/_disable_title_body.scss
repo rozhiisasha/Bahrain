@@ -1,0 +1,29 @@
+.doing-business-with-us,
+.our-partners,
+.tenders-supplier-relations,
+.statistics-and-data,
+.media-center,
+.the-business-areas,
+.working-with-us,
+.employee-quotes {
+	.global-content-wrapper {
+		.page-header {
+			display: none;
+		}
+		.content .field--name-body {
+			display: none;
+		}
+		.content-wrap {
+			background: none;
+		}
+	}
+
+}
+.newsletters .content,
+.download-documents {
+	.global-content-wrapper {
+		.field--name-body {
+			display: none;
+		}
+	}
+}

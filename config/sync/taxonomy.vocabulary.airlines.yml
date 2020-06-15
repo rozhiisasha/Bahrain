@@ -1,0 +1,8 @@
+uuid: 69cbde44-558b-4da9-ac18-a5cbd0ceb003
+langcode: en
+status: true
+dependencies: {  }
+name: airlines
+vid: airlines
+description: ''
+weight: 0

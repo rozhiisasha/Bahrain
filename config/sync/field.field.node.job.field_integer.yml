@@ -1,0 +1,23 @@
+uuid: da7745b6-ae38-47ab-a259-791707cfff6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_integer
+    - node.type.job
+id: node.job.field_integer
+field_name: field_integer
+entity_type: node
+bundle: job
+label: 'No. of Positions'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

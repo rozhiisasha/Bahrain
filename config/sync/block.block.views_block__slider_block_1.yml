@@ -1,0 +1,30 @@
+uuid: be8f6d28-4759-46c0-94e9-d23f5b199bba
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slider
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_air
+id: views_block__slider_block_1
+theme: bootstrap_air
+region: navigation_collapsible
+weight: -24
+provider: null
+plugin: 'views_block:slider-block_1'
+settings:
+  id: 'views_block:slider-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

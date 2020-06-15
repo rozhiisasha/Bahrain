@@ -1,0 +1,10 @@
+display:
+  default:
+    display_options:
+      fields:
+        view_node:
+          text: 'اقرأ المزيد ...>'
+      pager:
+        options:
+          tags:
+            next: 'الانتقال الى صفحة'

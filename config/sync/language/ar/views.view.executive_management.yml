@@ -1,0 +1,8 @@
+display:
+  default:
+    display_options:
+      fields:
+        view_node:
+          text: 'اِقرأ المزيد  ❱'
+          alter:
+            text: '<a href="{{ view_node }}" hreflang="ar" class="use-ajax" data-dialog-type="modal">اِقرأ المزيد  ❱</a>'

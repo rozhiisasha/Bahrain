@@ -1,0 +1,62 @@
+layout_traveller_homepage:
+  label: 'Traveller portal'
+  library: bootstrap_air/traveller_homepage
+  category: 'Bahrain homepages'
+  theme: bootstrap_air
+  default_region: first_above
+  icon_map:
+    - [first_above, second_above, third_above]
+    - [first_below, second_below]
+  regions:
+    first_above:
+      label: 'First above'
+    second_above:
+      label: 'Second above'
+    third_above:
+      label: 'Third above'
+    first_below:
+      label: 'First below'
+    second_below:
+      label: 'Second below'
+layout_corporate_homepage:
+  label: 'Corporate portal'
+  library: bootstrap_air/corporate_homepage
+  category: 'Bahrain homepages'
+  theme: bootstrap_air
+  default_region: first_above
+  icon_map:
+    - [first_above, second_above]
+    - [first_below, second_below, third_below]
+  regions:
+    first_above:
+      label: 'First above'
+    second_above:
+      label: 'Second above'
+    first_below:
+      label: 'First below'
+    second_below:
+      label: 'Second below'
+    third_below:
+      label: 'Third below'
+layout_career_homepage:
+  label: 'Career portal'
+  library: bootstrap_air/career_homepage
+  category: 'Bahrain homepages'
+  theme: bootstrap_air
+  default_region: first_above
+  icon_map:
+    - [first_above, second_above]
+    - [first_below, second_below, third_below, fourth_below]
+  regions:
+    first_above:
+      label: 'First above'
+    second_above:
+      label: 'Second above'
+    first_below:
+      label: 'First below'
+    second_below:
+      label: 'Second below'
+    third_below:
+      label: 'Third below'
+    fourth_below:
+      label: 'Fourth below'

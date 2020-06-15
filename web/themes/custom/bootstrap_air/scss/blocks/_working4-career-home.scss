@@ -1,0 +1,103 @@
+.block-block-content9105933c-1ce0-4677-995c-21783e8e67a4 {
+	width: 471px;
+	height: 285px;
+	padding: 15px 18px;
+	border: 1px solid #818181;
+	border-bottom: 0;
+
+	.field--name-field-title {
+		text-transform: uppercase;
+		font-size: 22px;
+		font-weight: 700;
+		padding-bottom: 14px;
+		padding-left: 17px;
+	}
+
+	.wrapper-title-body {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+
+		.field--name-field-title {
+			align-self: center;
+			
+			margin-top: 35px;
+			padding-right: 39px;	
+
+			a {
+				display: block;
+				width: 220px;
+				height: 90px;
+				background: url('../../../../../sites/default/files/2020-03/pattern.png') repeat left top,
+			    linear-gradient(to bottom, #dc3a34 0%,#932321 100%);
+				font-size: 17px;
+				color: #fff;
+				text-decoration: none;
+				padding: 10px;
+				word-spacing: -2px;
+				line-height: 18px;
+				border-radius: 7px;
+
+				&::after {
+					content: '';
+					display: block;
+					background: url('../images/hand.png') no-repeat;
+					height: 100px;
+					margin-left: 183px;
+					width: 90px;
+					margin-top: 7px;
+
+				}
+				
+			}
+			
+		}
+		.field--name-field-body {
+
+			ul{
+				li {
+
+					padding: 3px 0;
+					a {
+						text-decoration: none;
+						font-size: 11px;
+						color: #333;
+						padding-left: 17px;
+						font-weight: 700;
+						width: 120px;
+						display: block;
+						background: url(../images/r-arrow.png) no-repeat 1px 2px;
+					}
+
+
+				}
+			}
+		}
+	}
+}
+html[lang="ar"] .block-block-content9105933c-1ce0-4677-995c-21783e8e67a4 {
+		
+		.field--name-field-body {
+
+			ul{
+				li {
+
+					
+					a {
+						background: url(../images/l-arrow.png) no-repeat 1px 2px;
+					}
+				}
+			}
+		}
+		.wrapper-title-body {
+
+		.field--name-field-title {
+
+			padding-left: 17px;
+			a::after {
+				margin-right: 153px;
+				margin-top: 22px;
+			}
+		}
+	}
+}

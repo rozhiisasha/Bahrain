@@ -1,0 +1,81 @@
+.global-views-col {
+  height: 151px;
+  padding: 15px;
+  background: rgba(242,242,242, .4);
+  border-radius: 5px;
+  margin-right: 18px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid rgba(148, 148, 148, .2);
+  border-right: 1px solid rgba(148, 148, 148, .2);
+
+  img {
+    position: absolute;
+    right: 42px;
+    bottom: 32px;
+  }
+
+  .views-field.views-field-title {
+    padding-bottom: 7px;
+    line-height: 23px;
+    a {
+      font-family: 'Helvetica Neue LT Com';
+      font-weight: 700;
+      font-size: 21px;
+      text-transform: uppercase;
+      color: #000;
+      text-decoration: none;
+    }
+  }
+  .views-field.views-field-view-node {
+    p {
+      margin: 0;
+    }
+    a {
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 3px 10px 3px 5px;
+      color: #fff;
+      background-color: #000;
+      border-radius: 2px;
+      position: absolute;
+      bottom: 27px;
+      text-decoration: none;
+    }
+  }
+}
+
+//  View. Hides the title and body in content view
+.our-history,
+.flight-details,
+.baggage-information,
+.doing-business-with-us,
+.statistics-and-data,
+.tenders-supplier-relations,
+.media-center {
+	.global-content-wrapper {
+  		.page-header,
+  		.field--label-hidden {
+  	  		display: none;
+  		}
+
+  		.content-wrap {
+    		background: none;
+    		padding: 0;
+  		}
+	}
+}
+
+
+// Adaptation to Arabic
+html[lang="ar"] {
+  .global-views-col {
+    margin-right: 0;
+    margin-left: 18px;
+  }
+
+  .col-sm-4.hidden-xs.pr-0 {
+    padding-left: 0;
+    padding-right: 15px;
+  }
+
+}

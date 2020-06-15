@@ -1,0 +1,35 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a breadcrumb trail.
+ *
+ * Available variables:
+ * - breadcrumb: Breadcrumb trail items.
+ *
+ * @ingroup templates
+ */
+#}
+{% if breadcrumb %}
+    <div class="breadcrumb-container">
+        <div class="breadcrumb-wrapper">
+            <ol class="breadcrumb">
+            {% for item in breadcrumb %}
+              <li {{ item.attributes }}>
+                {% if item.url %}
+                  <a href="{{ item.url }}">{{ item.text }}</a>
+                {% else %}
+                  {{ item.text }}
+                {% endif %}
+                  <span></span>
+              </li>
+            {% endfor %}
+            </ol>
+            <div class="breadcrumb-bg"></div>
+            <div class="breadcrumb-click">
+                <span class="breadcrumb-click-img"></span>
+                {{ 'Click On Any Section To Explore'|t }}
+            </div>
+
+        </div>
+    </div>
+{% endif %}

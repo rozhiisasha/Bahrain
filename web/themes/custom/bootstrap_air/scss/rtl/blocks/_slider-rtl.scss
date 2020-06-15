@@ -1,0 +1,111 @@
+.region-navigation-collapsible {
+  padding: 0;
+}
+
+.corporate, .path-frontpage, .career {
+  .slick--view--slider {
+    position: absolute;
+    top: 0;
+
+    .slick__slide {
+      position: relative;
+
+      img {
+        min-width: 1920px;
+      }
+    }
+
+    .slick-arrow {
+      z-index: 1002;
+      position: absolute;
+      height: 50px;
+    }
+
+    .slick-prev:before, .slick-next:before {
+      opacity: 1;
+      display: block;
+    }
+  }
+}
+
+.path-frontpage {
+  .slick--view--slider {
+    .slick-arrow {
+      right: 24%;
+    }
+    .slick-prev {
+      margin-right: 150px;
+    }
+  }
+}
+
+.career, .corporate {
+  .slick--view--slider .slick__arrow{
+    width: 100%;
+    right: 0;
+  }
+  .slick-prev {
+    right: calc(100% - 42px);
+  }
+
+  .slick-next {
+    right: 0;
+  }
+
+  .slick-dots {
+    margin-right: calc(50% - 95px);
+    flex-direction: row-reverse;
+  }
+}
+
+.view-display-id-block_3 {
+  padding: 15px 5px 0 17px;
+  #slick-views-bac-news-attachment-1-2-slider {
+    .slide__description {
+      grid-template-columns: 234px 248px;
+      .views-field-field-media {
+        grid-area: 1 / 2 / 4 / 2;
+      }
+      .views-field-changed {
+        grid-area: 1 / 1 / 2 / 1;
+        text-align: left;
+      }
+      .views-field-title {
+        grid-area: 2 / 1 / 3 / 1;
+        text-align: left;
+      }
+      .views-field-body {
+        grid-area: 3 / 1 / 4 / 1;
+        text-align: left;
+      }
+      .views-field-view-node {
+        text-align: start;
+        grid-area: 4 / 1 / 5 / 1;
+        justify-content: flex-start;
+        margin-right: -20px;
+        align-items: flex-start;
+      }
+    }
+  }
+  #slick-views-bac-news-attachment-1-2 {
+    .slick__arrow {
+      width: 142px;
+      bottom: 0px;
+      right: 290px;
+      display: flex;
+      transform: rotateY(180deg);
+      .slick-prev {
+        flex-direction: row-reverse;
+
+        &:before {
+          margin-right: 12px;
+        }
+      }
+      .slick-next{
+        flex-direction: row;
+        &:before {
+        }
+      }
+    }
+  }
+}

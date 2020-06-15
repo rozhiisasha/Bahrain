@@ -1,0 +1,30 @@
+uuid: 70a4cab3-fefb-4e95-9460-f276c65e986e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.prepare-documents
+  module:
+    - system
+  theme:
+    - bootstrap_air
+id: preparedocuments
+theme: bootstrap_air
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:prepare-documents'
+settings:
+  id: 'system_menu_block:prepare-documents'
+  label: 'Prepare Documents'
+  provider: system
+  label_display: visible
+  level: 2
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: "/prepare-documents\r\n/prepare-documents/bahrain-visa-queries\r\n/prepare-documents/channels\r\n/prepare-documents/customs-rules\r\n/prepare-documents/f1-visa-regulation-arabic"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,21 @@
+@mixin dot-bg($z:0) {
+	&::before {
+			content: '';
+			background: url('../../../../../sites/default/files/2020-03/pattern.png') 
+			repeat left top;
+			position: absolute;
+			width: 100%;
+			z-index: $z;
+			height: 100%;
+		}
+}
+
+@mixin btn-home {
+	height: 26px;
+	background-color: #333333;
+	border: 0;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: bolder;
+	color: #fff;
+}

@@ -1,0 +1,30 @@
+uuid: c85ce58c-28b7-4153-8116-658f9cd4ceef
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.flight_details
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_air
+id: views_block__flight_details
+theme: bootstrap_air
+region: content
+weight: -13
+provider: null
+plugin: 'views_block:flight_details-block_1'
+settings:
+  id: 'views_block:flight_details-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /flight-details
+    negate: false
+    context_mapping: {  }

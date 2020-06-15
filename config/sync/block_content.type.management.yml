@@ -1,0 +1,8 @@
+uuid: a0041e27-858d-4548-8224-22c040694810
+langcode: en
+status: true
+dependencies: {  }
+id: management
+label: Management
+revision: 1
+description: ''

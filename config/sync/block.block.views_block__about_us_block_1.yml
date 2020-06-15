@@ -1,0 +1,30 @@
+uuid: 20fd6cda-9d07-4456-8188-57a4a462e21c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.about_us
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_air
+id: views_block__about_us_block_1
+theme: bootstrap_air
+region: content
+weight: -39
+provider: null
+plugin: 'views_block:about_us-block_1'
+settings:
+  id: 'views_block:about_us-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /corporate/about-us
+    negate: false
+    context_mapping: {  }

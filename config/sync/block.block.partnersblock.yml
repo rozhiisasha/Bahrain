@@ -1,0 +1,25 @@
+uuid: 28967ae9-0d06-4280-87f8-c0a11e31a72b
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:base_block:2227e32d-cdf5-4c3e-ad59-539694025e14'
+  module:
+    - block_content
+  theme:
+    - bootstrap_air
+id: partnersblock
+theme: bootstrap_air
+region: footer
+weight: -6
+provider: null
+plugin: 'block_content:2227e32d-cdf5-4c3e-ad59-539694025e14'
+settings:
+  id: 'block_content:2227e32d-cdf5-4c3e-ad59-539694025e14'
+  label: 'Partners block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

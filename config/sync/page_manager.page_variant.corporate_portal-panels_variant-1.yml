@@ -1,0 +1,101 @@
+uuid: 60ed6ebf-7702-4d77-93a6-96f367568ff6
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.corporate_portal
+    - views.view.about_bac_homepage_block
+    - views.view.bac_news
+    - views.view.photo_slider
+    - views.view.vision_purpose_homepage_block
+  content:
+    - 'block_content:block_with_paragraphs:c88faa40-1e3a-4aa1-9d63-b6417f3b12fd'
+  module:
+    - block_content
+    - language
+    - panels
+    - views
+id: corporate_portal-panels_variant-1
+label: Arabic
+variant: panels_variant
+variant_settings:
+  blocks:
+    3fad6495-8b01-4c2b-b244-4d2517589a18:
+      id: 'views_block:about_bac_homepage_block-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: second_below
+      weight: 0
+      uuid: 3fad6495-8b01-4c2b-b244-4d2517589a18
+      context_mapping: {  }
+    5fc47ae5-4ef1-4dc0-abda-af4d266eab33:
+      id: 'views_block:vision_purpose_homepage_block-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: first_below
+      weight: 0
+      uuid: 5fc47ae5-4ef1-4dc0-abda-af4d266eab33
+      context_mapping: {  }
+    a44fe0ab-6487-4ba2-b0c4-e1d096b5ae58:
+      id: 'views_block:bac_news-block_3'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: first_above
+      weight: -10
+      uuid: a44fe0ab-6487-4ba2-b0c4-e1d096b5ae58
+      context_mapping: {  }
+    9ca59baf-0578-4f3e-8957-d0306537aa8d:
+      id: 'block_content:c88faa40-1e3a-4aa1-9d63-b6417f3b12fd'
+      label: 'Doing business with us  (corporate homepage)'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: second_above
+      weight: -1
+      uuid: 9ca59baf-0578-4f3e-8957-d0306537aa8d
+      context_mapping: {  }
+    2c13f5dd-7b53-4ba3-a91a-689f1f6aad78:
+      id: 'views_block:photo_slider-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: third_below
+      weight: 0
+      uuid: 2c13f5dd-7b53-4ba3-a91a-689f1f6aad78
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 3d34dad6-c034-4763-b922-8ea56d0271b4
+  label: null
+  weight: 0
+  layout: layout_corporate_homepage
+  layout_settings:
+    label: corporate
+  page_title: ''
+  storage_type: page_manager
+  storage_id: corporate_portal-panels_variant-1
+  builder: standard
+page: corporate_portal
+weight: 0
+selection_criteria:
+  -
+    id: language
+    langcodes:
+      ar: ar
+    negate: false
+    context_mapping:
+      language: language_interface
+selection_logic: and
+static_context: {  }

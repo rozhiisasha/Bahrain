@@ -1,0 +1,123 @@
+@import "../variables";
+@import "../global/mixins";
+
+.path-frontpage, .flight-arrivals, .flight-departures {
+  .layout__region {
+    margin-bottom: 40px;
+  }
+
+  .webform-submission-flight-notification-form {
+    p {
+      margin: 0;
+    }
+
+    #edit-processed-text-01 {
+      margin-bottom: -19px;
+    }
+
+    .form-item-notify-the-status-of-flight-number {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: -0.58px;
+      margin: -7px 0 17px -1.5px;
+
+      #edit-notify-the-status-of-flight-number, input {
+        margin-top: 4px;
+        width: 170px;
+        margin-left: 1px;
+      }
+    }
+
+    input[type='text'], input[type='email'] {
+      height: 26px;
+      width: 195px;
+      margin-left: -1px;
+      font-size: 10px;
+      padding: 3px 0 5px 4px;
+
+      &::placeholder {
+        color: $btn-bg-clr;
+        font-weight: lighter;
+      }
+    }
+
+    h4 {
+      letter-spacing: -0.4px;
+    }
+  }
+
+  .form-type-checkbox {
+    label {
+      font-size: 10px;
+      display: flex;
+      align-items: center;
+      margin-top: 5px;
+
+      input {
+        margin-left: -21px;
+        margin-top: -2px;
+        margin-right: 3px;
+        display: block;
+        position: static;
+      }
+    }
+  }
+
+  #edit-notify-me-via {
+    margin-top: -7px;
+  }
+
+  #edit-notify-me-2 {
+    margin-top: -10px;
+  }
+
+  #edit-processed-text-note {
+    font-size: 11px;
+    margin-top: -10px;
+    margin-left: -2px;
+  }
+
+  .webform-submission-flight-notification-form, .ui-dialog-buttonpane {
+    .webform-actions, .ui-dialog-buttonset {
+      margin-top: -20px;
+      margin-left: -4px;
+
+      button {
+        @include btn-home;
+        width: 85px;
+        padding: 2px 0 0 0;
+        letter-spacing: -0.78px;
+      }
+    }
+  }
+
+  .ui-dialog-buttonpane {
+    border: 0;
+  }
+}
+
+.flight-arrivals, .flight-departures {
+  .webform-submission-flight-notification-form {
+    > :first-child {
+      width: 24px;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+
+      h3 {
+        display: none;
+      }
+    }
+
+    > :nth-child(2) {
+      margin-top: 10px;
+    }
+
+    h4 {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: -0.58px;
+    }
+  }
+
+}

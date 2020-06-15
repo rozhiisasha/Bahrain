@@ -1,0 +1,30 @@
+uuid: efd937b0-5d72-4d81-a426-e59858181372
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.flight_arrivals
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_air
+id: views_block__flight_arrivals_flight_departures
+theme: bootstrap_air
+region: content
+weight: -10
+provider: null
+plugin: 'views_block:flight_arrivals-flight_departures'
+settings:
+  id: 'views_block:flight_arrivals-flight_departures'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /flight-details/flight-departures
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,35 @@
+uuid: af72dc9d-1d31-4aa5-91e8-e03a3c8a5f07
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.embassies.field_embassies_address
+    - field.field.node.embassies.field_embassies_consulate
+    - field.field.node.embassies.field_embassies_email
+    - field.field.node.embassies.field_embassies_phone
+    - field.field.node.embassies.field_embassies_webpage
+    - field.field.node.embassies.field_icon_airline
+    - node.type.embassies
+  module:
+    - user
+id: node.embassies.teaser
+targetEntityType: node
+bundle: embassies
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_embassies_address: true
+  field_embassies_consulate: true
+  field_embassies_email: true
+  field_embassies_phone: true
+  field_embassies_webpage: true
+  field_icon_airline: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,128 @@
+uuid: 1daa7fbb-8c0d-43ca-891e-3eee5d6db7fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.job.field_apply
+    - field.field.node.job.field_date
+    - field.field.node.job.field_department
+    - field.field.node.job.field_division
+    - field.field.node.job.field_integer
+    - field.field.node.job.field_job_type
+    - field.field.node.job.field_location
+    - field.field.node.job.field_paragraph
+    - field.field.node.job.field_promo_image
+    - node.type.job
+  module:
+    - datetime
+    - entity_reference_revisions
+    - field_group
+    - link
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_job_property:
+      children:
+        - field_division
+        - field_location
+        - field_integer
+        - field_department
+        - field_job_type
+        - field_date
+      parent_name: ''
+      weight: 2
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: 'class="property"'
+        effect: none
+        speed: fast
+      label: job-property
+id: node.job.default
+targetEntityType: node
+bundle: job
+mode: default
+content:
+  field_apply:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_date:
+    weight: 13
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_department:
+    weight: 11
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_division:
+    weight: 8
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_integer:
+    weight: 10
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_job_type:
+    weight: 12
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_location:
+    weight: 9
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_paragraph:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_promo_image: true
+  langcode: true
+  search_api_excerpt: true

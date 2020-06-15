@@ -1,0 +1,40 @@
+uuid: ddaa9c7a-70b6-4d21-87cf-b8f206f986df
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.careers-menu
+  module:
+    - node
+    - system
+  theme:
+    - bootstrap_air
+id: careersmenu_2
+theme: bootstrap_air
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:careers-menu'
+settings:
+  id: 'system_menu_block:careers-menu'
+  label: Career
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility:
+  request_path:
+    id: request_path
+    pages: "/сareer/*/*\r\n/сareer/*/*/*\r\n/career/*"
+    negate: false
+    context_mapping: {  }
+  node_type:
+    id: node_type
+    bundles:
+      base_ct: base_ct
+      job: job
+      with_paragraphs: with_paragraphs
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

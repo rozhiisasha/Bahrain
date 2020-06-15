@@ -1,0 +1,90 @@
+//Pages Lounges and Services
+.lounges, .services {
+  .page-header {
+    color: $traveller-purple;
+    padding-bottom: 30px;
+  }
+
+  .paragraph {
+    .field--name-field-title {
+      color: $color-gray;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+  }
+}
+
+//Page Lounges
+.lounges {
+  .content {
+    padding-bottom: 100px;
+  }
+
+  .paragraph {
+    .field--name-field-body {
+      p {
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+//Page Services
+.services {
+  .paragraph {
+    .field--name-field-title {
+      padding-bottom: 14px;
+    }
+
+    .field--name-field-body {
+      p {
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+
+//Page Meet and greet services
+.meet-and-greet-services {
+  .page-header {
+    color: $traveller-purple;
+  }
+
+  .paragraph {
+    .field--name-field-title {
+      padding-bottom: 12px;
+    }
+
+    .field--name-field-body {
+      a, a:hover {
+        color: $traveller-purple;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+// BEGIN title sidebar for Traveller > At the airport
+
+.at-the-airport,
+.lounges,
+.meet-and-greet-services,
+.restaurants-and-dining,
+.services,
+.shops-and-services {
+  .region-sidebar-second {
+    h2 {
+      color: $traveller-purple;
+    }
+
+    .menu.menu--traveller-menu.nav a {
+      &:hover {
+        color: $traveller-purple;
+      }
+    }
+  }
+}
+
+// END title sidebar for Traveller > At the airport

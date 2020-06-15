@@ -1,0 +1,35 @@
+uuid: 671deb50-bac6-441d-a3c4-7acb98a4bf2f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - bootstrap_air
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: bootstrap_air_page_title
+theme: bootstrap_air
+region: content
+weight: -42
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      airline: airline
+      base_ct: base_ct
+      job: job
+      management: management
+      news: news
+      webform: webform
+      with_paragraphs: with_paragraphs
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

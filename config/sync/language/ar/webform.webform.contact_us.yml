@@ -1,0 +1,2 @@
+title: 'اتصل بنا'
+elements: "contact_us:\n  '#title': 'حدد القسم:'\n  '#options':\n    'airlines marketing': 'تسويق شركات الطيران'\n  '#default_value': 'قسم الاتصالات المؤسسية'\nprocessed_text:\n  '#text': \"<p>. جميع الحقول التي بجانبها (*) مطلوبة</p>\\n\"\nname:\n  '#title': الاسم\nemail:\n  '#title': 'البريد الالكتروني'\nsubject:\n  '#title': الموضوع\nmessage:\n  '#title': الرسالة\nactions:\n  '#submit__label': 'ارسل بريد'\n"

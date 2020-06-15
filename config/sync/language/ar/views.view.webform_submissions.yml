@@ -1,0 +1,44 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: 'إعادة الضبط'
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- الكل -'
+      fields:
+        view_webform_submission:
+          label: عمليات
+      arguments:
+        in_draft:
+          exception:
+            title: الكل
+  embed_administer:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: إجراء
+        completed:
+          label: 'تم الإنهاء'
+        operations:
+          label: عمليات
+  embed_manage:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: إجراء
+        completed:
+          label: 'تم الإنهاء'
+        view_webform_submission:
+          label: عمليات
+        edit_webform_submission:
+          label: عمليات
+  embed_review:
+    display_options:
+      fields:
+        completed:
+          label: 'تم الإنهاء'
+        view_webform_submission:
+          label: عمليات

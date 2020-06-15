@@ -1,0 +1,25 @@
+uuid: 43180524-97d7-4505-9265-4fd6927792e7
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:base_block:8988126b-1d99-42ee-ac10-e13fb01d32eb'
+  module:
+    - block_content
+  theme:
+    - bootstrap_air
+id: menu_trav_2
+theme: bootstrap_air
+region: navigation_collapsible
+weight: -15
+provider: null
+plugin: 'block_content:8988126b-1d99-42ee-ac10-e13fb01d32eb'
+settings:
+  id: 'block_content:8988126b-1d99-42ee-ac10-e13fb01d32eb'
+  label: menu_trav_2
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: default
+visibility: {  }

@@ -1,0 +1,31 @@
+uuid: 74b170d0-4c36-4321-90fc-7b9224e2628e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_with_paragraphs:d9354f5c-f470-472e-bd5c-b784c499fbd5'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_air
+id: keyfactsstatistics
+theme: bootstrap_air
+region: content
+weight: -23
+provider: null
+plugin: 'block_content:d9354f5c-f470-472e-bd5c-b784c499fbd5'
+settings:
+  id: 'block_content:d9354f5c-f470-472e-bd5c-b784c499fbd5'
+  label: 'Key facts (statistics)'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /corporate/doing-business-with-us/statistics-and-data/statistics
+    negate: false
+    context_mapping: {  }

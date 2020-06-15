@@ -1,0 +1,30 @@
+uuid: b8c39582-6c42-49a0-b29e-c76bb77234fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.embassies
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_air
+id: views_block__embassies_block_1
+theme: bootstrap_air
+region: content
+weight: -12
+provider: null
+plugin: 'views_block:embassies-block_1'
+settings:
+  id: 'views_block:embassies-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /prepare-documents/embassies-in-bahrain
+    negate: false
+    context_mapping: {  }

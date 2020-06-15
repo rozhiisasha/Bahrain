@@ -1,0 +1,29 @@
+uuid: de41b95f-a0f8-4b17-9490-d59293ee6460
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search_content
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_air
+id: exposedformsearch_contentpage_1_2
+theme: bootstrap_air
+region: content
+weight: -41
+provider: null
+plugin: 'views_exposed_filter_block:search_content-page_1'
+settings:
+  id: 'views_exposed_filter_block:search_content-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /search-results
+    negate: false
+    context_mapping: {  }

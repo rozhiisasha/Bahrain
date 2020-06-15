@@ -1,0 +1,75 @@
+display:
+  page_1:
+    display_options:
+      filters:
+        field_in_bahreyn__value:
+          expose:
+            label: ' البحث عن الرحلات من :'
+            description: 'البحرين (BAH)'
+          group_info:
+            label: ' البحث عن الرحلات من :'
+            description: 'البحرين (BAH)'
+        tid_1:
+          expose:
+            label: ' على خطوط الطيران التالية:  ()'
+          group_info:
+            label: 'البحث عن الرحلات'
+        type:
+          expose:
+            label: 'البحث عن الرحلات'
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 'البحث عن الرحلات'
+      title: 'بحث الرحلات'
+      fields:
+        field_airline_1:
+          label: 'اسم شركة الطيران'
+        title:
+          label: 'رقم الرحلة'
+        field_days_of_the_week:
+          label: 'أيام الأسبوع'
+        field_airline_2:
+          label: حجز
+      filters:
+        field_in_bahreyn__value:
+          expose:
+            label: '<span>البحث عن الرحلات من‬:</span> البحرين  (BAH)'
+        field_days_of_the_week_value:
+          expose:
+            label: 'المغادرة:'
+        field_city_target_id:
+          expose:
+            label: 'من:'
+        tid:
+          expose:
+            label: 'الرحلة:'
+      pager:
+        options:
+          tags:
+            next: 'الانتقال الى صفحة'
+  flight_finder:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 'البحث عن رحلات'
+          bef:
+            filter:
+              field_city_target_id:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: '- Any -|ادخل اسم المدينة'
+              tid:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: '- Any -|ادخل اسم شركة الطيران'
+              field_days_of_the_week_value:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: '- Any -|أدخل أيام الأسبوع'
+      empty:
+        area:
+          content:
+            value: "<p>لاتوجد اي نتائج</p>\r\n"
+            format: basic_html

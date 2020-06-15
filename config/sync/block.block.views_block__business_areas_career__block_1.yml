@@ -1,0 +1,30 @@
+uuid: ac8ea72c-7e30-4d15-ad73-3068feec6dba
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.business_areas_career_
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_air
+id: views_block__business_areas_career__block_1
+theme: bootstrap_air
+region: content
+weight: -31
+provider: null
+plugin: 'views_block:business_areas_career_-block_1'
+settings:
+  id: 'views_block:business_areas_career_-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /career/the-business-areas
+    negate: false
+    context_mapping: {  }

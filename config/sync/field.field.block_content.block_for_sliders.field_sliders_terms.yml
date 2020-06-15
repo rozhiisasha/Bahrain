@@ -1,0 +1,29 @@
+uuid: a9521738-5d3e-4736-b4d2-63d1dcd7a110
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_for_sliders
+    - field.storage.block_content.field_sliders_terms
+    - taxonomy.vocabulary.sliders
+id: block_content.block_for_sliders.field_sliders_terms
+field_name: field_sliders_terms
+entity_type: block_content
+bundle: block_for_sliders
+label: sliders_terms
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sliders: sliders
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

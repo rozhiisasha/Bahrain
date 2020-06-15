@@ -1,0 +1,30 @@
+uuid: 937ccc6f-7421-4e60-8cbc-13a1111e7583
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.gallery
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_air
+id: views_block__gallery_block_1
+theme: bootstrap_air
+region: content
+weight: -8
+provider: null
+plugin: 'views_block:gallery-block_1'
+settings:
+  id: 'views_block:gallery-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /corporate/media-center/gallery
+    negate: false
+    context_mapping: {  }

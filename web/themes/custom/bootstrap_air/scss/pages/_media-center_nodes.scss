@@ -1,0 +1,328 @@
+.bac-news,
+.download-documents,
+.filming-photography-at-bac,
+.media-kit,
+.new-terminal-to-offer-smoothe,
+.bahrain-airport-company-announces-completion---,
+.bahrain-airport-company-celebrates-bahraini-women,
+.bahrain-airport-company-hosts-major-aviation-body,
+.new-terminal-to-offer-smoother-travel-experience-for-passengers-with-reduced,
+.hala-bahrain-showcases-services-and-explores-new-business,
+.hala-bahrain-joins,
+.bahrain-airport-company-becomes-first-in-the-region,
+.minister-of-transportation-signs-major-agreement,
+.bahrain-airport-company-advises-passengers,
+.gallery,
+.media-center {
+  .region-sidebar-second {
+    h2 {
+      color: $bright-pink;
+    }
+
+    .menu.menu--corporate-menu.nav a {
+      &:hover {
+        color: $bright-pink;
+      }
+    }
+  }
+
+  .page-header {
+    color: #cc0066;
+  }
+
+  #block-footermenuhorizont {
+    .horizont {
+      nav {
+        ul {
+          li {
+            a:hover {
+              color: #cc0066;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.newsletters {
+  .region-sidebar-second {
+    h2 {
+      color: $color-red;
+    }
+
+    .menu.menu--corporate-menu.nav a {
+      &:hover {
+        color: $color-red;
+      }
+    }
+  }
+
+  #block-footermenuhorizont {
+    .horizont {
+      nav {
+        ul {
+          li {
+            a:hover {
+              color: $color-red;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.newsletters,
+.download-documents {
+
+  .global-content-wrapper {
+    background: linear-gradient(to bottom, #e2e2e2, #fff);
+  }
+
+  .page-header {
+    color: $color-red;
+  }
+
+  .content {
+    padding-bottom: 30px;
+    margin-top: 20px;
+
+    a {
+      color: $color-red;
+      text-decoration: none;
+    }
+
+    .field--type-file {
+      background: none;
+
+      .file-size {
+        display: none;
+      }
+
+      .file > span {
+        background: none;
+        border: none;
+        font-size: 12px;
+        font-weight: 400;
+      }
+
+      .file-icon {
+        padding-left: 0;
+      }
+
+      .glyphicon-file:before {
+        content: "";
+        background-image: url(http://bahrainairport.com/images/newsletters/pdf.png);
+        height: 32px;
+        width: 24px;
+        display: block;
+      }
+    }
+  }
+}
+
+.media-kit {
+  .global-content-wrapper {
+    background: linear-gradient(to bottom, #CACACA, #fff);
+  }
+
+  .content {
+    .field--name-body {
+      a {
+        color: #cc0066;
+      }
+
+      p + div {
+        float: right;
+        margin: 0 19px;
+
+        img {
+          height: 132px;
+          width: 192px;
+        }
+      }
+    }
+  }
+}
+
+.filming-photography-at-bac {
+  .content {
+    .field--name-body {
+      a {
+        color: #cc0066;
+      }
+    }
+  }
+}
+
+
+// BEGIN: Gallery view
+
+.gallery.page-node-187 {
+
+  .region-content {
+    .page-header {
+      display: none;
+    }
+
+    .content {
+      display: none;
+    }
+  }
+
+  .views-element-container {
+    .gallery-items {
+      height: 200px;
+      padding-top: 8px;
+
+      .views-field-field-gallery-img-1 {
+        margin-bottom: 8px;
+        text-align: center;
+
+        img {
+          border: 5px solid #fff;
+        }
+      }
+
+      .views-field-nothing {
+        text-align: center;
+        font-size: 14.4px;
+        line-height: 16px;
+
+        .gallery-name a {
+          color: $bright-pink;
+        }
+
+        .gallery-count {
+          font-size: 12px;
+          color: #383838;
+        }
+      }
+    }
+  }
+}
+
+// END: Gallery view
+
+// BEGIN: Gallery items
+
+.gallery {
+
+  .field--name-field-gallery-back {
+    background: #fcfcfc;
+    border: 1px solid #e8e8e8;
+    box-sizing: content-box;
+    position: absolute;
+    left: 21px;
+    width: 160px;
+    height: 120px;
+    margin: 8px;
+    padding: 5px;
+
+    p {
+      background: #f5f5f5;
+      padding: 36px 0;
+      text-align: center;
+
+      a {
+        padding: 50px;
+      }
+    }
+
+    &:hover {
+      border: 1px solid #b36b00;
+    }
+  }
+
+  .field--name-field-gallery-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .field--item {
+      text-align: center;
+      margin: 8px;
+
+      &:first-child {
+        grid-column-end: 3;
+      }
+
+      img {
+        background: #fcfcfc;
+        border: 1px solid #fcfcfc;
+        padding: 5px;
+        box-sizing: content-box;
+
+        &:hover {
+          border: 1px solid #b36b00;
+        }
+      }
+    }
+  }
+}
+
+// END: Gallery items
+
+
+// BEGIN: Adaptation to Arabic > Gallery items
+html[lang="ar"] {
+  .gallery {
+    .field--name-field-gallery-back {
+      left: unset;
+      right: 21px;
+    }
+  }
+
+
+  @media (max-width: 990px) {
+    .gallery {
+      .field--name-field-gallery-back {
+        right: unset;
+      }
+    }
+  }
+}
+
+// END: Adaptation to Arabic > Gallery items
+
+
+// BEGIN: Adaptation to mobile
+
+@media (max-width: 990px) {
+  .gallery {
+    .field--name-field-gallery-back {
+      left: unset;
+      width: 140px;
+      height: 105px;
+
+      p {
+        padding: 29px 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery {
+
+    .field--name-field-gallery-back {
+      position: relative;
+      left: unset;
+      margin: auto;
+      width: 160px;
+      height: 120px;
+
+      p {
+        padding: 36px 0;
+      }
+    }
+
+    .field--name-field-gallery-img {
+      display: block;
+    }
+
+  }
+}
+
+// END: Adaptation to mobile

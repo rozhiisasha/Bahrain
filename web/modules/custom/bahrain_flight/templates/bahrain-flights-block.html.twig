@@ -1,0 +1,61 @@
+{% set tab_classes_0 = create_attribute() %}
+{% set tab_classes_1 = create_attribute() %}
+{% set tab_0 = [
+  'tab',
+  'tab1',
+  'active',
+] %}
+{% set tab_1 = [
+  'tab',
+  'tab2',
+  'no-active',
+] %}
+<div>
+  {{ form }}
+  <div class="form_tabs">
+    {{ search_a }}
+    {{ search_d }}
+  </div>
+  {% for i in 0..1 %}
+    <table {{ _context['tab_classes_' ~ i].addClass(_context['tab_' ~ i]) }} >
+      <thead>
+      <tr>
+        {% for title in 0..3 %}
+          <th>{{ tab[i].titles[title] }}</th>
+        {% endfor %}
+      </tr>
+      </thead>
+      <tbody>
+      {% for flight in 0..6 %}
+        {% if (flight % 2) == 0 or (flight == 0) %}
+          {%  set table_class = 'odd'%}
+        {% else %}
+          {% set table_class = 'even' %}
+        {% endif %}
+      <tr {{ create_attribute({'class': [table_class]})}}>
+        <td><p>{{ tab[i].flights[flight].time }}</p></td>
+        <td><p>{{ tab[i].flights[flight].flight }}</p></td>
+        <td><p>{{ tab[i].flights[flight].origin }}</p></td>
+        <td><p {{ create_attribute({'class': [tab[i].flights[flight].stat]}) }}>{{ tab[i].flights[flight].stat }}</p></td>
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  {% endfor %}
+  <div class="refresh-update">
+    <div class="refresh">
+      {{ refresh }}
+    </div>
+    <div class="update">
+      <p>{% trans %} Updated at: {% endtrans %} {{ last_update }}</p>
+    </div>
+  </div>
+  <div class="link_to_all">
+    <div class="active tab1 link">
+      {{ link_to_all.0 }}
+    </div>
+    <div class="no-active tab2 link">
+      {{ link_to_all.1 }}
+    </div>
+  </div>
+</div>

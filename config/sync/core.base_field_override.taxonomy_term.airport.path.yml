@@ -1,0 +1,20 @@
+uuid: c439c775-1d5a-4312-a3cd-6d34aa3af3a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.airport
+  module:
+    - path
+id: taxonomy_term.airport.path
+field_name: path
+entity_type: taxonomy_term
+bundle: airport
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,21 @@
+uuid: 8fd9f720-06f9-4bbc-9ee0-b1e6f3495b4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.management
+    - field.storage.block_content.field_name
+  module:
+    - text
+id: block_content.management.field_name
+field_name: field_name
+entity_type: block_content
+bundle: management
+label: Name
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

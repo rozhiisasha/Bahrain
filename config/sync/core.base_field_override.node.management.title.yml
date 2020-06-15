@@ -1,0 +1,18 @@
+uuid: ee2d67b9-ad7a-41aa-a85f-34cc9bc57584
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.management
+id: node.management.title
+field_name: title
+entity_type: node
+bundle: management
+label: Management
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

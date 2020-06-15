@@ -1,0 +1,19 @@
+uuid: 9aa0342d-c39e-41b5-8b29-31ac786b3fe1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_gallery_back
+field_name: field_gallery_back
+entity_type: node
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

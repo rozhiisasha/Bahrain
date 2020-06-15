@@ -1,0 +1,21 @@
+uuid: 6f90303d-c9d0-4c71-aa27-6cc996e97a31
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.title_body_img
+  module:
+    - text
+id: paragraph.title_body_img.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: title_body_img
+label: title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

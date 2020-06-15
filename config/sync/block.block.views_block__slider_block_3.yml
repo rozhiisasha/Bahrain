@@ -1,0 +1,30 @@
+uuid: 2bcfc3a0-5aca-494b-97cf-fba684cffde9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slider
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_air
+id: views_block__slider_block_3
+theme: bootstrap_air
+region: navigation_collapsible
+weight: -31
+provider: null
+plugin: 'views_block:slider-block_3'
+settings:
+  id: 'views_block:slider-block_3'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /career
+    negate: false
+    context_mapping: {  }

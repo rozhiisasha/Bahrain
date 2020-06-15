@@ -1,0 +1,10 @@
+uuid: 7201ff22-0383-4b46-8118-865a4a055116
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.icon
+label: icon
+targetEntityType: node
+cache: true

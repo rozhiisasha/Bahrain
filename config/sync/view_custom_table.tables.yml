@@ -1,0 +1,6 @@
+flights:
+  table_name: flights
+  table_database: default
+  description: 'Table for  arrivals and departures flight'
+  column_relations: 'a:1:{s:12:"notification";s:18:"webform_submission";}'
+  created_by: '1'

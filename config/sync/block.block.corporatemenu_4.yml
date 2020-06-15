@@ -1,0 +1,30 @@
+uuid: 518450f3-9989-46bf-868e-405dc29266c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.corporate-menu
+  module:
+    - system
+  theme:
+    - bootstrap_air
+id: corporatemenu_4
+theme: bootstrap_air
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:corporate-menu'
+settings:
+  id: 'system_menu_block:corporate-menu'
+  label: 'Media Center'
+  provider: system
+  label_display: visible
+  level: 2
+  depth: 0
+  expand_all_items: true
+visibility:
+  request_path:
+    id: request_path
+    pages: "/corporate/media-center\r\n/corporate/media-center/*"
+    negate: false
+    context_mapping: {  }

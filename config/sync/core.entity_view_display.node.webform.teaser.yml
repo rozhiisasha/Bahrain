@@ -1,0 +1,38 @@
+uuid: 26a6da06-a7cf-4cc6-a880-5198aaa0e95c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.webform.body
+    - field.field.node.webform.field_promo_image
+    - field.field.node.webform.field_tags
+    - field.field.node.webform.field_webform_node
+    - node.type.webform
+  module:
+    - text
+    - user
+id: node.webform.teaser
+targetEntityType: node
+bundle: webform
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_promo_image: true
+  field_tags: true
+  field_webform_node: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,21 @@
+uuid: 7a8eca73-b797-4a1d-b5d6-79ae1856a47a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_etd
+    - node.type.flight
+  module:
+    - time_field
+id: node.flight.field_etd
+field_name: field_etd
+entity_type: node
+bundle: flight
+label: ETD
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: time

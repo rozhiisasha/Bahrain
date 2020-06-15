@@ -1,0 +1,28 @@
+label: 'Search results'
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 'كلمة البحث'
+          reset_button_label: 'إعادة الضبط'
+          text_input_required: البحث..
+      pager:
+        options:
+          tags:
+            next: 'go to page '
+          expose:
+            items_per_page_options_all_label: '- الكل -'
+      filters:
+        search_api_fulltext:
+          expose:
+            label: 'كلمة البحث'
+      title: 'نتائج البحث'
+      header:
+        result:
+          content: 'الإجمالي: @total نتيجة تم العثور عليها.'
+      empty:
+        result:
+          content: 'الإجمالي: 0 نتيجة تم العثور عليها.'
+  page_1:
+    display_title: الصفحة

@@ -1,0 +1,23 @@
+uuid: 2d633311-b558-49e2-a1a3-86ee7262e4ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_in_bahreyn_
+    - node.type.flight
+id: node.flight.field_in_bahreyn_
+field_name: field_in_bahreyn_
+entity_type: node
+bundle: flight
+label: 'In Bahreyn?'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'To Bahrain'
+  off_label: 'From Bahrain'
+field_type: boolean

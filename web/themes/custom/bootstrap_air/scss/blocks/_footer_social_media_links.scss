@@ -1,0 +1,13 @@
+.block-social-media-links {
+	margin-right: 200px;
+	ul a span {
+		color: #fff;
+		background-color: #333;
+		font-size: 17px;
+	}
+}
+@media all and(max-width: 998px) {
+	.block-social-media-links {
+		margin-right: 0;
+	}
+}

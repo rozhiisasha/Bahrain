@@ -1,0 +1,6 @@
+name: Bahrain time
+description: 'Module for current time in Bahrain and more info.'
+type: module
+core: 8.x
+package: Custom
+

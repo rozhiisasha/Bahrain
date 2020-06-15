@@ -1,0 +1,94 @@
+.logo-wrapper {
+  .logo {
+    margin-right: -22px;
+  }
+  a {
+    align-self: flex-end;
+  }
+}
+.lang-search-wrapper {
+  #views-exposed-form-search-content-page-1 {
+    .form-actions {
+      transform: translateX(14px);
+    }
+  }
+}
+
+.navigation-wrapper {
+  flex: 0 1 39%;
+  .block-switch-portal {
+    padding: 3px 41px 5px 0;
+    justify-content: flex-start;
+    a {
+      margin-right: -13px;
+      margin-left: 0;
+      &::before {
+        order: 1;
+        margin-right: 55px;
+      }
+    }
+  }
+  .language-switcher-language-url {
+    margin-left: 20.5px;
+    .links {
+      margin-top: -4px;
+      font-size: 12px;
+      transform: scale(0.95,0.8);
+    }
+  }
+}
+
+.lang-search-wrapper #views-exposed-form-search-content-page-1 {
+  #edit-actions--7 {
+    button {
+      &:after {
+        content: url("../../../../../../sites/default/files/searchButton.gif");
+        margin-right: -27px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .lang-search-wrapper {
+    margin-top: 0;
+
+      #edit-actions--7 {
+        margin-top: -45px;
+      }
+  }
+  .layout--layout-traveller-homepage {
+    flex-direction: column-reverse;
+  }
+
+  .navigation-wrapper {
+    .language-switcher-language-url {
+      margin-left: 0;
+
+      .links {
+        margin: 0;
+        height: 30px;
+        transform: none;
+      }
+    }
+
+  }
+  .lang-search-wrapper #views-exposed-form-search-content-page-1 {
+    #edit-actions--7 {
+      margin-top: -45px;
+      button {
+        &:after {
+          content: url("../../../../../../sites/default/files/search-button-m.png");
+          margin-right: -31px;
+        }
+      }
+    }
+  }
+  #block-exposedformsearch-contentpage-1 {
+    margin-right: 15px;
+  }
+  .lang-search-wrapper #views-exposed-form-search-content-page-1 input {
+    text-align: left;
+  }
+}
+

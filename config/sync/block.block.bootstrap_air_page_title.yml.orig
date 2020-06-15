@@ -1,0 +1,28 @@
+uuid: 671deb50-bac6-441d-a3c4-7acb98a4bf2f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bootstrap_air
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: bootstrap_air_page_title
+theme: bootstrap_air
+<<<<<<< HEAD
+region: header
+weight: -11
+||||||| merged common ancestors
+region: header
+weight: 0
+=======
+region: content
+weight: -12
+>>>>>>> dev
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

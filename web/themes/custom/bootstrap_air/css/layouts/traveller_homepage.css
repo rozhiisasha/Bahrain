@@ -1,0 +1,31 @@
+.layout--layout-traveller-homepage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.layout--layout-traveller-homepage > .layout__region--first-above,
+.layout--layout-traveller-homepage > .layout__region--second-above,
+.layout--layout-traveller-homepage > .layout__region--third-above {
+  flex: 0 1 31.8%;
+}
+
+.layout--layout-traveller-homepage > .layout__region--first-below,
+.layout--layout-traveller-homepage > .layout__region--second-below {
+  flex: 0 1 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .layout__region {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .layout--layout-traveller-homepage > .layout__region--first-above,
+  .layout--layout-traveller-homepage > .layout__region--second-above,
+  .layout--layout-traveller-homepage > .layout__region--third-above {
+    flex: 0 1 29%;
+  }
+}

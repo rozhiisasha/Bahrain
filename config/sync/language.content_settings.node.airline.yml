@@ -1,0 +1,18 @@
+uuid: a77d3c40-0a41-46ef-961f-8e9cc15c5a2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.airline
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.airline
+target_entity_type_id: node
+target_bundle: airline
+default_langcode: site_default
+language_alterable: true

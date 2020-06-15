@@ -1,0 +1,30 @@
+uuid: 9bf1848f-0047-4eaf-af77-d68ff40e3dc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.statistics_views
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_air
+id: views_block__statistics_views_block_1
+theme: bootstrap_air
+region: content
+weight: -17
+provider: null
+plugin: 'views_block:statistics_views-block_1'
+settings:
+  id: 'views_block:statistics_views-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /corporate/doing-business-with-us/statistics-and-data
+    negate: false
+    context_mapping: {  }

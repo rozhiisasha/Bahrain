@@ -1,0 +1,25 @@
+uuid: 673a02f5-06df-4372-9c35-69aeb9013e57
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.prepare-documents
+  module:
+    - system
+  theme:
+    - bootstrap_air
+id: preparedocuments_2
+theme: bootstrap_air
+region: navigation_collapsible
+weight: -20
+provider: null
+plugin: 'system_menu_block:prepare-documents'
+settings:
+  id: 'system_menu_block:prepare-documents'
+  label: 'Prepare Documents'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

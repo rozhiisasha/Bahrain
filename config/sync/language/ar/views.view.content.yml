@@ -1,0 +1,35 @@
+label: المحتوى
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: انتقاء
+          reset_button_label: 'إعادة الضبط'
+      fields:
+        title:
+          label: العنوان
+        type:
+          label: 'نوع المحتوى'
+        status:
+          label: الحالة
+        operations:
+          label: عمليات
+      filters:
+        title:
+          expose:
+            label: العنوان
+        type:
+          expose:
+            label: 'نوع المحتوى'
+        status:
+          expose:
+            label: الحالة
+      title: المحتوى
+  page_1:
+    display_options:
+      menu:
+        title: المحتوى
+      tab_options:
+        title: المحتوى
+    display_title: الصفحة

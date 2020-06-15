@@ -1,0 +1,107 @@
+@import "../variables";
+@import "../global/mixins";
+.messages__wrapper {
+  div {
+    margin: 0;
+  }
+}
+.path-frontpage {
+  .content-wrap {
+    background: none;
+    margin-top: 17px;
+    padding: 0;
+  }
+  h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bolder;
+    letter-spacing: -2px;
+    margin: 0;
+  }
+  h4 {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin: -7px 0 0 -1.5px;
+  }
+  p {
+    margin-top: 8px;
+  }
+
+  hr {
+    margin-top: 3px;
+    margin-bottom: 21px;
+    border-color: $hr-clr;
+    border-radius: 1px;
+  }
+
+  .block-webform  {
+    border-top: 1px solid rgba(56, 56, 56, 0.5);
+    border-left: 1px solid rgba(56, 56, 56, 0.5);
+    border-right: 1px solid rgba(56, 56, 56, 0.5);
+    border-radius: 5px 5px 0 0;
+    padding: 8px 8px 0 8px;
+    background: linear-gradient(to top, #f8f8f8, #d8d8d8);
+  }
+
+  h4,h3,p {
+    color: $traveller-block;
+  }
+}
+
+.info-count {
+  display: flex;
+  justify-content: space-between;
+}
+
+#edit-input-email {
+  margin-top: -8px;
+  label {
+    letter-spacing: 0.6px;
+    font-weight: bolder;
+  }
+  input {
+    height: 26px;
+    width: 200px;
+    border-radius: 3px;
+    padding: 3px 0 6px 4px;
+    margin-top: 4px;
+  }
+  input::placeholder {
+    color: $black;
+    font-size: 10px;
+  }
+  button {
+    width: 80px;
+    @include btn-home;
+    margin: 0 0 0 1px;
+    padding: 2px 0 0 0;
+    letter-spacing: -0.42px;
+  }
+  .webform-flex--8 {
+  }
+  .webform-flex--3 {
+    margin-left: -80px;
+    margin-top: 23px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #edit-input-email {
+    button {
+      width: 70px;
+    }
+    .webform-flex--3 {
+      margin-left: -70px;
+      margin-top: 37px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .block-region-first-above {
+    .block-webform {
+      display: none;
+    }
+  }
+}

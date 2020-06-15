@@ -1,0 +1,25 @@
+uuid: 32be7fe3-b1dc-4027-b8c1-f0045a29207f
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:2e8e612e-32c6-4f95-ad35-10bbc4a8c752'
+  module:
+    - block_content
+  theme:
+    - bootstrap_air
+id: copyright
+theme: bootstrap_air
+region: footer
+weight: -9
+provider: null
+plugin: 'block_content:2e8e612e-32c6-4f95-ad35-10bbc4a8c752'
+settings:
+  id: 'block_content:2e8e612e-32c6-4f95-ad35-10bbc4a8c752'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

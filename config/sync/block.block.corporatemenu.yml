@@ -1,0 +1,30 @@
+uuid: e8a13e84-a8ff-4f6b-937f-e0eefdf3ee36
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.corporate-menu
+  module:
+    - system
+  theme:
+    - bootstrap_air
+id: corporatemenu
+theme: bootstrap_air
+region: navigation_collapsible
+weight: -26
+provider: null
+plugin: 'system_menu_block:corporate-menu'
+settings:
+  id: 'system_menu_block:corporate-menu'
+  label: 'Corporate menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility:
+  request_path:
+    id: request_path
+    pages: "/corporate\r\n/corporate/*\r\n/privacy-policy"
+    negate: false
+    context_mapping: {  }

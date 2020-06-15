@@ -1,0 +1,26 @@
+uuid: 990e056a-b9b4-46c1-9067-15eba6034cc9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - we_megamenu
+  theme:
+    - bootstrap_air
+id: corporatemenu_3
+theme: bootstrap_air
+region: navigation_collapsible
+weight: -28
+provider: null
+plugin: 'we_megamenu_block:corporate-menu'
+settings:
+  id: 'we_megamenu_block:corporate-menu'
+  label: 'Corporate menu'
+  provider: we_megamenu
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/corporate\r\n/corporate/*\r\n/privacy-policy"
+    negate: false
+    context_mapping: {  }

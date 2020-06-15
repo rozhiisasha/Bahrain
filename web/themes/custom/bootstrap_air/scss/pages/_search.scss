@@ -1,0 +1,123 @@
+.search-results {
+  .col-sm-8 {
+    width: 100%;
+  }
+  .global-content-wrapper {
+    .content-wrap {
+      background: #f3f3f3;
+      border-left: 1px solid rgba(102, 102, 102, 0.1);
+      border-right: 1px solid rgba(102, 102, 102, 0.1);
+      border-bottom: 1px solid rgba(102, 102, 102, 0.1);
+      padding-top: 0;
+    }
+  }
+  .col-sm-4 {
+   display: none;
+  }
+  #block-addtoanybuttons {
+    display: none;
+  }
+
+  h2, button {
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 22px;
+    font-family: 'Helvetica Neue LT Com', serif;
+    margin-bottom: 16px;
+  }
+  .views-exposed-form, .views-row {
+    h2, a {
+      color: #e25257;
+      font-weight: 600;
+    }
+  }
+
+
+  strong {
+    background-color: #ff0;
+  }
+
+  #block-exposedformsearch-contentpage-1-2 {
+    button {
+      border: 0;
+      background: url("../../../../../sites/default/files/red-button-right-cut.png") no-repeat right top;
+      padding: 2px 18px 1px 2px;
+      border-radius: 0;
+      font-family: 'Helvetica', serif;
+      font-size: 12px;
+      font-weight: bolder;
+      span {
+        display: none;
+      }
+    }
+
+  }
+  .close {
+    display: none;
+  }
+  .has-error {
+    .control-label {
+      color: inherit;
+    }
+    .form-control {
+      border-radius: 0;
+      padding: 1px 0 1px 1px;
+      line-height: 14px;
+      font-size: 12px;
+      width: 260px;
+      height: 20px;
+      border: 1px solid #ccc;
+    }
+  }
+
+  input {
+    border-radius: 0;
+    padding: 1px 0 1px 1px;
+    line-height: 14px;
+    font-size: 12px;
+  }
+
+  #edit-keys {
+    width: 260px;
+    height: 20px;
+  }
+
+  .view-header {
+    font-weight: bold;
+  }
+
+  .views-row {
+    margin: 20px 0 20px 0;
+    .counter {
+      font-weight: bold;
+    }
+    div:first-child, div:nth-child(2) {
+      display: inline;
+    }
+    div:last-child {
+      margin: 10px 0 0 20px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .views-exposed-form {
+      h2{
+        color: #666;
+      }
+    }
+    #block-exposedformsearch-contentpage-1-2 {
+      .form-group {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+html[lang="ar"] #block-exposedformsearch-contentpage-1-2 {
+  #edit-submit-search-content {
+    color: white;
+    background: url("../../../../../sites/default/files/red-button-right-cut-ar.png") no-repeat left top;
+    padding: 2px 2px 1px 18px;
+  }
+}

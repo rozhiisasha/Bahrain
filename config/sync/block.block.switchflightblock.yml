@@ -1,0 +1,26 @@
+uuid: 8d7579ce-147e-4370-9f0e-ec54a9326c0c
+langcode: en
+status: true
+dependencies:
+  module:
+    - switch_flight
+    - system
+  theme:
+    - bootstrap_air
+id: switchflightblock
+theme: bootstrap_air
+region: content
+weight: -26
+provider: null
+plugin: switch_flight_block
+settings:
+  id: switch_flight_block
+  label: 'Switch flight block'
+  provider: switch_flight
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/flight-details/flight-arrivals\r\n/flight-details/flight-departures"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,15 @@
+#block-node-title {
+	position: absolute;
+	z-index: 1;
+	bottom: 117px;
+	left: 169px;//450px
+	h2 {
+		font-size: 44px;
+		color: #fff;
+		font-weight: 900;
+		text-transform: uppercase;
+		letter-spacing: -2px;
+		line-height: 10px;
+		transform: scale(.85,1.0);
+	}
+}

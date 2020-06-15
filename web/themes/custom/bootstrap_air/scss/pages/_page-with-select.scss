@@ -1,0 +1,378 @@
+.restaurants-and-dining, .shops-and-services, .regulations-and-allowance {
+  .content-wrap {
+
+    .content {
+      p {
+        padding-bottom: 20px;
+      }
+    }
+
+    .view-footer {
+      padding: 6px 0 12px;
+    }
+
+    .form-type-select {
+      display: flex;
+      max-width: 485px;
+      justify-content: space-between;
+      padding: 13px 10px;
+      margin-bottom: 30px;
+      border-radius: 7px;
+      box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 1);
+
+      .control-label {
+        color: $color-white;
+        font-size: 18px;
+        margin: 0;
+        padding-right: 10px;
+        text-transform: uppercase;
+        display: flex;
+        flex: 0 1 50%;
+        align-items: center;
+        line-height: 16px;
+      }
+
+      .select-wrapper {
+        height: 30px;
+        flex: 0 1 50%;
+
+        select {
+          text-transform: uppercase;
+          height: 30px;
+        }
+      }
+
+      .select-wrapper::after {
+        content: '';
+        background: url("../../../../../themes/custom/bootstrap_air/svg/sort-solid.svg") no-repeat;
+        display: block;
+        margin-right: 3px;
+        width: 11px;
+        height: 11px;
+      }
+
+    }
+
+    .row-element {
+      display: flex;
+      justify-content: flex-start;
+      margin: 0 25px 20px;
+      border-bottom: 2px dotted #fff;
+
+      .field--type-image {
+        padding: 0 25px 25px 0;
+
+        .img-responsive {
+          width: 120px;
+          height: 85px;
+        }
+      }
+
+      .wrapper-title-body {
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+
+        .field--name-field-title {
+          text-transform: uppercase;
+          color: $color-gray;
+          font-size: 14px;
+          padding-bottom: 30px;
+        }
+
+        .field--name-body {
+          p {
+            padding-bottom: 15px;
+          }
+
+          a {
+            text-decoration: none;
+          }
+
+          :last-child {
+            padding: 0;
+          }
+        }
+      }
+
+      .link-to-top {
+        align-self: flex-end;
+        margin-left: auto;
+        margin-bottom: -3px;
+
+        a {
+          text-transform: uppercase;
+          text-decoration: none;
+          color: $color-gray;
+          font-size: 9px;
+          font-weight: bold;
+        }
+
+        a::before, a::after {
+          content: '';
+          background: url("../../../../../themes/custom/bootstrap_air/svg/arrow.svg") no-repeat;
+          margin-right: 3px;
+          margin-bottom: -1px;
+          width: 6px;
+          height: 7px;
+        }
+
+        a::before {
+          display: inline-block;
+        }
+
+        a::after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// Stylization restaurants and dining
+.restaurants-and-dining {
+
+  .row-element {
+    flex-wrap: wrap;
+
+    .field--type-image {
+      padding: 0 25px 25px 0;
+    }
+
+    .wrapper-title-body {
+      padding-bottom: 30px;
+      justify-content: space-between;
+
+      .field--name-field-title {
+        padding-bottom: 30px;
+      }
+    }
+
+    .link-to-top {
+      align-self: flex-end;
+      margin-left: auto;
+    }
+  }
+}
+
+// Stylization regulations and allowance
+.regulations-and-allowance {
+  .form-type-select {
+    background: #FAA419 url('../../../../../sites/default/files/2020-03/pattern.png') repeat left top;
+  }
+
+  .row-element {
+
+    .field--type-image {
+      padding: 0 35px 35px 0;
+      img {
+        width: 120px;
+        height: 85px;
+        max-width: none;
+      }
+    }
+
+    .wrapper-title-body {
+      padding-bottom: 40px;
+      align-self: center;
+
+      .field--name-field-title {
+        padding-bottom: 13px;
+      }
+
+      .field--name-body {
+        a {
+          color: $traveller-red;
+        }
+
+        a:hover {
+          color: $traveller-orange;
+        }
+      }
+    }
+
+    .link-to-top {
+      position: absolute;
+      right: 41px;
+
+      a:hover {
+        color: $traveller-orange;
+      }
+    }
+  }
+}
+
+
+// Stylization shops and services
+.shops-and-services {
+  .row-element {
+    flex-direction: column;
+
+    .field--name-field-title {
+      text-transform: uppercase;
+      color: $color-gray;
+      font-size: 14px;
+    }
+
+    .paragraph {
+      display: flex;
+      align-items: center;
+      padding-bottom: 30px;
+
+      .field--name-field-body {
+        order: 2;
+
+        > :first-child {
+          font-weight: bold;
+        }
+
+        a, a:hover {
+          color: $traveller-purple;
+        }
+
+        p {
+          padding-bottom: 9px;
+        }
+
+        .booked {
+          color: $corp-career-red;
+          font-weight: bold;
+        }
+      }
+
+      .field--type-image {
+        padding-right: 40px;
+
+        img {
+          width: 120px;
+          height: 85px;
+        }
+      }
+    }
+  }
+}
+
+.restaurants-and-dining, .shops-and-services {
+  .page-header {
+    color: $traveller-purple;
+  }
+
+  .form-type-select {
+    background: #8A1FFF url('../../../../../sites/default/files/2020-03/pattern.png') repeat left top;;
+  }
+
+  .row-element {
+    .field--name-body {
+      a {
+        color: $traveller-purple;
+      }
+    }
+
+    .link-to-top {
+      a:hover {
+        color: $traveller-purple;
+      }
+    }
+  }
+}
+
+
+// Adaptation to Arabic
+html[lang="ar"] {
+  .restaurants-and-dining, .shops-and-services, .regulations-and-allowance {
+    .form-type-select {
+      box-shadow: -1px 1px 0px 0px rgba(255, 255, 255, 1);
+
+      .control-label {
+        font-weight: normal;
+        padding-right: 0px;
+      }
+
+      .select-wrapper::after {
+        left: 10px;
+        right: auto;
+      }
+
+      .select-wrapper select {
+        padding-right: 15px;
+        padding-bottom: 0;
+      }
+    }
+
+    .row-element {
+      .link-to-top {
+        a::before {
+          display: none;
+        }
+
+        a::after {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  .restaurants-and-dining, .shops-and-services {
+    .form-type-select {
+      padding: 13px 10px;
+
+      .control-label {
+        flex: 0 1 40%;
+      }
+
+      .select-wrapper {
+        flex: 0 1 60%;
+      }
+    }
+
+    .row-element {
+      .field--type-image {
+        padding: 0 0 25px 35px;
+      }
+
+      .wrapper-title-body {
+        margin-left: auto;
+      }
+    }
+  }
+
+  // Adaptation to Arabic restaurants and dining
+  .restaurants-and-dining {
+    .row-element {
+      .field--type-image {
+        margin-right: -60px;
+      }
+
+      .link-to-top {
+        order: -1;
+        margin-left: 0;
+      }
+    }
+  }
+
+  // Adaptation to Arabic shops and services
+  .shops-and-services {
+    #element6 {
+      .field--name-field-paragraph {
+        > :last-child {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .regulations-and-allowance {
+    .row-element {
+      margin: 18px 0 20px;
+
+      .field--type-image {
+        padding: 5px 5px 60px 40px;
+      }
+
+      .field--name-field-title {
+        font-weight: normal;
+      }
+    }
+  }
+}
+

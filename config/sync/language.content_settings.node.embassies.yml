@@ -1,0 +1,16 @@
+uuid: a3df0c4a-5715-4028-920d-523f996bf315
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.embassies
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.embassies
+target_entity_type_id: node
+target_bundle: embassies
+default_langcode: current_interface
+language_alterable: false

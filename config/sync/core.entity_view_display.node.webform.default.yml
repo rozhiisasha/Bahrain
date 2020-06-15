@@ -1,0 +1,45 @@
+uuid: 904a9c1c-25b9-463f-9ea8-edd4245f2e8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.webform.body
+    - field.field.node.webform.field_promo_image
+    - field.field.node.webform.field_tags
+    - field.field.node.webform.field_webform_node
+    - node.type.webform
+  module:
+    - text
+    - user
+    - webform
+id: node.webform.default
+targetEntityType: node
+bundle: webform
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_webform_node:
+    weight: 102
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_promo_image: true
+  field_tags: true
+  langcode: true
+  search_api_excerpt: true

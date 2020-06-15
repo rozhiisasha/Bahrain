@@ -1,0 +1,14 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: 'إعادة الضبط'
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- الكل -'
+  block_1:
+    display_title: الصندوق
+  page_1:
+    display_title: الصفحة

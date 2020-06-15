@@ -1,0 +1,152 @@
+@import "../../global/variables";
+
+.block-bahrain-flights-block {
+  right: 100%;
+
+  #tabs-block {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+
+    button {
+      padding-right: 0;
+
+      &:before {
+        position: relative;
+        top: -12px;
+      }
+    }
+
+    #edit-arrivals {
+      letter-spacing: -1.3px;
+
+      &:before {
+        content: url("../../../../../sites/default/files/arrival-icon.png");
+        left: -6px;
+      }
+
+      &:after {
+        display: none;
+      }
+    }
+
+    #edit-departures {
+      letter-spacing: -2.5px;
+      margin-right: -6px;
+
+      &:before {
+        content: url("../../../../../sites/default/files/departure-icon.png");
+        left: -10px;
+      }
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &:after {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  form.active {
+
+    :first-child {
+      padding-right: 10px;
+    }
+
+    input:first-child {
+      margin-top: 25px;
+    }
+
+    #edit-flight-number, #edit-flight-number--2 {
+
+    }
+
+    #edit-origin, #edit-origin--2 {
+      margin-right: -5px;
+    }
+
+    #edit-button, #edit-button--2 {
+      margin-left: 15px;
+      margin-right: 0;
+      padding-right: 7px;
+      border: 0;
+
+      span {
+        display: none;
+      }
+    }
+  }
+
+  .tab.active {
+
+    thead {
+      background-color: $btn-bg-grey;
+      color: $white;
+    }
+
+
+    tr.odd, tr.even, tr {
+
+      td, th {
+        padding: 0 10px 0 0;
+        text-align: right;
+        border: 0;
+      }
+
+      td:last-of-type {
+        align-items: center;
+        &:after {
+          content: url("../../../../../sites/default/files/arr-status-ar.png");
+          display: block;
+          height: 12px;
+          padding-left: 8px;
+        }
+      }
+    }
+
+  }
+
+  .link {
+
+    a {
+      padding-right: 157px;
+      font-weight: normal;
+      &:after {
+        content: url("../../../../../sites/default/files/arr-status-ar.png");
+        display: block;
+        margin-right: 10px;
+        margin-left: -10px;
+      }
+    }
+  }
+  .refresh-update {
+    flex-direction: row-reverse;
+  }
+  .update {
+    justify-content: flex-start;
+    p {
+      font-weight: normal;
+    }
+  }
+
+  .refresh-button {
+    justify-content: flex-end;
+
+    button {
+      font-weight: normal;
+      &:before {
+        order: 2;
+      }
+    }
+  }
+
+
+}
+@media only screen and (min-width: 768px) {
+  .block-bahrain-flights-block {
+    margin-right: -300px;
+  }
+}

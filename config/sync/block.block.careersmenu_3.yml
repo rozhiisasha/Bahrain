@@ -1,0 +1,26 @@
+uuid: 76d10e63-1328-4c5c-a6d5-8234fb19bef4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - we_megamenu
+  theme:
+    - bootstrap_air
+id: careersmenu_3
+theme: bootstrap_air
+region: navigation_collapsible
+weight: -33
+provider: null
+plugin: 'we_megamenu_block:careers-menu'
+settings:
+  id: 'we_megamenu_block:careers-menu'
+  label: 'Careers menu'
+  provider: we_megamenu
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/career*\r\n/career"
+    negate: false
+    context_mapping: {  }

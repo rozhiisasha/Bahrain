@@ -1,0 +1,28 @@
+uuid: 98328275-0551-4fa6-9e63-bb7a8fc9cbfa
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.base_block
+    - field.storage.block_content.field_image_block
+    - media.type.image
+id: block_content.base_block.field_image_block
+field_name: field_image_block
+entity_type: block_content
+bundle: base_block
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

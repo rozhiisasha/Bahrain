@@ -1,0 +1,18 @@
+uuid: 3428d3a9-0444-48cf-8176-9342f191ab0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sliders
+id: taxonomy_term.sliders.name
+field_name: name
+entity_type: taxonomy_term
+bundle: sliders
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

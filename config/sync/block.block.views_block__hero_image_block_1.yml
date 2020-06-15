@@ -1,0 +1,31 @@
+uuid: bf176cf4-198e-4e88-9041-326c9fd96df3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.hero_image
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_air
+id: views_block__hero_image_block_1
+theme: bootstrap_air
+region: navigation_collapsible
+weight: -35
+provider: null
+plugin: 'views_block:hero_image-block_1'
+settings:
+  id: 'views_block:hero_image-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: " <front>\r\n/corporate\r\n/traveller"
+    negate: true
+    context_mapping: {  }

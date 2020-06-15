@@ -1,0 +1,19 @@
+uuid: 74e5e968-b145-4468-bddd-3d3cfa3f97b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_for_views
+    - field.storage.block_content.field_email
+id: block_content.block_for_views.field_email
+field_name: field_email
+entity_type: block_content
+bundle: block_for_views
+label: Email
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

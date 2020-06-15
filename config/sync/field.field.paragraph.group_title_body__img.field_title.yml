@@ -1,0 +1,21 @@
+uuid: be494830-dbf4-4c6a-be62-4fe889e21faf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.group_title_body__img
+  module:
+    - text
+id: paragraph.group_title_body__img.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: group_title_body__img
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

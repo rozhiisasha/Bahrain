@@ -1,0 +1,23 @@
+uuid: 1fed478f-10e6-48b1-807c-cd1bb35b6431
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_for_views
+    - field.storage.block_content.field_url
+  module:
+    - link
+id: block_content.block_for_views.field_url
+field_name: field_url
+entity_type: block_content
+bundle: block_for_views
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

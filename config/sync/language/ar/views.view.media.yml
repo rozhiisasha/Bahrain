@@ -1,0 +1,33 @@
+label: ميديا
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: انتقاء
+          reset_button_label: 'إعادة الضبط'
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- الكل -'
+      fields:
+        media_bulk_form:
+          action_title: إجراء
+        thumbnail__target_id:
+          label: 'النسخة المصغرة'
+        bundle:
+          label: النوع
+        status:
+          label: الحالة
+        operations:
+          label: عمليات
+      filters:
+        bundle:
+          expose:
+            label: النوع
+      title: ميديا
+  media_page_list:
+    display_title: ميديا
+    display_options:
+      menu:
+        title: ميديا

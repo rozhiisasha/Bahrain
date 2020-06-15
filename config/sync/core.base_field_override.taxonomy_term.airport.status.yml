@@ -1,0 +1,22 @@
+uuid: acc066eb-ad17-4996-8e85-d8c286f791f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.airport
+id: taxonomy_term.airport.status
+field_name: status
+entity_type: taxonomy_term
+bundle: airport
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

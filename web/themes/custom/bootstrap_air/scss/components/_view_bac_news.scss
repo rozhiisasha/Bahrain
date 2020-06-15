@@ -1,0 +1,59 @@
+.view-bac-news .views-row {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 210px; 
+	width: 100%;
+	.views-field-field-media {
+		height: 197px;
+	}
+	.views-field-changed {
+		font-weight: bold;
+		color: #cc0066;
+	}
+	.views-field-body {
+		width: calc(100% - 171px);
+		height: 90px;
+		text-align: justify;
+		padding-top: 5px;
+		color: #333;
+	}
+	.views-field:not(:first-child){
+		padding-left: 15px;
+	}
+	.views-field-title {
+		width: calc(100% - 171px);
+
+		span {
+			text-decoration: none;
+			color: #383838;
+			font-size: 16px;
+			font-weight: bold;
+			line-height: 14px;
+			text-transform: uppercase;
+		}
+	}
+	.views-field-view-node {
+		text-align: right;
+		width: calc(100% - 171px);
+		a {
+			background-color: #cc0066;
+			color: #fff;
+			font-weight: bold;
+			padding: 3px;
+			font-size: 12px;
+			text-decoration: none;
+		}
+
+	}
+	.views-field-nothing {
+		hr {
+			background-color: #c5c5c5;
+			width: calc(100% + 171px);
+			height: 1px;
+			border: 0;
+			margin-left: -171px;
+		}
+	}
+
+}

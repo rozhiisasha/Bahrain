@@ -1,0 +1,38 @@
+uuid: f1abd83c-1365-434a-bde4-73f4ec057579
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.flight.field_airline
+    - field.field.node.flight.field_airport
+    - field.field.node.flight.field_city
+    - field.field.node.flight.field_days_of_the_week
+    - field.field.node.flight.field_eta
+    - field.field.node.flight.field_etd
+    - field.field.node.flight.field_in_bahreyn_
+    - field.field.node.flight.field_stop
+    - node.type.flight
+  module:
+    - user
+id: node.flight.teaser
+targetEntityType: node
+bundle: flight
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_airline: true
+  field_airport: true
+  field_city: true
+  field_days_of_the_week: true
+  field_eta: true
+  field_etd: true
+  field_in_bahreyn_: true
+  field_stop: true
+  langcode: true
+  search_api_excerpt: true

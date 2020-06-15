@@ -1,0 +1,30 @@
+uuid: 0931814b-8031-4bb7-9dc6-e94d40da0474
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.flight_arrivals
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_air
+id: views_block__flight_arrivals_flight_arrivals
+theme: bootstrap_air
+region: content
+weight: -11
+provider: null
+plugin: 'views_block:flight_arrivals-flight_arrivals'
+settings:
+  id: 'views_block:flight_arrivals-flight_arrivals'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /flight-details/flight-arrivals
+    negate: false
+    context_mapping: {  }

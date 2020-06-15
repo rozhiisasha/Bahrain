@@ -1,0 +1,8 @@
+display:
+  default:
+    display_options:
+      footer:
+        area:
+          content:
+            value: "<p>لتوفير المال أو التأخير غير الضروري ، ننصحك بالاتصال بشركة الطيران الخاصة بك فيما يتعلق بلوائح تسجيل الوصول وحقائب اليد.</p>\r\n"
+            format: basic_html

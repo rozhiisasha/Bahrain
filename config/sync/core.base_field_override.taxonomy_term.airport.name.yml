@@ -1,0 +1,18 @@
+uuid: 51437915-f5db-4d92-86d5-eafc2646dd9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.airport
+id: taxonomy_term.airport.name
+field_name: name
+entity_type: taxonomy_term
+bundle: airport
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

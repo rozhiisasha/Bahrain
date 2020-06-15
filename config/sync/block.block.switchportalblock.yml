@@ -1,0 +1,37 @@
+uuid: 0180da9d-b5e9-4491-8c9b-a8816b706ef6
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - switch_portal
+    - system
+  theme:
+    - bootstrap_air
+id: switchportalblock
+theme: bootstrap_air
+region: navigation
+weight: -13
+provider: null
+plugin: switch_portal_block
+settings:
+  id: switch_portal_block
+  label: 'Switch portal block'
+  provider: switch_portal
+  label_display: '0'
+  corporate: 'switch to traveller portal'
+  travel: 'switch to corporate portal'
+visibility:
+  language:
+    id: language
+    langcodes:
+      en: en
+      ar: ar
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+  request_path:
+    id: request_path
+    pages: '/career/*'
+    negate: true
+    context_mapping: {  }

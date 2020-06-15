@@ -1,0 +1,6 @@
+name: Bahrain flight
+description: 'Module for Bahrain flight details.'
+type: module
+core: 8.x
+version: 1.0
+package: Custom

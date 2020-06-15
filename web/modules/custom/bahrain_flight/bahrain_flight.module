@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function bahrain_flight_theme($existing, $type, $theme, $path) {
+  return [
+    'bahrain_flights_block' => [
+      'variables' => [
+        'last_update' => '',
+        'form' => '',
+        'search_d' => '',
+        'search_a' => '',
+        'refresh' => '',
+        'link_to_all' => [],
+        'tab' => [
+          '0' => [
+            'flights'=> [],
+            'titles' => [],
+          ],
+          '1' => [
+            'flights' => [],
+            'titles' => [],
+          ],
+        ],
+      ],
+    ],
+  ];
+}

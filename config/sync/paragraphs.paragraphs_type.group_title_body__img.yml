@@ -1,0 +1,10 @@
+uuid: 4a980b05-865d-4f70-91de-ebf88e814ccc
+langcode: en
+status: true
+dependencies: {  }
+id: group_title_body__img
+label: Group(title_body)_img
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

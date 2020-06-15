@@ -1,0 +1,183 @@
+uuid: abc7c0fa-a061-4acb-a0b8-ce4925a378c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - system.menu.footer
+  content:
+    - 'block_content:base_block:2227e32d-cdf5-4c3e-ad59-539694025e14'
+    - 'block_content:basic:2e8e612e-32c6-4f95-ad35-10bbc4a8c752'
+  module:
+    - block
+    - block_content
+    - social_media_links
+    - system
+id: footer_menu_horizont
+label: 'footer menu horizont'
+page:
+  status: false
+  title: ''
+  path: ''
+  theme: ''
+  display_variant: ''
+  access:
+    type: all
+    permission: ''
+    role: {  }
+block:
+  status: true
+  name: ''
+display_variant:
+  status: false
+  admin_label: ''
+layout:
+  status: false
+  label: ''
+  default_region: null
+template:
+  value: "<div class=\"container\">\r\n\t<div class =\"horizont\">\r\n      <div class=\"column-bottom\">\r\n      \t{{ copyright }}\r\n      \t{{ footer_menu }}\r\n      </div>\r\n\t  {{ social_media }}\r\n\t  {{ partners_block }}\r\n  </div>\r\n</div>"
+  format: full_html
+css:
+  status: false
+  preprocess: true
+  value: null
+  group: component
+js:
+  status: false
+  preprocess: true
+  value: null
+variables:
+  copyright:
+    plugin_id: 'block:block_content:2e8e612e-32c6-4f95-ad35-10bbc4a8c752'
+    configuration:
+      label: Copyright
+      label_display: 0
+      status: true
+      info: ''
+      view_mode: full
+      settings:
+        label: ''
+        label_display: false
+  footer_menu:
+    plugin_id: 'block:system_menu_block:footer'
+    configuration:
+      label: Footer
+      label_display: 0
+      level: '1'
+      depth: '0'
+      expand_all_items: 0
+      settings:
+        label: ''
+        label_display: false
+  partners_block:
+    plugin_id: 'block:block_content:2227e32d-cdf5-4c3e-ad59-539694025e14'
+    configuration:
+      label: 'Partners block'
+      label_display: 0
+      status: true
+      info: ''
+      view_mode: full
+      settings:
+        label: ''
+        label_display: false
+  social_media:
+    plugin_id: 'block:social_media_links_block'
+    configuration:
+      label: 'Social Media Links'
+      label_display: 0
+      settings:
+        label: ''
+        label_display: false
+      platforms:
+        facebook:
+          value: 'https://www.facebook.com/ '
+          description: ''
+          weight: '-30'
+        twitter:
+          value: 'https://www.twitter.com/ '
+          description: ''
+          weight: '-29'
+        instagram:
+          value: 'https://www.instagram.com/ '
+          description: ''
+          weight: '-28'
+        rss:
+          value: rss
+          description: ''
+          weight: '-27'
+        linkedin:
+          value: 'https://www.linkedin.com/ '
+          description: ''
+          weight: '-26'
+        bitbucket:
+          value: ''
+          description: ''
+          weight: '-25'
+        youtube:
+          value: ''
+          description: ''
+          weight: '-24'
+        vimeo:
+          value: ''
+          description: ''
+          weight: '-23'
+        flickr:
+          value: ''
+          description: ''
+          weight: '-22'
+        email:
+          value: ''
+          description: ''
+          weight: '-21'
+        drupal:
+          value: ''
+          description: ''
+          weight: '-20'
+        slideshare:
+          value: ''
+          description: ''
+          weight: '-19'
+        vkontakte:
+          value: ''
+          description: ''
+          weight: '-18'
+        youtube_channel:
+          value: ''
+          description: ''
+          weight: '-17'
+        behance:
+          value: ''
+          description: ''
+          weight: '-16'
+        googleplus:
+          value: ''
+          description: ''
+          weight: '-15'
+        contact:
+          value: ''
+          description: ''
+          weight: '-14'
+        pinterest:
+          value: ''
+          description: ''
+          weight: '-13'
+        tumblr:
+          value: ''
+          description: ''
+          weight: '-12'
+        github:
+          value: ''
+          description: ''
+          weight: '-11'
+      appearance:
+        orientation: h
+        show_name: 0
+      link_attributes:
+        target: '<none>'
+        rel: '<none>'
+      iconset:
+        style: 'fontawesome:2x'
+        installed_iconsets:
+          fontawesome:
+            examples: ''

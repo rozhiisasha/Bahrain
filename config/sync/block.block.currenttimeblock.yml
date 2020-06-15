@@ -1,0 +1,26 @@
+uuid: b4ed7777-2dac-4be1-a077-7e46033e453d
+langcode: en
+status: true
+dependencies:
+  module:
+    - current_time
+    - system
+  theme:
+    - bootstrap_air
+id: currenttimeblock
+theme: bootstrap_air
+region: content
+weight: -25
+provider: null
+plugin: current_time_Block
+settings:
+  id: current_time_Block
+  label: 'Сurrent time in Bahrain and more info block'
+  provider: current_time
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/flight-details/flight-arrivals\r\n/flight-details/flight-departures\r\n/flight-details/flight-finder"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,212 @@
+@import "../variables";
+
+.webform-submission-contact-us-form {
+  padding-left: 5px;
+
+  .form-type-select {
+    background: url('../../../../../sites/default/files/2020-03/pattern.png'), linear-gradient(to bottom, #0084c1, #00669a), repeat left top;
+    display: flex;
+    max-width: 485px;
+    justify-content: space-between;
+    padding: 13px 10px;
+    margin-bottom: 30px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 1px 0 rgba(255, 255, 255, 1);
+
+    .control-label {
+      color: $color-white;
+      font-size: 16px;
+      margin: 0 0 0 -9px;
+      padding-right: 10px;
+      text-transform: uppercase;
+      display: flex;
+      flex: 0 1 45%;
+      transform: scale(0.9, 1.1);
+      align-items: center;
+      justify-content: flex-start;
+      line-height: 16px;
+    }
+
+    .select-wrapper {
+      height: 25px;
+      flex: 0 1 69%;
+
+      select {
+        text-transform: uppercase;
+        height: 25px;
+        font-size: 10px;
+
+        option {
+          text-transform: inherit;
+          color: $color-black;
+
+          &[selected], &:hover {
+            background-color: #ccc;
+          }
+        }
+      }
+
+      select:focus > option:hover {
+        color: #fff;
+        background-color: black;
+      }
+    }
+  }
+
+  .select-wrapper::after {
+    content: '';
+    background: url("../../../../../themes/custom/bootstrap_air/svg/sort-solid.svg") no-repeat;
+    display: block;
+    margin-right: 3px;
+    width: 11px;
+    height: 11px;
+  }
+
+  .form-type-processed-text {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 0;
+
+    p {
+      margin-top: 20px;
+    }
+  }
+
+  #department {
+    text-transform: uppercase;
+    color: $corporate-blue;
+    font-size: 16px;
+  }
+
+  .webform-element--title-inline {
+    display: flex;
+
+    label {
+      flex: 0 1 21%;
+
+      &:after {
+        transform: scale(0.5, 0.8);
+      }
+    }
+
+    input {
+      width: 240px;
+      height: 28px;
+    }
+
+    #edit-subject {
+      flex: 0 1 72%;
+    }
+
+    textarea {
+      width: 375px;
+      height: 145px;
+    }
+  }
+
+  .form-actions {
+    display: flex;
+    margin-left: 21%;
+
+    button {
+      width: 94px;
+      height: 20px;
+      border-radius: 0;
+      padding: 0 18px 1px 0;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: -2px;
+      display: flex;
+      align-items: center;
+
+      &:after {
+        content: '❱';
+        margin-left: 10px;
+        display: block;
+        margin-top: -2px;
+        align-self: center;
+      }
+    }
+  }
+}
+
+.page-node-81 {
+  .webform-element--title-inline {
+    label {
+      flex: 0 1 32%;
+    }
+
+    #edit-subject {
+      flex: 0 1 63%;
+    }
+  }
+
+  #department {
+    color: #e51937;
+  }
+}
+
+.contact-us {
+  .region-sidebar-second {
+    h2 {
+      color: $corporate-blue;
+    }
+
+    .menu.menu--corporate-menu.nav a {
+      &:hover {
+        color: $corporate-blue;
+      }
+    }
+  }
+
+  #block-footermenuhorizont {
+    .horizont {
+      nav {
+        ul {
+          li {
+            a:hover {
+              color: $corporate-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .webform-submission-contact-us-form {
+
+    width: 300px;
+
+    .form-type-select {
+      .select-wrapper {
+        flex: 0 1 100%;
+      }
+
+      .control-label {
+        display: none;
+      }
+    }
+
+    .form-type-textarea {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+
+      textarea {
+        width: 300px;
+        height: 145px;
+      }
+    }
+
+    .form-actions {
+      button {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}

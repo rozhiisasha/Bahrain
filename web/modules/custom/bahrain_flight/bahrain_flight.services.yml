@@ -1,0 +1,7 @@
+services:
+  bahrain_flight.get_flight_details:
+    class: Drupal\bahrain_flight\GetFlightDetails
+    arguments: ['@datetime.time','@http_client', '@serialization.json']
+  bahrain_flight.saved_flight:
+    class: Drupal\bahrain_flight\SavedFlights
+    arguments: ['@bahrain_flight.get_flight_details', '@database','@date.formatter']

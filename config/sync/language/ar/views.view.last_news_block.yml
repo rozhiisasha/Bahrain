@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      fields:
+        view_node:
+          text: 'إقرأ المزيد  >'
+        nothing:
+          alter:
+            text: '<a href="/corporate/media-center"> زيقم بزيارة المركز الاعلامي ></a>'
+      title: 'أحدث الأخبار'
+      header:
+        area:
+          content:
+            value: "<p>أحدث الأخبار</p>\r\n"
+            format: basic_html

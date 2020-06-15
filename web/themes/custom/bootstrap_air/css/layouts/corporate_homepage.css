@@ -1,0 +1,15 @@
+.layout--layout-corporate-homepage {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.layout--layout-corporate-homepage > .layout__region--first-above,
+.layout--layout-corporate-homepage > .layout__region--second-above,
+.layout--layout-corporate-homepage > .layout__region--third-below {
+  flex: 0 1 50%;
+}
+
+.layout--layout-corporate-homepage > .layout__region--first-below,
+.layout--layout-corporate-homepage > .layout__region--second-below {
+  flex: 0 1 25%;
+}

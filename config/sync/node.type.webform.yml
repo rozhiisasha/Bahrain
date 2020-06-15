@@ -1,0 +1,20 @@
+uuid: c0a87c32-633f-4a3b-bf9c-4ed67127e519
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - careers-menu
+      - corporate-menu
+      - traveller-menu
+    parent: 'careers-menu:'
+name: Webform
+type: webform
+description: 'Content type for webform nodes.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

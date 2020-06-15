@@ -1,0 +1,33 @@
+uuid: a74c8d6f-9960-41a3-85e7-d6d983d46c11
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.management
+    - field.storage.block_content.field_term
+    - taxonomy.vocabulary.corporate
+  content:
+    - 'taxonomy_term:corporate:c4c91a7b-74e6-4cc6-95bf-51a724f64f2e'
+id: block_content.management.field_term
+field_name: field_term
+entity_type: block_content
+bundle: management
+label: Term
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    target_uuid: c4c91a7b-74e6-4cc6-95bf-51a724f64f2e
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      corporate: corporate
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

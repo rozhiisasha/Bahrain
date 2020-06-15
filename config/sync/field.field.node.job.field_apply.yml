@@ -1,0 +1,28 @@
+uuid: 121758cd-7f0a-444f-855a-6d43cc0351fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_apply
+    - node.type.job
+  module:
+    - link
+id: node.job.field_apply
+field_name: field_apply
+entity_type: node
+bundle: job
+label: apply
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    attributes: {  }
+    uri: 'internal:/career/job-list/in-dev'
+    title: 'APPLY NOW  >'
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

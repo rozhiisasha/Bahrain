@@ -1,0 +1,33 @@
+uuid: 05660d72-d44a-454a-b65a-8132e0854f3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.gallery
+    - taxonomy.vocabulary.corporate
+  content:
+    - 'taxonomy_term:corporate:114a1a55-a751-4ad7-a4d4-bd37306c8845'
+id: node.gallery.field_tags
+field_name: field_tags
+entity_type: node
+bundle: gallery
+label: Tags
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    target_uuid: 114a1a55-a751-4ad7-a4d4-bd37306c8845
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      corporate: corporate
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

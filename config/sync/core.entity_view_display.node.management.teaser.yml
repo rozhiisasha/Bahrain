@@ -1,0 +1,40 @@
+uuid: e5dedcb6-fc3e-44b2-a5d5-95cc3048f17e
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.management.body
+    - field.field.node.management.field_media
+    - field.field.node.management.field_name
+    - field.field.node.management.field_subtitle
+    - field.field.node.management.field_term
+    - node.type.management
+  module:
+    - text
+    - user
+id: node.management.teaser
+targetEntityType: node
+bundle: management
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_media: true
+  field_name: true
+  field_subtitle: true
+  field_term: true
+  langcode: true
+  search_api_excerpt: true

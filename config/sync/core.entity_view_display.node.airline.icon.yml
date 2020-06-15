@@ -1,0 +1,32 @@
+uuid: eb035bf3-a93e-444d-954b-0f5b6df2d84b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.icon
+    - field.field.node.airline.field_airline_link
+    - field.field.node.airline.field_airline_term
+    - field.field.node.airline.field_icon_airline
+    - node.type.airline
+  module:
+    - user
+id: node.airline.icon
+targetEntityType: node
+bundle: airline
+mode: icon
+content:
+  field_icon_airline:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_airline_link: true
+  field_airline_term: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

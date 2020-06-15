@@ -1,0 +1,21 @@
+uuid: 56d2ee22-61e0-4580-8921-ce6d658bf55a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.management
+    - field.storage.block_content.field_subtitle
+  module:
+    - text
+id: block_content.management.field_subtitle
+field_name: field_subtitle
+entity_type: block_content
+bundle: management
+label: Subtitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

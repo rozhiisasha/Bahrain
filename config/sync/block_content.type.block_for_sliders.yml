@@ -1,0 +1,8 @@
+uuid: 788d688c-2053-4754-bcce-4a6fbdf94821
+langcode: en
+status: true
+dependencies: {  }
+id: block_for_sliders
+label: 'Block for sliders'
+revision: 0
+description: 'Custom block for sliders.'

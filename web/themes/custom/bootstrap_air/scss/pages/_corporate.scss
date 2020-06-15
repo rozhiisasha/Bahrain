@@ -1,0 +1,459 @@
+// BEGIN View Corporate portal
+
+.about-us,
+.at-the-airport,
+.our-history,
+.contact-us,
+.before-you-fly,
+.prepare-documents {
+  .content-wrap {
+    background: none;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+    .page-header {
+      display: none;
+    }
+  }
+}
+
+.view-about-us, .our-history {
+  .views-field.views-field-title {
+    a {
+      color: $color-red;
+    }
+  }
+
+  .views-field.views-field-view-node {
+    a {
+      background-color: $color-red;
+    }
+  }
+}
+
+.corporate {
+
+  .bac-block {
+    border: 1px solid #818181;
+    height: 310px;
+
+    .views-field-title {
+      padding: 12px 12px 0 12px;
+
+      a {
+        font-size: 18px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #383838;
+        font-weight: 700;
+      }
+    }
+
+    .views-field-body {
+      padding: 12px;
+
+      p {
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    .views-field-view-node {
+      margin-top: -25px;
+      margin-left: 10px;
+
+      a {
+        color: #fff;
+        background-color: $color-red;
+        padding: 2px;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+    }
+  }
+}
+
+.block-views-blockvision-purpose-homepage-block-block-1 {
+  .bac-block {
+    border-right: none;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .corporate .col-sm-8 {
+    width: 100%;
+  }
+}
+
+
+// END View Corporate portal
+
+
+
+// BEGIN Page Contact Us
+
+.contact-us {
+
+  .region-sidebar-second {
+    h2 {
+      color: $blue;
+    }
+  }
+
+  .region-content {
+    .views-element-container {
+      .views-field-title a {
+        color: $blue;
+      }
+    }
+
+    .views-field-view-node a {
+      background-color: $blue;
+    }
+  }
+}
+
+// END Page Contact Us
+
+
+
+// BEGIN Pages Corporate portal
+.about-us,
+.aviation-in-bahrain,
+.about-bac,
+.awards-and-achievements,
+.board-of-directors,
+.corporate-social-responsibility,
+.message-from-the-ceo,
+.vision-purpose-objectives,
+.bia-timeline,
+.privacy-policy,
+.our-history {
+  h2 {
+    color: $color-red;
+  }
+
+  .page-header {
+    color: $color-red;
+  }
+}
+
+.vision-purpose-objectives {
+  img {
+    padding-bottom: 12px;
+  }
+
+  .field.field--name-body.field--type-text-with-summary.field--label-hidden.field--item {
+    display: none;
+  }
+}
+
+.board-of-directors {
+  .field--name-body {
+    padding-bottom: 26px;
+  }
+
+  .field--name-field-paragraph {
+    padding-left: 18px;
+
+    .field--name-field-title {
+      font-family: 'Helvetica Neue LT Com';
+      font-weight: 700;
+      font-size: 16px;
+      text-transform: uppercase;
+      line-height: 18px;
+      padding-bottom: 0;
+    }
+
+    .field--name-field-body {
+      font-family: 'Helvetica Neue LT Com';
+      font-size: 14px;
+      line-height: 16px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.awards-and-achievements {
+  .field--name-field-paragraph {
+    padding-right: 5px;
+  }
+
+  .paragraph--type--title-body-img {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    padding-bottom: 17px;
+
+    .field--name-field-title {
+      padding-top: 10px;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    .field--name-field-body {
+      align-self: center;
+      margin-left: -30px;
+      order: 2;
+    }
+
+    .field--name-field-media {
+      align-self: center;
+      order: 1;
+    }
+  }
+
+  .field--name-field-paragraph {
+    padding: 5px;
+
+    .field--name-field-title {
+      color: $color-red;
+      font-size: 16px;
+      font-weight: 500;
+      padding-bottom: 13px;
+      text-transform: uppercase;
+    }
+  }
+
+  .paragraph--type--title-body {
+    padding-top: 10px;
+  }
+}
+
+// BEGIN Block Doing business with us for homepage Corporate portal
+
+.corporate {
+  .content-wrap {
+    padding-top: 20px;
+    padding-left: 1px;
+    padding-right: 1px;
+
+    .block-block-content {
+      padding: 15px 16px 0 18px;
+      border: 1px solid #818181;
+      height: 320px;
+      width: 470px;
+
+      .field--name-field-title {
+        font-family: 'Helvetica Neue LT Com';
+        font-size: 22px;
+        line-height: 24px;
+        padding: 0 0 6px;
+        text-transform: uppercase;
+      }
+
+      .wrapper-title-body {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+
+        .field--name-field-title {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 18px;
+          width: 222px;
+          padding-top: 70px;
+          padding-left: 30px;
+
+          a:first-of-type {
+            display: block;
+            width: 220px;
+            height: 90px;
+            background: url('../../../../../sites/default/files/2020-03/pattern.png') repeat left top,
+            linear-gradient(to bottom, #dc3a34 0%, #932321 100%);
+            font-size: 16px;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            word-spacing: -2px;
+            line-height: 18px;
+            border-radius: 7px;
+
+            &::after {
+              content: '';
+              display: block;
+              background: url('../images/hand.png') no-repeat;
+              height: 100px;
+              margin-left: 185px;
+              width: 200px;
+              margin-top: -32px;
+            }
+          }
+
+          a:nth-of-type(2) {
+            display: block;
+            margin-top: -20px;
+            margin-left: 0;
+            line-height: 17px;
+            font-size: 11px;
+            text-decoration: none;
+            text-transform: capitalize;
+            padding-left: 10px;
+            color: #E64257;
+            background: url(../images/r-arrow-red.png) no-repeat 1px 2px;
+          }
+        }
+
+        .field--name-field-body {
+
+          ul {
+            width: 133px;
+
+            li {
+              border-bottom: 1px solid #CCCCCC;
+
+              padding: 3px 0;
+
+              a {
+                text-decoration: none;
+                font-size: 11px;
+                color: #333;
+                padding-left: 17px;
+                font-weight: 700;
+                width: 162px;
+                display: block;
+                background: url(../images/r-arrow.png) no-repeat 1px 2px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .bac-block {
+      border-top: none;
+      border-left: 1px solid #818181;
+      border-bottom: 1px solid #818181;
+      height: 315px;
+    }
+  }
+}
+
+// Begin Adaptation to Arabic Block Doing business with us for homepage Corporate portal
+
+html[lang="ar"] {
+  .corporate {
+    .content-wrap {
+      .block-block-content {
+        .wrapper-title-body {
+
+          .field--name-field-title {
+            order: 1;
+
+            a:nth-of-type(1) {
+              font-family: 'GE SS Text Light';
+              font-size: 18px;
+              line-height: 20px;
+              font-weight: 500;
+
+              &::after {
+                margin-top: -19px;
+                margin-right: 51px;
+              }
+            }
+
+            a:nth-of-type(2) {
+              background: url(../images/l-arrow-red.png) no-repeat right center;
+              padding-right: 10px;
+              padding-left: 0;
+            }
+          }
+
+          .field--name-field-body {
+            order: 0;
+            padding-right: 70px;
+
+            ul {
+              li {
+                a {
+                  background: url(../images/l-arrow.png) no-repeat right top;
+                  padding-right: 10px;
+                  padding-left: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// END Adaptation to Arabic Block Doing business with us for homepage Corporate portal
+// END Block Doing business with us for homepage Corporate portal
+
+
+// END Pages Corporate portal
+
+
+// Adaptation to Arabic
+html[lang="ar"] {
+  .awards-and-achievements {
+    .paragraph--type--title-body-img {
+      .field--name-field-body {
+        margin-left: 0;
+        margin-right: -30px;
+      }
+    }
+  }
+}
+
+// Photo slider
+.corporate {
+  .layout__region--third-below {
+    .block-region-third-below {
+      width: 470px;
+      height: 315px;
+      border-right: 1px solid #818181;
+      border-bottom: 1px solid #818181;
+
+      img {
+        width: 470px;
+        height: 314px;
+      }
+
+      .slick__arrow {
+        .slick-prev {
+          &::before {
+            content: url(../../../../../sites/default/files/left-arr-no-active.png);
+          }
+        }
+
+        .slick-next {
+          &::before {
+            content: url(../../../../../sites/default/files/right-arr-no-active.png);
+          }
+        }
+      }
+    }
+  }
+}
+
+[dir="rtl"] {
+  .corporate .main-container .row .col-sm-8.content-wrap {
+    float: initial;
+  }
+
+  .corporate .layout__region--third-below {
+    .block-region-third-below {
+      border-right: 0;
+      border-left: 1px solid #818181;
+    }
+  }
+
+  .corporate .layout__region--first-below {
+    .view-vision-purpose-homepage-block {
+      border-left: 0;
+      border-right: 1px solid #818181;
+    }
+  }
+}
+
+@media all and(max-width: 768px) {
+  .corporate .layout__region--third-below {
+    display: none;
+  }
+}
+
+// End Gallert Slider

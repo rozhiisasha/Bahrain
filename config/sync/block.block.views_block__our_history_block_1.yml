@@ -1,0 +1,30 @@
+uuid: 6e10d912-adfb-4c85-b882-e86467463f67
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.our_history
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_air
+id: views_block__our_history_block_1
+theme: bootstrap_air
+region: content
+weight: -21
+provider: null
+plugin: 'views_block:our_history-block_1'
+settings:
+  id: 'views_block:our_history-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /corporate/about-us/our-history
+    negate: false
+    context_mapping: {  }

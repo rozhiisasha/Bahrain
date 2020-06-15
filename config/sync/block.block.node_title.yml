@@ -1,0 +1,31 @@
+uuid: 2d728d08-3ed9-443f-939e-316e42292ea7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:base_block:40ef9af7-ff53-4683-9fca-e624247d3c45'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_air
+id: node_title
+theme: bootstrap_air
+region: navigation_collapsible
+weight: -30
+provider: null
+plugin: 'block_content:40ef9af7-ff53-4683-9fca-e624247d3c45'
+settings:
+  id: 'block_content:40ef9af7-ff53-4683-9fca-e624247d3c45'
+  label: '[current-page:title]'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: default
+visibility:
+  request_path:
+    id: request_path
+    pages: "/corporate/media-center/newsletters\r\n/corporate/doing-business-with-us/advertising-space\r\n/corporate/doing-business-with-us/our-partners/bahrain-airport-services\r\n/corporate/doing-business-with-us/our-partners/partners"
+    negate: false
+    context_mapping: {  }

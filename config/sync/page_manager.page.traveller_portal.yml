@@ -1,0 +1,12 @@
+uuid: 02b738c3-d3b3-4f25-b230-80cabdc2cda6
+langcode: en
+status: true
+dependencies: {  }
+id: traveller_portal
+label: 'Traveller portal'
+description: ''
+use_admin_theme: false
+path: /travel
+access_logic: and
+access_conditions: {  }
+parameters: {  }

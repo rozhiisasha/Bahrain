@@ -1,0 +1,129 @@
+.tahleeq,
+.careers-faqs,
+.prepare-for-an-interview,
+.overview-with-bac-culture,
+.airport-operations,
+.infrastructure-development-maintenance,
+.commercial-and-marketing,
+.human-resources,
+.finance,
+.information-communication-technology,
+.strategy-implementation-business-improvement,
+.ceo-s-office,
+.mariam-alkhalifa,
+.khalid-al-hadad,
+.jamal-alhaji,
+.fared-malek,
+.eyad-ismaeel,
+.anoop,
+.ali-saad,
+.ali-humaidan,
+.abdulla-ebrahim-ghali,
+.surveyor-cad-operator,
+.engineer-civil,
+.engineer-electrical,
+.senior-engineering-technician-cad {
+
+	.region-sidebar-second {
+		h2 {
+			color: $corp-career-red;
+		}
+	}
+
+	.page-header,
+	.field--name-field-title,
+	.content a {
+		color: $career;
+	}
+	.field--name-field-title {
+		font-size: 16px;
+		font-weight: 400;
+	}
+	.page-header {
+			transform: scale(1.3, 0.9);
+			margin-left: 13%;
+	
+	}
+	 
+}
+
+.working-with-us {
+	.region-sidebar-second {
+		h2 {
+			color: $corp-career-red;
+		}
+	}
+}
+
+.page-node-type-job {
+	.property {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		height: 84px;
+		padding-left: 17px;
+		margin-bottom: 20px;
+		margin-top: 4px;
+		.field--label {
+			width: 102px;
+		}
+	}
+	.field--type-link {
+		position: absolute;
+		right: 30px;
+		top: 20px;
+		a {
+			background-color: $career;
+			color: #fff;
+			padding: 3px;
+			border-radius: 3px;
+			font-weight: 700;
+		}
+	}
+}
+html[dir="rtl"] .page-node-type-job{
+	.field--type-link {
+		position: absolute;
+		left: 30px;
+		top: 20px;
+		right: inherit;
+	}
+	.page-header {
+			transform: scale(1.3, 0.9);
+			margin-right: 13%;
+	
+	}
+}
+html[dir="rtl"] {
+	.tahleeq,
+	.careers-faqs,
+	.prepare-for-an-interview,
+	.overview-with-bac-culture,
+	.airport-operations,
+	.infrastructure-development-maintenance,
+	.commercial-and-marketing,
+	.human-resources,
+	.finance,
+	.information-communication-technology,
+	.strategy-implementation-business-improvement,
+	.ceo-s-office,
+	.mariam-alkhalifa,
+	.khalid-al-hadad,
+	.jamal-alhaji,
+	.fared-malek,
+	.eyad-ismaeel,
+	.anoop,
+	.ali-saad,
+	.ali-humaidan,
+	.abdulla-ebrahim-ghali,
+	.surveyor-cad-operator,
+	.engineer-civil,
+	.engineer-electrical,
+	.senior-engineering-technician-cad {
+		.page-header {
+			transform: scale(1.3, 0.9);
+			margin-right: 13%;
+		}
+	}
+
+}

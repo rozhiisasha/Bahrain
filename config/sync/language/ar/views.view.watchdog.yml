@@ -1,0 +1,28 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: انتقاء
+          reset_button_label: 'إعادة الضبط'
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- الكل -'
+      fields:
+        nothing:
+          admin_label: أيقونة
+        type:
+          label: النوع
+        timestamp:
+          label: التاريخ
+        name:
+          label: المستخدم
+        link:
+          label: عمليات
+      filters:
+        type:
+          expose:
+            label: النوع
+  page:
+    display_title: الصفحة

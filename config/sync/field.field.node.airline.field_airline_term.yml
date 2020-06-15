@@ -1,0 +1,29 @@
+uuid: 7d042975-8f94-4bcf-8206-f4ea6fc7528a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_airline_term
+    - node.type.airline
+    - taxonomy.vocabulary.airlines
+id: node.airline.field_airline_term
+field_name: field_airline_term
+entity_type: node
+bundle: airline
+label: 'Airline term'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      airlines: airlines
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

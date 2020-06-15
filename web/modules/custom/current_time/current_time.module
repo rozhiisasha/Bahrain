@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function current_time_theme($existing, $type, $theme, $path) {
+  return [
+    'current_time_block' => [
+      'variables' => [
+        'last_update' => '',
+        'path_arr_last' => '',
+      ],
+    ],
+  ];
+}

@@ -1,0 +1,129 @@
+.operating-airlines,
+.flight-arrivals,
+.flight-departures,
+.flight-finder,
+.employee-quotes,
+.bac-news,
+.embassies-in-bahrain,
+.search-results {
+  .pager-nav {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+
+    .wrapper-pager {
+      display: flex;
+      flex-basis: auto;
+      height: 30px;
+      align-items: center;
+      background: #E5E5E5;
+      text-transform: uppercase;
+      padding: 4px 18px;
+      border-radius: 5px;
+      color: #333333;
+      font-family: 'Helvetica Neue LT Com', serif;
+
+      #go_to_page {
+        display: flex;
+        align-items: center;
+
+        label {
+          margin: 0;
+          display: flex;
+          align-items: center;
+          padding-top: 2px;
+        }
+
+        input {
+          height: 22px;
+          width: 40px;
+          border: 0;
+          outline: none;
+          border-radius: 3px;
+          padding: 1px 0;
+          text-align: center;
+          margin: 0 5px;
+        }
+
+        #go_to_page_link {
+          height: 5px;
+          display: inline-block;
+          border: 5px solid transparent;
+          border-left: 5px solid #333333;
+          margin-right: 10px;
+          cursor: pointer;
+        }
+      }
+
+      ul {
+        margin: 0;
+        display: flex;
+
+        li {
+          border: 0;
+
+          a, a:hover {
+            border: 0;
+            font-family: 'Helvetica Neue LT Com', serif;
+            font-size: 12px;
+            background: #E5E5E5;
+            font-weight: bold;
+            color: $traveller-red;
+            height: 25px;
+            padding: 6px 10px;
+          }
+          a:active {
+            outline:none;
+          }
+        }
+
+        li.active {
+          a {
+            color: #333333;
+          }
+        }
+      }
+    }
+  }
+}
+
+html[lang="ar"] {
+  .operating-airlines,
+  .flight-arrivals,
+  .flight-departures,
+  .flight-finder,
+  .employee-quotes,
+  .bac-news,
+  .embassies-in-bahrain {
+    .pager-nav {
+      justify-content: flex-start;
+
+      .wrapper-pager {
+
+        #go_to_page {
+          label {
+            font-weight: normal;
+          }
+          #go_to_page_link {
+            border: 5px solid transparent;
+            border-right: 5px solid #333333;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .operating-airlines,
+  .flight-arrivals,
+  .flight-departures,
+  .flight-finder,
+  .employee-quotes,
+  .bac-news,
+  .embassies-in-bahrain {
+    .pager-nav .wrapper-pager #go_to_page {
+      display: none;
+    }
+  }
+}

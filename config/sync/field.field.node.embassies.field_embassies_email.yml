@@ -1,0 +1,19 @@
+uuid: 52df2a00-7a44-418a-b98f-d7c17e2e68a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_embassies_email
+    - node.type.embassies
+id: node.embassies.field_embassies_email
+field_name: field_embassies_email
+entity_type: node
+bundle: embassies
+label: embassies_email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

@@ -1,0 +1,21 @@
+#block-views-block-hero-image-block-1 {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	.field--item {
+		display: flex;
+		justify-content: center;
+		@include dot-bg;
+	}
+	img {
+		min-width: 1920px;
+		height: 390px;
+		object-fit: cover;
+	}
+
+	.view-empty {
+		img {
+			min-width: 0;
+		}
+	}
+}

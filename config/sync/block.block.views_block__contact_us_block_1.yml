@@ -1,0 +1,30 @@
+uuid: 170a283f-6e53-4dc3-9d8d-4415baa1387b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.contact_us
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_air
+id: views_block__contact_us_block_1
+theme: bootstrap_air
+region: content
+weight: -30
+provider: null
+plugin: 'views_block:contact_us-block_1'
+settings:
+  id: 'views_block:contact_us-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /corporate/contact-us
+    negate: false
+    context_mapping: {  }

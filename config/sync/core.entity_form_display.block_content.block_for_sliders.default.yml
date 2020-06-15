@@ -1,0 +1,48 @@
+uuid: a0c34920-cce4-4c58-91a9-18b6cfc4fd8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_for_sliders
+    - field.field.block_content.block_for_sliders.field_slider_media
+    - field.field.block_content.block_for_sliders.field_sliders_terms
+  module:
+    - media_library
+id: block_content.block_for_sliders.default
+targetEntityType: block_content
+bundle: block_for_sliders
+mode: default
+content:
+  field_slider_media:
+    type: media_library_widget
+    weight: 26
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_sliders_terms:
+    weight: 27
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

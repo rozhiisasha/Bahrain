@@ -1,0 +1,113 @@
+uuid: 9d2e1cff-c672-4480-b9fb-12f7784fdbd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.career
+    - views.view.career_business_block1
+    - views.view.career_business_block2
+    - views.view.career_business_block3
+    - views.view.career_business_block4
+    - views.view.prepare_for_an_interview_career_slider_
+  content:
+    - 'block_content:block_with_paragraphs:9105933c-1ce0-4677-995c-21783e8e67a4'
+  module:
+    - block_content
+    - language
+    - panels
+    - views
+id: career-panels_variant-1
+label: Arabic
+variant: panels_variant
+variant_settings:
+  blocks:
+    46cfbed8-df36-4374-ad11-eee04936f359:
+      id: 'views_block:career_business_block1-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: first_below
+      weight: -1
+      uuid: 46cfbed8-df36-4374-ad11-eee04936f359
+      context_mapping: {  }
+    d68091f2-6cc8-4f4e-8426-b0ea68af7797:
+      id: 'views_block:career_business_block2-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: third_below
+      weight: -2
+      uuid: d68091f2-6cc8-4f4e-8426-b0ea68af7797
+      context_mapping: {  }
+    fe0e82fc-c780-41be-a646-984aa7814f82:
+      id: 'views_block:career_business_block3-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: second_below
+      weight: -10
+      uuid: fe0e82fc-c780-41be-a646-984aa7814f82
+      context_mapping: {  }
+    d43e9ea6-f671-4ef5-8851-3a0d5088a325:
+      id: 'views_block:career_business_block4-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: fourth_below
+      weight: 0
+      uuid: d43e9ea6-f671-4ef5-8851-3a0d5088a325
+      context_mapping: {  }
+    363d6127-cc19-4c17-9ce6-807b680fa227:
+      id: 'block_content:9105933c-1ce0-4677-995c-21783e8e67a4'
+      label: 'working with us (career homepage)'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: second_above
+      weight: -1
+      uuid: 363d6127-cc19-4c17-9ce6-807b680fa227
+      context_mapping: {  }
+    2751ddbc-69e7-4a30-a935-def46e48cf0b:
+      id: 'views_block:prepare_for_an_interview_career_slider_-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: first_above
+      weight: -2
+      uuid: 2751ddbc-69e7-4a30-a935-def46e48cf0b
+      context_mapping: {  }
+  id: panels_variant
+  uuid: f8277ba8-2b85-42b1-8225-45dd19db2152
+  label: null
+  weight: 0
+  layout: layout_career_homepage
+  layout_settings:
+    label: career
+  page_title: ''
+  storage_type: page_manager
+  storage_id: career-panels_variant-1
+  builder: standard
+page: career
+weight: 0
+selection_criteria:
+  -
+    id: language
+    langcodes:
+      ar: ar
+    negate: false
+    context_mapping:
+      language: language_interface
+selection_logic: and
+static_context: {  }

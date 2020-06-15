@@ -1,0 +1,18 @@
+uuid: 9db2c824-f20b-4d0c-8cca-0ed56c89aefd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.management
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.management
+target_entity_type_id: node
+target_bundle: management
+default_langcode: current_interface
+language_alterable: false

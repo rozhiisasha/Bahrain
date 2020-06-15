@@ -1,0 +1,30 @@
+uuid: 4f0b8956-bc9e-4b02-8ddb-decef7ce57aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.operating_airlines
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_air
+id: views_block__operating_airlines_operating_airlines
+theme: bootstrap_air
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:operating_airlines-operating_airlines'
+settings:
+  id: 'views_block:operating_airlines-operating_airlines'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /flight-details/operating-airlines
+    negate: false
+    context_mapping: {  }

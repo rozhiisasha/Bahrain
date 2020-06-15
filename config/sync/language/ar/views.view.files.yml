@@ -1,0 +1,33 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: انتقاء
+          reset_button_label: 'إعادة الضبط'
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- الكل -'
+      fields:
+        filename:
+          label: Name
+        status:
+          label: الحالة
+      filters:
+        status:
+          expose:
+            label: الحالة
+  page_2:
+    display_options:
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- الكل -'
+      fields:
+        entity_label:
+          label: الكيان
+      arguments:
+        fid:
+          exception:
+            title: الكل

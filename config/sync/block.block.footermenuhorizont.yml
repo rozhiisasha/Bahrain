@@ -1,0 +1,20 @@
+uuid: ddeb516a-754b-441f-8544-7aeb33611766
+langcode: en
+status: true
+dependencies:
+  module:
+    - snippet_manager
+  theme:
+    - bootstrap_air
+id: footermenuhorizont
+theme: bootstrap_air
+region: footer
+weight: 0
+provider: null
+plugin: 'snippet:footer_menu_horizont'
+settings:
+  id: 'snippet:footer_menu_horizont'
+  label: 'footer menu horizont'
+  provider: snippet_manager
+  label_display: '0'
+visibility: {  }

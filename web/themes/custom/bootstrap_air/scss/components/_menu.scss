@@ -1,0 +1,829 @@
+.region-navigation-collapsible {
+		 .navbar-toggle {
+		 	float: initial;
+		 	padding: 12px 102px 12px 15px;
+		 	margin-top: 0;
+		 	border: 0;
+		 	&:hover {
+		 		background: #e31b38;
+		 	}
+		 	.icon-bar {
+		 		background-color: #fff;
+		 	}
+		 }
+
+		.we-mega-menu-ul {
+
+			.we-mega-menu-li:nth-child(1) {
+			
+				&:hover {
+
+					&>.we-mega-menu-li {				
+						color: #e72844;
+					}	
+				}
+				.we-mega-menu-submenu {
+					
+					ul>li>a:hover {
+						color: #e72844;
+					}
+				}
+			}
+			.we-mega-menu-li:nth-child(2) {
+			
+				&:hover {
+
+					&>.we-mega-menu-li {				
+						color: #fa7e1a;
+					}	
+				}
+				.we-mega-menu-submenu {
+					
+					ul>li:hover {
+						a {
+							color: #fa7e1a;
+						}
+
+					}
+				}
+			}
+			.we-mega-menu-li:nth-child(3) {
+			
+				&:hover {
+
+					&>a[href="/at-the-airport"] {					
+						color: #6700d8;
+					}
+					&>a[href="/corporate/media-center"] {					
+						color: #D5376E;
+					}	
+				}
+				.we-mega-menu-submenu {
+					left: -372px;
+					ul>li:hover {
+						a {
+							color: #6700d8;
+						}
+
+					}
+					.media-menu ul>li:hover {
+							a {
+								color: #D5376E;
+							}
+					}
+				}
+			}
+			.we-mega-menu-li:nth-child(4) {
+				&:hover {
+
+					&>a[href="/corporate/contact-us"] {				
+						 
+							color: #2C669C;
+							background-color: #fff;
+						
+					}
+					&>a[href="/ar/corporate/contact-us"] {				
+						 
+							color: #2C669C;
+							background-color: #fff;
+						
+					}		
+				}
+				.we-mega-menu-submenu {
+					
+					left: -400px;
+					ul>li:hover {
+						a {
+							color: #2C669C;
+						}
+
+					}
+				}
+			}
+			.we-mega-menu-li:last-child {
+				&:hover {				
+						 
+						background: none;						
+				}
+
+			}
+
+			& >.we-mega-menu-li {
+				&.dropdown-menu::after {
+					content: '';
+				}
+				&.dropdown-menu::before {
+					content: '';
+					
+				}
+
+				&:hover {
+					background-color: #fff;
+					border-radius: 7px 7px 0 0;
+					&.dropdown-menu::after {
+								content: '';
+								background: url('../images/hover-arrow.png') no-repeat center;
+								width: 100%;
+								height: 100%;
+								position: absolute;
+								top: 18px;
+								z-index: 200;
+							}
+					&.dropdown-menu::before {
+						background: url('../images/glow-layer.png') no-repeat left top;
+						content: '';
+					    width: 101px;
+					    height: 355px;
+					    position: absolute;
+					    right: 35px;
+					    top: 47px;
+					    display: block;
+					}	
+
+					
+				
+				}
+				a {
+					padding-left: 3rem;
+					
+				}
+				
+					
+				.we-mega-menu-submenu {
+					
+					width: max-content;
+					background: url("../images/menu_bg.png") no-repeat 92% 99%;
+					border-radius: 0 7px 7px;
+					padding: 0;
+					border: 0;
+					margin-left: 0;
+			
+					.we-mega-menu-submenu-inner {
+
+						
+						padding: 15px 20px 40px 20px;
+						margin-left: 0;
+				
+						}
+						.we-mega-menu-col:nth-child(1) {
+
+							
+							ul {
+									
+
+								li {
+									
+									background: url("../images/li-bg.png") no-repeat left bottom;
+									width: 250px;
+									margin: 0;
+									a {
+
+										font-size: 15px;
+										font-weight: 700;
+										border: 0;
+										padding-left: 8px;
+
+									}
+									&:hover {
+										.we-mega-menu-submenu {
+											display: none;
+										}
+									}
+								}
+							}
+						}
+						
+							
+						.we-mega-menu-col:nth-child(2) {
+							
+							padding-left: 10px;
+							p {
+								padding-bottom: 10px;
+								a{
+									padding: 0;
+								}
+							}
+						}
+					}
+				}
+			
+		}
+		#block-corporatemenu-3 {
+			.we-mega-menu-li:nth-child(3) {
+			
+				.we-mega-menu-submenu {
+					left: -383px;
+				}
+			}
+		} 
+}
+.region-navigation-collapsible .careers-menu {
+
+		border: 0;
+		.we-mega-menu-ul {
+
+			.we-mega-menu-li {
+			
+				&:hover {
+
+					&>.we-mega-menu-li {				
+						color: inherit;
+						font-weight: 900;
+					}	
+				}
+				.we-mega-menu-submenu {
+					
+					ul>li>a:hover {
+						color: #e72844;
+					}
+				}
+			}
+			.we-mega-menu-li:nth-child(3) {
+				&:hover {				
+						 
+						background: none;						
+				}
+
+			}
+		}
+	
+}
+html[lang="ar"] {
+
+	.region-navigation-collapsible {
+
+		.we-mega-menu-ul {
+
+			.we-mega-menu-li {
+
+				.we-mega-menu-submenu {
+					background:  url("../images/menu_bg.png") no-repeat 53% 97%;
+					border-radius: 0 0 7px 7px;
+				}
+			}
+			.we-mega-menu-li:nth-child(2) {
+
+				.we-mega-menu-submenu {
+					right: 0;
+					
+				}
+			}
+			.we-mega-menu-li:nth-child(3) {
+
+				.we-mega-menu-submenu {
+					left: 0;
+					
+				}
+			}
+			.we-mega-menu-li:nth-child(4) {
+
+				&:hover {
+
+					&>a[href="/ar/node/72"] {				
+						 
+							color: #2C669C;
+							background-color: #fff;
+							border-radius: 7px 7px 0 0;
+						
+					}	
+				}
+				.we-mega-menu-submenu {
+					
+					right: -454px;
+					left: auto;
+					
+				}
+			}
+			.we-mega-menu-li:first-child {
+
+		
+				.we-mega-menu-submenu {
+					
+					right: 0;
+					left: auto;
+					
+				}
+			}
+		}
+		#block-corporatemenu-3 {
+			.we-mega-menu-li:nth-child(3) {
+			
+				.we-mega-menu-submenu {
+					left: 0;
+				}
+			}
+		} 
+	}
+}
+
+/// Mobile menu
+@media screen and (min-width: 769px) {
+	.region-mobile-menu {
+		display: none;
+	}
+}
+	
+@media screen and (max-width: 768px) {
+	.navbar-header>.navbar-toggle{
+		display: none;
+	}
+	.region-navigation-collapsible {
+		display: none;
+	}
+	#block-travellermenu-4 {
+		margin-right: 8px;
+		.navbar-toggle {
+			
+			&::after {
+				content: 'TRAVELLER';
+				color: #fff;
+				position: absolute;
+				font-weight: 600;
+				font-size: 14px;
+				right: 16px;
+				top: 36%;
+			}
+		}
+	}
+	#block-corporatemenu-6 {
+		margin-left: 8px;
+		.navbar-toggle {
+			
+			&::after {
+				content: 'CORPORATE';
+				color: #fff;
+				position: absolute;
+				font-weight: 600;
+				font-size: 14px;
+				right: 10px;
+				top: 36%;
+			}
+		}
+		.navbar-we-mega-menu.navbar {
+			right: 158px;
+			.we-mega-menu-ul {
+				&::before {
+						content: '';
+					    width: 15px;
+					    height: 15px;
+					    background: #e31b38;
+					    position: absolute;
+					    display: block;
+					    top: -7px;
+					    right: 17px;
+					    left: auto;
+					    transform: rotateZ(45deg);
+
+				    
+				}
+			}
+		}
+	}
+
+		.region-mobile-menu {
+			display: flex;
+			.nav>.open>a {
+				background: none;
+			}
+			 .navbar-toggle {
+			 	float: initial;
+			 	padding: 12px 102px 12px 15px;
+			 	margin-top: 0;
+			 	border: 0;
+			 	&:hover {
+			 		background: #e31b38;
+			 	}
+			 	.icon-bar {
+			 		background-color: #fff;
+			 	}
+			 }
+
+			.we-mega-menu-ul {
+
+				
+					flex-direction: column;
+					width: 100%;
+					align-items: flex-start;
+					&::before {
+						content: '';
+					    width: 15px;
+					    height: 15px;
+					    background: #e31b38;
+					    position: absolute;
+					    display: block;
+					    top: -7px;
+					    left: 17px;
+					    transform: rotateZ(45deg);
+
+				    
+				}
+				.we-mega-menu-li:nth-child(1) {
+				
+					&:hover {
+
+						&>.we-mega-menu-li {				
+							color: #fff;
+						}	
+					}
+					.we-mega-menu-submenu {
+						
+						ul>li>a:hover {
+							color: #fff;
+						}
+					}
+				}
+				.we-mega-menu-li:nth-child(2) {
+				
+					&:hover {
+
+						&>.we-mega-menu-li {				
+							color: #fff;
+						}	
+					}
+					.we-mega-menu-submenu {
+						
+						ul>li:hover {
+							a {
+								color: #fff;
+							}
+
+						}
+					}
+				}
+				.we-mega-menu-li:nth-child(3) {
+				
+					&:hover {
+
+						&>a[href="/at-the-airport"] {					
+							color: #fff;
+							font-weight: 900;
+						}
+						&>a[href="/corporate/media-center"] {					
+							color: #fff;
+						}	
+					}
+					.we-mega-menu-submenu {
+						
+						ul>li:hover {
+							a {
+								color: #fff;
+							}
+
+						}
+						.media-menu ul>li:hover {
+								a {
+									color: #fff;
+								}
+						}
+					}
+				}
+				.we-mega-menu-li:nth-child(4) {
+					&:hover {
+
+						&>a[href="/corporate/contact-us"] {				
+							 
+								color: #fff;
+								background: none;
+							
+						}	
+					}
+					.we-mega-menu-submenu {
+						
+						
+						ul>li:hover {
+							a {
+								color: #fff;
+							}
+
+						}
+					}
+				}
+				.we-mega-menu-li:last-child {
+					&:hover {				
+							 
+							background: none;						
+					}
+
+				}
+
+				& >.we-mega-menu-li {
+
+			
+						width: 100%;
+						border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+						
+					&:hover {
+							background-color: inherit;
+							border-radius: 0;
+							&::after {
+								content: '';
+								background: none;
+								display: none;
+							}		
+					
+					}
+					a {
+						
+							padding: 0;
+							font-size: 14px;
+							text-transform: capitalize;
+							font-weight: 400;
+							color: #fff;
+							letter-spacing: 1px;
+							border: 0;
+							width: 230px;
+
+						
+					}
+					.white-arrow {
+						position: absolute;
+						top: 14px;
+						right: 17px;
+						.glyphicon-triangle-bottom {
+							color: #fff;
+							font-size: 12px;
+							font-weight: 400;
+						}
+						&.rotate {
+							&:hover {
+							transform: rotate(-180deg);
+						}
+						}
+					}
+					
+						
+					.we-mega-menu-submenu {
+						
+					
+									display: none;
+									background: none;
+									width: 100%;
+						
+						.we-mega-menu-submenu-inner {
+
+								padding: 0;
+								.we-mega-menu-row {
+									flex-direction: column;
+								
+							}
+							.we-mega-menu-col:nth-child(1) {
+
+								
+								ul {
+									
+										padding: 0;
+									
+									li:first-of-type {
+										
+											border-top: 1px solid rgba(0, 0, 0, 0.075);
+										
+									}
+
+									li {
+										
+										background: none;
+										width: 100%;
+
+										a {
+
+										
+											font-size: 14px;
+											padding-left: 0;
+											font-weight: 400;
+											padding: 12px 15px 12px 33px;										
+
+
+										}
+										&:hover {
+											.we-mega-menu-submenu {
+												display: none;
+											}
+										}
+									}
+								}
+							}
+							
+								
+							.we-mega-menu-col:nth-child(2) {
+								
+									display: none;
+							
+
+								padding-left: 10px;
+								p {
+									padding-bottom: 10px;
+									a{
+										padding: 0;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+	}
+
+	html[lang="ar"] {
+		
+	#block-travellermenu-4 {
+		margin-left: 8px;
+		.navbar-toggle {
+			
+			&::after {
+				content: 'المسافر';
+				color: #fff;
+				position: absolute;
+				font-weight: 600;
+				font-size: 14px;
+				right: 16px;
+				top: 36%;
+			}
+		}
+	}
+	#block-corporatemenu-6 {
+		margin-right: 8px;
+		.navbar-toggle {
+			
+			&::after {
+				content: 'الشركة';
+				color: #fff;
+				position: absolute;
+				font-weight: 600;
+				font-size: 14px;
+				right: 10px;
+				top: 36%;
+			}
+		}
+		.navbar-we-mega-menu.navbar {
+			right: -158px;
+			.we-mega-menu-ul {
+				&::before {
+						content: '';
+					    width: 15px;
+					    height: 15px;
+					    background: #e31b38;
+					    position: absolute;
+					    display: block;
+					    top: -7px;
+					    left: 17px;
+					    right: auto;
+					    transform: rotateZ(45deg);
+
+				    
+				}
+			}
+		}
+	}
+
+		.region-mobile-menu {
+			display: flex;
+			.nav>.open>a {
+				background: none;
+			}
+			 .navbar-toggle {
+			 	float: initial;
+			 	padding: 12px 90px 12px 15px;
+			 	margin-top: 0;
+			 	border: 0;
+			 	&:hover {
+			 		background: #e31b38;
+			 	}
+			 	.icon-bar {
+			 		background-color: #fff;
+			 	}
+			 }
+
+			.we-mega-menu-ul {
+
+				
+					flex-direction: column;
+					width: 100%;
+					align-items: flex-start;
+					&::before {
+						content: '';
+					    width: 15px;
+					    height: 15px;
+					    background: #e31b38;
+					    position: absolute;
+					    display: block;
+					    top: -7px;
+					    right: 17px;
+					    left: auto;
+					    transform: rotateZ(45deg);
+
+				    
+				}
+
+				& >.we-mega-menu-li {
+
+			
+						width: 100%;
+						border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+						
+					&:hover {
+							background-color: inherit;
+							border-radius: 0;
+							&::after {
+								content: '';
+								background: none;
+								display: none;
+							}		
+					
+					}
+					a {
+						
+							padding: 12px 18px 12px 64px;
+							font-size: 14px;
+							text-transform: capitalize;
+							font-weight: 400;
+							color: #fff;
+							letter-spacing: 1px;
+							border: 0;
+							width: 230px;
+							text-align: right;
+
+						
+					}
+					.white-arrow {
+						position: absolute;
+						top: 14px;
+						left: 17px;
+						right: auto;
+						.glyphicon-triangle-bottom {
+							color: #fff;
+							font-size: 12px;
+							font-weight: 400;
+						}
+						&.rotate {
+							&:hover {
+							transform: rotate(-180deg);
+						}
+						}
+					}
+					
+						
+					.we-mega-menu-submenu {
+						
+					
+									display: none;
+									background: none;
+									width: 100%;
+						
+						.we-mega-menu-submenu-inner {
+
+								padding: 0;
+								.we-mega-menu-row {
+									flex-direction: column;
+								
+							}
+							.we-mega-menu-col:nth-child(1) {
+
+								
+								ul {
+									
+										padding: 0;
+									
+									li:first-of-type {
+										
+											border-top: 1px solid rgba(0, 0, 0, 0.075);
+										
+									}
+
+									li {
+										
+										background: none;
+										width: 100%;
+
+										a {
+
+										
+											font-size: 14px;
+											padding-left: 0;
+											font-weight: 400;
+											padding: 12px 15px 12px 33px;										
+
+
+										}
+										&:hover {
+											.we-mega-menu-submenu {
+												display: none;
+											}
+										}
+									}
+								}
+							}
+							
+						}
+					}
+				}
+			}
+		}
+
+	}
+}
+
+@media screen and(min-width: 768px) {
+	.white-arrow {
+		display: none;
+	}
+}

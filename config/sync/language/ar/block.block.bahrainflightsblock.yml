@@ -1,0 +1,12 @@
+settings:
+  time: الوقت
+  flight: الرحلة
+  origin: 'جهة القدوم'
+  destination: 'جهة القدوم'
+  stat: الحالة
+  link_arrivals: 'تحديث القائمة'
+  link_departures: 'عرض جميع الرحلات المغادرة'
+  btn_departures: 'مغادرة الرحلات'
+  btn_arrivals: 'وصول الرحلات'
+  refresh: 'تحديث القائمة'
+  update: 'خر تحديث'

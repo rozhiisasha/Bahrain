@@ -1,0 +1,5 @@
+name: Switch flight
+description: 'Switch flight module for block with switch button.'
+type: module
+core: 8.x
+package: Custom

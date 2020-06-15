@@ -1,0 +1,30 @@
+uuid: e0b7b72d-103c-416b-9e40-b17dd90caf6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.traveller-menu
+  module:
+    - system
+  theme:
+    - bootstrap_air
+id: travellermenu_3
+theme: bootstrap_air
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:traveller-menu'
+settings:
+  id: 'system_menu_block:traveller-menu'
+  label: 'Experience Airport'
+  provider: system
+  label_display: visible
+  level: 2
+  depth: 0
+  expand_all_items: true
+visibility:
+  request_path:
+    id: request_path
+    pages: "/corporate/*\r\n/career/*\r\n/privacy-policy\r\n/flight-details/*\r\n/before-you-fly\r\n/before-you-fly/*\r\n<front>"
+    negate: true
+    context_mapping: {  }

@@ -1,0 +1,12 @@
+uuid: 615bc545-465f-46a6-9413-f290d27c21b2
+langcode: en
+status: true
+dependencies: {  }
+id: corporate_portal
+label: 'Corporate portal'
+description: ''
+use_admin_theme: false
+path: /corporate
+access_logic: and
+access_conditions: {  }
+parameters: {  }

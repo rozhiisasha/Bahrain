@@ -1,0 +1,21 @@
+uuid: 33b1f4bb-9621-4860-8c63-ec843b59f0c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_stop
+    - node.type.flight
+  module:
+    - text
+id: node.flight.field_stop
+field_name: field_stop
+entity_type: node
+bundle: flight
+label: Stop
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      fields:
+        field_date:
+          label: 'الموعد النهائي'
+        view_node:
+          text: تطبيق
+      header:
+        area:
+          content:
+            value: "<h2>قائمة الوظائف</h2>\r\n\r\n<p>يوضح هذا القسم أحدث الفرص المتاحة في شركة مطار البحرين.</p>\r\n"
+            format: full_html

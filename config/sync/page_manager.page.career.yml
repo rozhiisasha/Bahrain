@@ -1,0 +1,12 @@
+uuid: 85415864-67fb-4aa1-9aee-cdb0eb390be9
+langcode: en
+status: true
+dependencies: {  }
+id: career
+label: Career
+description: ''
+use_admin_theme: false
+path: /career
+access_logic: and
+access_conditions: {  }
+parameters: {  }

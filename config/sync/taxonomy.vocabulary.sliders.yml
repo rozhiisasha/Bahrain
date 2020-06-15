@@ -1,0 +1,8 @@
+uuid: 93a6dd44-c4a4-47ce-a865-dfb0d564f98a
+langcode: und
+status: true
+dependencies: {  }
+name: Sliders
+vid: sliders
+description: 'Terms for sliders block'
+weight: 0

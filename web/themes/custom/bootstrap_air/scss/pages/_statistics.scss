@@ -1,0 +1,109 @@
+.statistics {
+  .content-wrap {
+    font-family: 'Helvetica Neue LT Com', serif;
+    line-height: normal;
+
+    .base-ct {
+      display: none;
+    }
+
+    .page-header, .field--name-field-title {
+      color: $corporate-orange;
+      text-transform: uppercase;
+      font-size: 19px;
+    }
+
+    .field--name-field-title {
+      padding-bottom: 8px;
+    }
+
+    #block-keyfactsstatistics {
+      .field--name-field-paragraph {
+        display: flex;
+        direction: ltr;
+        .field--item {
+          &:not(:last-child) {
+            flex-basis: 250px;
+          }
+          .paragraph--type--title-body-img {
+            display: flex;
+            max-width: 250px;
+            background: #E1E1E1;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 220px;
+            border: 1px solid #CCCCCC;
+            text-align: center;
+            padding: 17px 30px 30px;
+
+            .field--name-field-media {
+              order: -1;
+
+              .field--item {
+                height: 109px;
+              }
+            }
+
+            p {
+              padding: 0;
+            }
+
+            .field--name-field-title {
+              margin-top: 5px;
+              font-size: 16px;
+              height: 38px;
+              text-transform: uppercase;
+              color: $corporate-orange;
+              padding: 8px 0 0;
+              border-top: 1px solid #CCCCCC;
+            }
+
+
+            #gargo, #passengers {
+              font-family: 'Arial', serif;
+              font-size: 36px;
+              display: flex;
+              height: 41px;
+              justify-content: center;
+              align-items: center;
+            }
+
+            &:first-child {
+              border-right: 0;
+            }
+          }
+
+          .paragraph--type--title-body {
+            ul {
+              margin: 0;
+              font-size: 16px;
+              color: $color-gray;
+              text-align: center;
+              font-weight: bold;
+
+              li {
+                padding: 13px 21px 8px;
+                cursor: pointer;
+                border-top: 1px solid #CCCCCC;
+              }
+
+              &:last-child {
+                border-bottom: 1px solid #CCCCCC;
+              }
+            }
+          }
+        }
+        &>:last-child {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+
+    #block-statistics {
+      .field--name-field-title {
+        margin-top: 30px;
+      }
+    }
+  }
+}

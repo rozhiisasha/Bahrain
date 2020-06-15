@@ -1,0 +1,298 @@
+.career-views {
+
+
+	.my-column {
+		height: 311px;
+		width: 297px;
+		margin-bottom:18px;
+		background-color: #333;
+		box-sizing: border-box;
+		border: 0;
+		border-radius: 5px;
+
+		img {
+			border-radius: 5px 5px 0 0;
+			width: 100%;
+		}
+
+		.views-field-title {
+			font-size: 21px;
+			font-weight: 700;
+			padding: 12px 15px 0;
+			line-height: 21px;
+			
+			a {
+				color: #fff;
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+		}
+
+		.views-field-body {
+			font-size: 12px;
+			color: #fff;
+			padding: 5px 15px 12px;
+		}
+		.views-field-view-node {
+			position: absolute;
+			bottom: 39px;
+			left: 15px;
+
+			a {
+				background-color: #E73D37;
+				color: #fff;
+				padding: 2px;
+				border: 0;
+				border-radius: 2px;
+				font-weight: 700;
+				text-decoration: none;
+			}																																																																																																																																																																																																																																																																																																																																																																												 ;																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
+		}																																																																																																																																																																																																																																																																																			
+		
+		
+	
+	}
+}
+.working-with-us, 
+.the-business-areas {
+	.content-wrap {
+		background: none;
+		padding: 0;
+	}
+}
+
+.career-employee {
+	.views-row {
+		height: 350px;
+		width: 572px;
+		margin-bottom: 20px;
+		border: 0;
+		border-radius: 5px;
+		background-color: #333;
+		img {
+			border-radius: 5px 5px 0 0;
+			width: 100%;
+		}
+
+		.views-field-title {
+			position: absolute;
+			font-size: 21px;
+			font-weight: 700;
+			padding: 12px 15px 0;
+			line-height: 21px;
+			
+			a {
+				color: #fff;
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+		}
+
+		.views-field-body {
+			font-size: 12px;
+			color: #fff;
+			padding: 25px 15px 12px;
+		}
+	}
+}
+
+.job-list,
+.career {
+	.global-content-wrapper {
+		@media screen and (max-width: 768px) {
+			background: #fff;
+		}
+	}
+	.content-wrap {
+		@media screen and (max-width: 768px) {
+			background: none;
+		}
+	}
+	.page-header,
+	.view-header {
+		color: #E73D37;
+		@media screen and (max-width: 768px) {
+			font-size: 16px;
+			font-weight: 400;
+			color: #333;
+			h2 {
+				font-size: 21px;
+				color: #665;
+				font-weight: 600;
+			}
+		}
+
+	}
+}
+
+#block-views-block-lob-list-career-block-1,
+#block-views-block-job-list-homepage-career-block-1{
+	.table-responsive {
+		@media screen and (max-width: 768px) {
+			margin-bottom: 0;
+			border: 0;
+		}
+	}
+	.table {
+		margin-top: 20px;
+		border-spacing: 0 1px;
+		border-collapse: unset;
+		margin-bottom: 90px;
+		@media screen and (max-width: 768px) {
+			margin-bottom: 0;
+		}
+		thead {
+			
+			&::after {
+				content: '';
+				height: 4px;
+				display: block;
+				background: none;
+			}
+			
+			tr {
+				background-color: #E73D37;
+				@media screen and (max-width: 768px) {
+					background: none;
+				}
+				th {
+					padding-bottom: 6px;
+					@media screen and (max-width: 768px) {
+						border: 0;
+					}
+
+				}
+				
+				#view-title-table-column {
+					border-radius: 7px 0 0 7px;
+					padding-left: 11px;
+					@media screen and (max-width: 768px) {
+						border: 0;
+					}
+
+				}
+				th:nth-child(3) {
+					border-radius: 0 7px 7px 0;
+					padding-bottom: 10px;
+					@media screen and (max-width: 768px) {
+						border: 0;
+					}
+
+				}
+			}
+
+			a {
+				color: #fff;
+				text-transform: uppercase;
+				font-size: 10px;
+				text-decoration: none;
+				@media screen and (max-width: 768px) {
+					color: #E73D37;
+				}
+			}
+		}
+		tbody {
+
+			tr {
+				background-color: #fff;
+				@media screen and (max-width: 768px) {
+						background: none;
+					}
+
+				.views-field-view-node {
+					a {
+						background-color: #333;
+						padding: 3px 15px 0;
+						color: #fff;
+						border-radius: 2px;
+						@media screen and (max-width: 768px) {
+							background: none;
+							color: #E73D37;
+						}
+					}
+				}
+				td {
+					border: 0;
+					padding: 2px 11px 3px;
+					a {
+						color: #333;
+						text-decoration: none;
+						text-transform: uppercase;
+						font-size: 11px;
+					}
+
+				}
+				td:nth-child(1) {
+					border-radius: 7px 0 0 7px;
+					
+				}
+				td:nth-child(3) {
+					border-radius: 0 7px 7px 0;
+					text-align: right;
+				
+				}
+			}
+		}
+	}
+}
+html[lang="ar"]{
+
+	#block-views-block-lob-list-career-block-1,
+	#block-views-block-job-list-homepage-career-block-1{	
+		
+	.table {
+		
+		thead {
+			
+			&::after {
+				
+			}
+			
+			tr {
+
+				th {
+					padding-bottom: 6px;
+
+				}
+				
+				#view-title-table-column {
+					border-radius: 0 7px 7px 0;
+					padding-left: 11px;
+
+				}
+				th:nth-child(3) {
+					border-radius: 7px 0 0 7px;
+					padding-bottom: 10px;
+				}
+			}
+
+			
+		}
+		tbody {
+
+			tr {
+
+
+				td {
+					border: 0;
+					padding: 2px 11px 3px;
+
+				}
+				td:nth-child(1) {
+					border-radius: 0 7px 7px 0;
+					
+				}
+				td:nth-child(2) {
+					text-align: left;
+				
+				}
+				td:nth-child(3) {
+					border-radius:  7px 0 0 7px;
+					text-align: left;
+				
+				}
+			}
+		}
+	}
+	}
+}

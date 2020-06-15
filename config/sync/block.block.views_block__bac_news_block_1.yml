@@ -1,0 +1,30 @@
+uuid: eaf93175-be06-4e9c-a1d8-0761cacf11ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.bac_news
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_air
+id: views_block__bac_news_block_1
+theme: bootstrap_air
+region: content
+weight: -37
+provider: null
+plugin: 'views_block:bac_news-block_1'
+settings:
+  id: 'views_block:bac_news-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /corporate/media-center/bac-news
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,23 @@
+uuid: 5a12622f-6f05-4519-ac4f-d15195867640
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_embassies_address
+    - node.type.embassies
+  module:
+    - text
+id: node.embassies.field_embassies_address
+field_name: field_embassies_address
+entity_type: node
+bundle: embassies
+label: embassies_address
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

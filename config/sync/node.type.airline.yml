@@ -1,0 +1,18 @@
+uuid: e4fab103-1ad1-47ca-80d7-cd009e1aff65
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Airline
+type: airline
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

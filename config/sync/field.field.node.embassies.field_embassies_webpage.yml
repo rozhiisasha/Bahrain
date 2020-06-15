@@ -1,0 +1,21 @@
+uuid: c7888d74-3490-4ef2-97b4-c266eec7c4a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_embassies_webpage
+    - node.type.embassies
+  module:
+    - text
+id: node.embassies.field_embassies_webpage
+field_name: field_embassies_webpage
+entity_type: node
+bundle: embassies
+label: embassies_webpage
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

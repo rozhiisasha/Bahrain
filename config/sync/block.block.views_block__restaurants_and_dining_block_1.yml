@@ -1,0 +1,30 @@
+uuid: 6d303951-0af5-4596-90b6-c00b865a93f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.restaurants_and_dining
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_air
+id: views_block__restaurants_and_dining_block_1
+theme: bootstrap_air
+region: content
+weight: -33
+provider: null
+plugin: 'views_block:restaurants_and_dining-block_1'
+settings:
+  id: 'views_block:restaurants_and_dining-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /at-the-airport/restaurants-and-dining
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,42 @@
+label: التعليقات
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: 'إعادة الضبط'
+      pager:
+        options:
+          tags:
+            next: 'go to page '
+          expose:
+            items_per_page_options_all_label: '- الكل -'
+      fields:
+        comment_bulk_form:
+          action_title: إجراء
+        subject:
+          label: الموضوع
+        operations:
+          label: عمليات
+      filters:
+        subject:
+          expose:
+            label: الموضوع
+      title: التعليقات
+  page_published:
+    display_options:
+      menu:
+        title: التعليقات
+  page_unapproved:
+    display_options:
+      filters:
+        subject:
+          expose:
+            label: الموضوع
+      fields:
+        comment_bulk_form:
+          action_title: إجراء
+        subject:
+          label: الموضوع
+        operations:
+          label: عمليات

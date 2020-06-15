@@ -1,0 +1,23 @@
+uuid: d25d9b17-428e-4620-aad3-92b348bd2907
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_embassies_phone
+    - node.type.embassies
+id: node.embassies.field_embassies_phone
+field_name: field_embassies_phone
+entity_type: node
+bundle: embassies
+label: embassies_phone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: '973 '
+  suffix: ''
+field_type: integer

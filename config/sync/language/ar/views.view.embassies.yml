@@ -1,0 +1,28 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: بحث
+      filters:
+        title:
+          expose:
+            label: 'ابحث عن السفارة'
+            placeholder: 'أدخل اسم السفارة'
+      fields:
+        field_icon_airline:
+          label: السفارة
+        field_embassies_consulate:
+          label: القنصلية
+        field_embassies_address:
+          label: العنوان
+        field_embassies_phone:
+          label: 'رقم الهاتف'
+        field_embassies_email:
+          label: 'البريد الإلكتروني'
+        field_embassies_webpage:
+          label: الموقع
+      pager:
+        options:
+          tags:
+            next: 'الانتقال الى صفحة'

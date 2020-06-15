@@ -1,0 +1,25 @@
+uuid: 4cb4ba5b-b5ab-4518-b9a1-fa7dacd7a254
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:base_block:e17f748e-2f78-43b3-8be3-f5467b7e3eef'
+  module:
+    - block_content
+  theme:
+    - bootstrap_air
+id: menu_corp_2
+theme: bootstrap_air
+region: navigation_collapsible
+weight: -19
+provider: null
+plugin: 'block_content:e17f748e-2f78-43b3-8be3-f5467b7e3eef'
+settings:
+  id: 'block_content:e17f748e-2f78-43b3-8be3-f5467b7e3eef'
+  label: menu_corp_2
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: default
+visibility: {  }

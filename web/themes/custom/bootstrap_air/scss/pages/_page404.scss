@@ -1,0 +1,95 @@
+.page-node-122,
+.page-node-123,
+.page-node-125 {
+	background: url('../images/emergency-bg.png') 0 0 no-repeat;
+
+
+	.dialog-off-canvas-main-canvas header {
+		background: none;
+	
+	height: 120px;
+	overflow: visible;
+	.region-navigation-collapsible {
+		
+		.block-views-blockhero-image-block-1 {
+			display: none;
+		}
+	}
+
+	}
+	.breadcrumbs-top {
+		display: none;
+	}
+
+	.global-content-wrapper {
+		//background: none;
+		background: url('../images/emergency-bg.png') 0 -120px no-repeat;
+		padding-bottom: 0;
+
+		.col-sm-8 {
+			width: 100%;
+		}
+
+		.content-wrap {
+			background: none;
+			.page-header {
+				display: none;
+			}
+
+			.content {
+				display: flex;
+				justify-content: space-between;
+				margin-top: 48px;
+
+				.field--name-body {
+
+					color: #fff;
+
+
+					h1 {
+						margin-bottom: 0;
+						font-weight: 700;
+						font-size: 44px;
+					}
+
+					h2 {
+						margin-top: 0;
+						font-weight: 700;
+						text-transform: uppercase;
+						font-size: 25px;
+						margin-bottom: 180px;
+					}
+
+					a {
+						text-transform: uppercase;
+						font-size: 20px;
+						color: #fff;
+						font-weight: 700;
+					}
+				}
+
+
+			}
+		}
+
+		@media all and (max-width: 775px) {
+
+			.field--name-field-media {
+				display: none;
+			}
+
+			.content-wrap .content .field--name-body {
+
+				h1 {
+					font-size: 30px;
+				}
+				h2 {
+					margin-bottom: 100px;
+				}
+			}
+		}
+	}
+	.footer {
+		border-top: 0;	}
+
+}

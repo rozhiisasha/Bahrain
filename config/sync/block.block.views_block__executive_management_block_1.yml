@@ -1,0 +1,30 @@
+uuid: c5a5b49b-1b57-4ad4-9fbc-819693443594
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.executive_management
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_air
+id: views_block__executive_management_block_1
+theme: bootstrap_air
+region: content
+weight: -27
+provider: null
+plugin: 'views_block:executive_management-block_1'
+settings:
+  id: 'views_block:executive_management-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /corporate/about-us/executive-management
+    negate: false
+    context_mapping: {  }

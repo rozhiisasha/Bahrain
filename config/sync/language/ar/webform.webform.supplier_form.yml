@@ -1,0 +1,2 @@
+title: 'استمارة المورد'
+elements: "company_name:\n  '#title': 'اسم الشركة'\nlocation:\n  '#title': الموقع\nservices_offered:\n  '#title': 'الخدمات المقدمة'\nupload_brochure:\n  '#title': 'تحميل الكتيب'\ncomment:\n  '#title': تعليق\nactions:\n  '#submit__label': إرسال\n"

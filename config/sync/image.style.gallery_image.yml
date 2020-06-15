@@ -1,0 +1,14 @@
+uuid: 2222b92a-531f-4ad5-9dc6-565fc65658b0
+langcode: en
+status: true
+dependencies: {  }
+name: gallery_image
+label: 'Gallery image (640  x 480)'
+effects:
+  b1af32c6-9622-4a4b-bbf1-30e56deccfec:
+    uuid: b1af32c6-9622-4a4b-bbf1-30e56deccfec
+    id: image_resize
+    weight: 1
+    data:
+      width: 640
+      height: 480

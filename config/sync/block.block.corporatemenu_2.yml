@@ -1,0 +1,30 @@
+uuid: 283a2319-268a-4e93-821f-b5dca0a73d21
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.corporate-menu
+  module:
+    - system
+  theme:
+    - bootstrap_air
+id: corporatemenu_2
+theme: bootstrap_air
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:corporate-menu'
+settings:
+  id: 'system_menu_block:corporate-menu'
+  label: 'About Us'
+  provider: system
+  label_display: visible
+  level: 2
+  depth: 0
+  expand_all_items: true
+visibility:
+  request_path:
+    id: request_path
+    pages: "/corporate/about-us\r\n/corporate/about-us/*"
+    negate: false
+    context_mapping: {  }

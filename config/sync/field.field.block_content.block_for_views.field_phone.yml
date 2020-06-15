@@ -1,0 +1,21 @@
+uuid: 9400a28d-11ff-48aa-9c88-cd157fd75a7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_for_views
+    - field.storage.block_content.field_phone
+  module:
+    - text
+id: block_content.block_for_views.field_phone
+field_name: field_phone
+entity_type: block_content
+bundle: block_for_views
+label: Phone
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

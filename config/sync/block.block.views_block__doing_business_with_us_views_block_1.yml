@@ -1,0 +1,30 @@
+uuid: 4b92212e-e2b8-457e-b762-e7b2017d5ad5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.doing_business_with_us_views
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_air
+id: views_block__doing_business_with_us_views_block_1
+theme: bootstrap_air
+region: content
+weight: -29
+provider: null
+plugin: 'views_block:doing_business_with_us_views-block_1'
+settings:
+  id: 'views_block:doing_business_with_us_views-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /corporate/doing-business-with-us
+    negate: false
+    context_mapping: {  }

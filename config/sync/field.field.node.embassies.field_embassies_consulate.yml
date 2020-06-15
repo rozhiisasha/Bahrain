@@ -1,0 +1,21 @@
+uuid: bd574b05-4dae-464a-97ce-3936f280bb96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_embassies_consulate
+    - node.type.embassies
+  module:
+    - text
+id: node.embassies.field_embassies_consulate
+field_name: field_embassies_consulate
+entity_type: node
+bundle: embassies
+label: embassies_consulate
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

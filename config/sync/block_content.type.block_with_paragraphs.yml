@@ -1,0 +1,8 @@
+uuid: dc03618a-6127-4465-8bb9-d8d0d89dcbc2
+langcode: en
+status: true
+dependencies: {  }
+id: block_with_paragraphs
+label: 'Block with paragraphs'
+revision: 1
+description: ''

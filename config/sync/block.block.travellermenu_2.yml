@@ -1,0 +1,30 @@
+uuid: 5b03fd80-21c5-42b3-9483-b96ff426d19f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.traveller-menu
+  module:
+    - system
+  theme:
+    - bootstrap_air
+id: travellermenu_2
+theme: bootstrap_air
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:traveller-menu'
+settings:
+  id: 'system_menu_block:traveller-menu'
+  label: 'Before You Fly'
+  provider: system
+  label_display: visible
+  level: 2
+  depth: 0
+  expand_all_items: true
+visibility:
+  request_path:
+    id: request_path
+    pages: "/corporate/*\r\n/career/*\r\n/privacy-policy\r\n/flight-details/*\r\n/flight-details\r\n/at-the-airport\r\n/at-the-airport/*\r\n<front>"
+    negate: true
+    context_mapping: {  }

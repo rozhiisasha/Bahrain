@@ -1,0 +1,33 @@
+uuid: 6c834e02-f3b2-40b2-acb1-16d3fbb8448a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_for_sliders
+    - field.field.block_content.block_for_sliders.field_slider_media
+    - field.field.block_content.block_for_sliders.field_sliders_terms
+id: block_content.block_for_sliders.default
+targetEntityType: block_content
+bundle: block_for_sliders
+mode: default
+content:
+  field_slider_media:
+    type: entity_reference_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_sliders_terms:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

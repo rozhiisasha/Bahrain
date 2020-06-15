@@ -1,0 +1,109 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 'البحث عن رحلات'
+      pager:
+        options:
+          tags:
+            next: 'الانتقال الى صفحة'
+      fields:
+        flight_time:
+          label: حجز
+        origin:
+          label: ' الوجهة'
+        flight_number:
+          label: ' رقم الرحلة'
+        airline:
+          label: ' الرحلة'
+        status:
+          label: الحالة‬
+        notification:
+          label: تنبيه
+          alter:
+            text: 'ارسال تنبيه'
+          format_plural_string: !!binary MQNAY291bnQDAwMD
+      filters:
+        flight_time:
+          group_info:
+            label: 'الوصول:'
+            group_items:
+              1:
+                title: 'اليوم (<span class="today"></span>)'
+              2:
+                title: 'غداً (<span class="tomorrow"></span>)'
+        origin:
+          expose:
+            label: 'من:'
+            placeholder: المصدر
+        airline:
+          expose:
+            label: 'شركة الطيران:'
+            placeholder: 'اسم شركة الطيران'
+        flight_number:
+          expose:
+            label: ' و/أو'
+            placeholder: ' رقم الرحلة'
+      empty:
+        area:
+          content:
+            value: "<p>لاتوجد اي نتائج</p>\r\n"
+            format: basic_html
+  flight_departures:
+    display_options:
+      fields:
+        flight_time:
+          label: حجز
+        origin:
+          label: الوجهة
+        flight_number:
+          label: ' رقم الرحلة'
+        airline:
+          label: ' الرحلة'
+        status:
+          label: الحالة‬
+        notification:
+          label: تنبيه
+          alter:
+            text: 'ارسال تنبيه'
+          format_plural_string: !!binary MQNAY291bnQDAwMD
+      filters:
+        flight_time:
+          group_info:
+            label: 'المغادرة:'
+            group_items:
+              1:
+                title: 'اليوم (<span class="today"></span>)'
+              2:
+                title: 'غداً (<span class="tomorrow"></span>)'
+        origin:
+          expose:
+            label: 'إلى:'
+            placeholder: الوجهة
+        airline:
+          expose:
+            label: 'شركة الطيران:'
+            placeholder: 'اسم شركة الطيران'
+        flight_number:
+          expose:
+            label: ' و/أو'
+            placeholder: 'رقم الرحلة'
+  flight_arrivals:
+    display_options:
+      fields:
+        flight_time:
+          label: 'وقت الوصول'
+        origin:
+          label: المصدر
+        flight_number:
+          label: 'رقم الرحلة'
+        airline:
+          label: الرحلة
+        status:
+          label: الحالة
+        notification:
+          label: تنبيه
+          alter:
+            text: 'ارسال تنبيه'
+          format_plural_string: !!binary MQNAY291bnQDAwMD

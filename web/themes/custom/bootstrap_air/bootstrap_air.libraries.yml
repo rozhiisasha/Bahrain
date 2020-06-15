@@ -1,0 +1,87 @@
+moment.min:
+  js:
+    /libraries/moment/min/moment.min.js: {}
+
+highcharts:
+  js:
+    /libraries/highcharts/highcharts.js: {}
+
+framework:
+  css:
+    theme:
+      css/style.css: {}
+  js:
+    js/script.js: {}
+    js/page_with_select.js: {}
+    js/pager.js: {}
+    js/flight.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/jquery.cookie
+    - bootstrap_air/moment.min
+
+rtl:
+  css:
+    theme:
+      css/rtl/style-rtl.css: {}
+traveller_homepage:
+  css:
+    theme:
+      css/layouts/traveller_homepage.css: {}
+
+corporate_homepage:
+  css:
+    theme:
+      css/layouts/corporate_homepage.css: {}
+
+career_homepage:
+  css:
+    theme:
+      css/layouts/career_homepage.css: {}
+
+statistics:
+  js:
+    js/statistics.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - bootstrap_air/highcharts
+
+executive-management:
+  js:
+    core/drupal.ajax: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+
+
+# Uncomment for LESS source JavaScript files.
+#  js:
+#    bootstrap/js/affix.js: {}
+#    bootstrap/js/alert.js: {}
+#    bootstrap/js/button.js: {}
+#    bootstrap/js/carousel.js: {}
+#    bootstrap/js/collapse.js: {}
+#    bootstrap/js/dropdown.js: {}
+#    bootstrap/js/modal.js: {}
+#    bootstrap/js/tooltip.js: {}
+#    bootstrap/js/popover.js: {}
+#    bootstrap/js/scrollspy.js: {}
+#    bootstrap/js/tab.js: {}
+#    bootstrap/js/transition.js: {}
+
+# Uncomment for SASS source JavaScript files.
+#  js:
+#    bootstrap/assets/javascripts/bootstrap/affix.js: {}
+#    bootstrap/assets/javascripts/bootstrap/alert.js: {}
+#    bootstrap/assets/javascripts/bootstrap/button.js: {}
+#    bootstrap/assets/javascripts/bootstrap/carousel.js: {}
+#    bootstrap/assets/javascripts/bootstrap/collapse.js: {}
+#    bootstrap/assets/javascripts/bootstrap/dropdown.js: {}
+#    bootstrap/assets/javascripts/bootstrap/modal.js: {}
+#    bootstrap/assets/javascripts/bootstrap/tooltip.js: {}
+#    bootstrap/assets/javascripts/bootstrap/popover.js: {}
+#    bootstrap/assets/javascripts/bootstrap/scrollspy.js: {}
+#    bootstrap/assets/javascripts/bootstrap/tab.js: {}
+#    bootstrap/assets/javascripts/bootstrap/transition.js: {}

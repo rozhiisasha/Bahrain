@@ -1,0 +1,26 @@
+uuid: 6e0437ac-068c-4231-b696-5f9b464c43b5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - we_megamenu
+  theme:
+    - bootstrap_air
+id: travellermenu_5
+theme: bootstrap_air
+region: navigation_collapsible
+weight: -36
+provider: null
+plugin: 'we_megamenu_block:traveller-menu'
+settings:
+  id: 'we_megamenu_block:traveller-menu'
+  label: 'Traveller menu'
+  provider: we_megamenu
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/corporate*\r\n/corporate\r\n/career*\r\n/career\r\n/privacy-policy"
+    negate: true
+    context_mapping: {  }

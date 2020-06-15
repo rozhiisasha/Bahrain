@@ -1,0 +1,30 @@
+uuid: 01068ac6-e673-4c3b-910c-79f6d8bd8a19
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.careers-menu
+  module:
+    - system
+  theme:
+    - bootstrap_air
+id: careersmenu
+theme: bootstrap_air
+region: navigation_collapsible
+weight: -24
+provider: null
+plugin: 'system_menu_block:careers-menu'
+settings:
+  id: 'system_menu_block:careers-menu'
+  label: 'Career menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility:
+  request_path:
+    id: request_path
+    pages: "/career*\r\n/career"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,21 @@
+uuid: ed29d38f-494b-4d61-b683-ecfb13afd13e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_days_of_the_week
+    - node.type.flight
+  module:
+    - options
+id: node.flight.field_days_of_the_week
+field_name: field_days_of_the_week
+entity_type: node
+bundle: flight
+label: 'Days of the week'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

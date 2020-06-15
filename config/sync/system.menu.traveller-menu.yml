@@ -1,0 +1,8 @@
+uuid: 5c8be179-dea0-43f2-a980-a1103881fd0e
+langcode: en
+status: true
+dependencies: {  }
+id: traveller-menu
+label: 'Traveller menu'
+description: ''
+locked: false

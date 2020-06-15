@@ -1,0 +1,30 @@
+uuid: b28611f6-2c53-4355-91c7-f9c10c39daea
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.prepare_documents
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_air
+id: views_block__prepare_documents_block_1
+theme: bootstrap_air
+region: content
+weight: -19
+provider: null
+plugin: 'views_block:prepare_documents-block_1'
+settings:
+  id: 'views_block:prepare_documents-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /prepare-documents
+    negate: false
+    context_mapping: {  }

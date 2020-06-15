@@ -1,0 +1,21 @@
+uuid: 20f0853d-1413-45e1-bafd-a2c0feef9b33
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_eta
+    - node.type.flight
+  module:
+    - time_field
+id: node.flight.field_eta
+field_name: field_eta
+entity_type: node
+bundle: flight
+label: ETA
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: time

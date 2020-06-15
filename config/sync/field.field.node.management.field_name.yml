@@ -1,0 +1,21 @@
+uuid: 95472d41-99ca-4490-9e94-a06e0567555d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name
+    - node.type.management
+  module:
+    - text
+id: node.management.field_name
+field_name: field_name
+entity_type: node
+bundle: management
+label: name
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

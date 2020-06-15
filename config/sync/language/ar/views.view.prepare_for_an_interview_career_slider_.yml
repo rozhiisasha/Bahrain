@@ -1,0 +1,8 @@
+display:
+  default:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<h1>استعد لمقابلة</h1>\r\n\r\n<p>يجب اتباع خطوات سهلة للتحضير للمقابلة</p>\r\n\r\n<div id=\"gtx-trans\" style=\"position: absolute; left: 366px; top: 98.875px;\">\r\n<div class=\"gtx-trans-icon\">&nbsp;</div>\r\n</div>\r\n"
+            format: full_html

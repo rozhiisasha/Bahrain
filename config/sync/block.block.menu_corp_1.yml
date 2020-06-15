@@ -1,0 +1,25 @@
+uuid: 712a138e-3ec7-4ad7-8a27-101cf3d269a6
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:base_block:62012828-56d6-4dda-8fe6-995e8f2f8d76'
+  module:
+    - block_content
+  theme:
+    - bootstrap_air
+id: menu_corp_1
+theme: bootstrap_air
+region: navigation_collapsible
+weight: -20
+provider: null
+plugin: 'block_content:62012828-56d6-4dda-8fe6-995e8f2f8d76'
+settings:
+  id: 'block_content:62012828-56d6-4dda-8fe6-995e8f2f8d76'
+  label: menu_corp_1
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: default
+visibility: {  }

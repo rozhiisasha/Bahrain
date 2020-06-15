@@ -1,0 +1,75 @@
+uuid: ee7477ea-e14a-4f72-b717-f96d7f9c33ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.embassies.field_embassies_address
+    - field.field.node.embassies.field_embassies_consulate
+    - field.field.node.embassies.field_embassies_email
+    - field.field.node.embassies.field_embassies_phone
+    - field.field.node.embassies.field_embassies_webpage
+    - field.field.node.embassies.field_icon_airline
+    - node.type.embassies
+  module:
+    - text
+    - user
+id: node.embassies.default
+targetEntityType: node
+bundle: embassies
+mode: default
+content:
+  field_embassies_address:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_embassies_consulate:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_embassies_email:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_embassies_phone:
+    weight: 4
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_embassies_webpage:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_icon_airline:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  langcode: true
+  search_api_excerpt: true

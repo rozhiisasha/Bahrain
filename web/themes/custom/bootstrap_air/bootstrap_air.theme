@@ -1,0 +1,228 @@
+<?php
+
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+/**
+ * Implements hook_preprocess_links__language_block().
+ */
+function bootstrap_air_preprocess_links__language_block(&$variables) {
+  // Get current language id.
+  $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  foreach ($variables['links'] as $key => $value) {
+    if ($key === $language) {
+      // Unset current language from array.
+      unset($variables['links'][$key]);
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_links__language_block().
+ */
+function bootstrap_air_preprocess_block__system_branding_block(&$variables) {
+  $result = \Drupal::service('switch_portal.get_current_portal')->getPortal();
+  if ($result[1] == 'corporate') {
+    $variables['uri'] = '/corporate';
+  }
+  elseif ($result[1] == 'career') {
+    $variables['uri'] = '/career';
+  }
+  else {
+    $variables['uri'] = '/';
+  }
+  if ($result['lang'] == 'ar') {
+    $variables['uri'] = '/' . $result['lang'] . $variables['uri'];
+  }
+  $variables['#cache']['max-age'] = 0;
+}
+
+/**
+ * Implements hook_preprocess_views_view_unformatted().
+ */
+function bootstrap_air_preprocess_views_view_unformatted(&$variables) {
+  $view_id = $variables['view']->element['#view_id'];
+
+  // Checking view id, if it is not the id we need, then exit of this hook.
+  if (!in_array($view_id, [
+    'restaurants_and_dining',
+    'shops_and_services',
+    'baggage_regulations',
+  ])) {
+    return;
+  }
+
+  $elements = [];
+  $rows = $variables['rows'];
+  for ($i = 0; $i < count($rows); $i++) {
+    if (!isset($rows[$i]['content']['field_title'][0]['#text']) || empty($rows[$i]['content']['field_title'][0]['#text'])) {
+      $name_element = 'Name element ' . $i;
+    }
+    else {
+      $name_element = $rows[$i]['content']['field_title'][0]['#text'];
+    }
+    $id_element = 'element' . $i;
+    $rows[$i]['attributes']['id'] = $id_element;
+    $rows[$i]['content']['field_url']['#attributes'] = ['class' => 'link-to-top'];
+    $elements['#' . $id_element] = $name_element;
+  }
+  $variables['rows'] = [];
+  $variables['rows'][0]['content'] = [
+    '#type' => 'select',
+    '#title' => t('Choose an outlet :'),
+    '#options' => $elements,
+    '#id' => 'select_list',
+  ];
+  for ($i = 0; $i < count($rows); $i++) {
+    $variables['rows'][($i + 1)] = $rows[$i];
+  }
+}
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function bootstrap_air_preprocess_html(&$variables) {
+  // Adding a css class to the body tag depending on the URL.
+  $portal = \Drupal::service('switch_portal.get_current_portal')->getPortal();
+  $current_uri = \Drupal::request()->getRequestUri();
+  $path_arr = explode('/', $current_uri);
+  $path = array_reverse($path_arr);
+
+  if ($path[0] == "") {
+    $class_name = $path[1];
+  }
+  else {
+    $class_name = $path[0];
+  }
+
+  $find_get_query = strripos($class_name, '?');
+
+  if ($find_get_query == FALSE) {
+    $variables['attributes']['class'][] = $class_name;
+  }
+  else {
+    $result = explode('?', $class_name);
+    $variables['attributes']['class'][] = $result[0];
+  }
+
+  // Attached library for arabic language.
+  if ($variables['html_attributes']['dir'] == 'rtl') {
+    $variables['#attached']['library'][] = 'bootstrap_air/rtl';
+  }
+
+  // Attached library for page statistics.
+  if ($class_name === 'statistics') {
+    $variables['#attached']['library'][] = 'bootstrap_air/statistics';
+  }
+
+  // Attached library for page bia-timeline.
+  if ($class_name === 'bia-timeline') {
+    $variables['#attached']['library'][] = 'bootstrap_air/bia-timeline';
+  }
+
+  // Added node-id as class.
+  if ($node = \Drupal::request()->attributes->get('node')) {
+    $variables['attributes']['class'][] = 'page-node-' . $node->id();
+  }
+  if ($path[0] === 'flight-arrivals' || $path[0] === 'flight-departures') {
+    \Drupal::service('bahrain_flight.saved_flight')->insert();
+  }
+
+  if ($portal[1] == 'corporate') {
+    $variables['attributes']['class'][] = 'corp';
+  }
+  elseif ($portal[1] == 'career') {
+    $variables['attributes']['class'][] = 'carer';
+  }
+  else {
+    $variables['attributes']['class'][] = 'traveller';
+  }
+}
+
+
+/**
+ * Implements hook_preprocess_HOOK()
+ */
+function bootstrap_air_preprocess_block(&$variables) {
+  if ($variables['derivative_plugin_id'] == "a256db82-8e70-437b-ba64-82dca327ff87") {
+    $variables['#cache']['max-age'] = 0;
+  }
+}
+
+
+/**
+ * Implements hook_preprocess_breadcrumb()
+ *
+ * @param $variables
+ */
+
+function bootstrap_air_preprocess_breadcrumb(&$variables) {
+  $crumbs = $variables['breadcrumb'];
+
+  // This function modified first item in breadcrumbs for Arabic language
+  function breadcrumb_ar(&$crumbs, $portal_name) {
+    $crumbs[0]['url'] = '/ar/' . $portal_name;
+  }
+
+  // This function modified first item in breadcrumbs for English language
+  function breadcrumb_en(&$crumbs) {
+    $crumbs[0]['url'] = $crumbs[1]['url'];
+    unset($crumbs[1]);
+  }
+
+
+  if (strripos($crumbs[1]['url'], 'corporate')) {
+
+    if ($crumbs[0]['url'] == '/ar') {
+      breadcrumb_ar($crumbs, 'corporate');
+    }
+    else {
+      breadcrumb_en($crumbs);
+    }
+
+  }
+  elseif (strripos($crumbs[1]['url'], 'career')) {
+
+    if ($crumbs[0]['url'] == '/ar') {
+      breadcrumb_ar($crumbs, 'career');
+    }
+    else {
+      breadcrumb_en($crumbs);
+    }
+  }
+
+  $variables['breadcrumb'] = $crumbs;
+}
+
+
+/**
+ * Implements hook_page_attachments_alter()
+ *
+ * @param $page
+ */
+
+function bootstrap_air_page_attachments_alter(&$page) {
+  $page['#attached']['library'][] = 'core/drupal.ajax';
+}
+/**
+ * Implements hook_form_alter().
+ */
+function bootstrap_air_form_alter(&$form, $form_state, $form_id) {
+  if ($form_id == "views_exposed_form") {
+    $form['keys']['#attributes']['placeholder'] = t('Search...');
+  }
+  switch ($form_id) {
+    case 'search_arrival':
+    case 'search_departures':
+      unset($form['form_token'], $form['form_build_id'], $form['form_id']);
+      break;
+    case 'views_exposed_form' :
+      $form['tid']['#placeholder'] = t('Enter airport name');
+      $form['tid_1']['#placeholder'] = t('Enter airline name');
+      break;
+  }
+}

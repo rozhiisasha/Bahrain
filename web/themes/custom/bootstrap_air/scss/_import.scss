@@ -1,0 +1,49 @@
+// gloval
+@import "global/global";
+@import "global/mixins";
+
+// blocks
+@import "blocks/footer_copyright";
+@import "blocks/footer_horizontal_blocks";
+@import "blocks/footer_social_media_links";
+@import "blocks/hero_image";
+@import "blocks/slider";
+@import "blocks/node_title_block";
+@import "blocks/latest_news";
+@import "blocks/block-info";
+@import "blocks/block-notification";
+@import "blocks/bahrain-flights-block";
+@import "blocks/working4-career-home";
+@import "blocks/corporate-block-on-travel";
+@import "blocks/flight-finder-block";
+
+//components
+@import "components/footer";
+@import "components/header";
+@import "components/global-view";
+@import "components/view_bac_news";
+@import "components/disable_title_body";
+@import "components/view_doing_business_global";
+@import "components/view_media_center_global";
+@import "components/career-views-global";
+@import "components/pager";
+@import "components/menu";
+
+//pages
+@import "pages/traveller";
+@import "pages/corporate";
+@import "pages/ba_at_glance";
+@import "pages/page-with-select";
+@import "pages/doing_business_nodes";
+@import "pages/media-center_nodes";
+@import "pages/at_the_airport";
+@import "pages/career-nodes";
+@import "pages/statistics";
+@import "pages/timeline";
+@import "pages/career";
+@import "pages/page404";
+@import "pages/pages-flight";
+@import "pages/contact-us";
+@import "pages/search";
+
+

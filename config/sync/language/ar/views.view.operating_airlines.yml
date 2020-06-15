@@ -1,0 +1,23 @@
+display:
+  default:
+    display_options:
+      pager:
+        options:
+          tags:
+            next: 'الانتقال الى صفحة'
+      fields:
+        title:
+          label: 'اسم شركة الطيران'
+      filters:
+        title:
+          expose:
+            label: ' البحث حسب شركة الطيران'
+            placeholder: ' ادخل اسم شركة الطيران'
+      exposed_form:
+        options:
+          submit_button: 'البحث عن رحلات'
+      empty:
+        area:
+          content:
+            value: "<p>لاتوجد اي نتائج</p>\r\n"
+            format: basic_html

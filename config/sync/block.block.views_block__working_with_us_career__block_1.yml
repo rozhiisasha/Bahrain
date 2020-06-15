@@ -1,0 +1,30 @@
+uuid: 1b893a55-04fb-4494-956f-06388277e821
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.working_with_us_career_
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_air
+id: views_block__working_with_us_career__block_1
+theme: bootstrap_air
+region: content
+weight: -14
+provider: null
+plugin: 'views_block:working_with_us_career_-block_1'
+settings:
+  id: 'views_block:working_with_us_career_-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /career/working-with-us
+    negate: false
+    context_mapping: {  }
